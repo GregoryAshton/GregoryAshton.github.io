@@ -1,3 +1,8 @@
+---
+layout: post
+title: Opening ipython notebooks in a new window
+---
+
 Using Google chrome on Ubuntu 14.04, by default the command
 
     $ ipython notebook 
