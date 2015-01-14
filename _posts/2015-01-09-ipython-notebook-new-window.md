@@ -17,9 +17,15 @@ To do this first locate the default profile:
 
     $ ipython profile locate
 
-In this directory will be a file `ipython_notebook_config.py` to
-which you add the line 
+In this directory will be a file `ipython_notebook_config.py`; if this
+does not exist then run `ipython profile create` to generate the default
+configuration files. This file specifies all the configuration settings
+on starting up any notebooks, for more details see 
+[the docs](http://ipython.org/ipython-doc/1/config/overview.html)
+
+ 
+Open up `ipython_notebook_config.py` and add the line
 
     c.NotebookApp.browser = u'/usr/bin/google-chrome %s --new-window'
 
-
+New notebook instances will now generate a new browser window. 
