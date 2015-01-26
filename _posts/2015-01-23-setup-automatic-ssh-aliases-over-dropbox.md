@@ -16,40 +16,42 @@ here for myself in the future.
 
 Firstly we need a script which saves an the address as a useful alias:
 
-    #!/usr/bin/python
-    
-    import subprocess
-    import os
-    
-    # Read in the ipaddress, hostname and username
-    command_line = "/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2| awk '{print $1}'"
-    ipaddress = subprocess.check_output(command_line, shell=True).rstrip("\n")
-    hostname = subprocess.check_output("hostname", shell=True).rstrip("\n")
-    user = subprocess.check_output("/usr/bin/whoami", shell=True).rstrip("\n")
-    
-    # Save results in a dictionary
-    data = {}
-    
-    # Save aliases in a file
-    dir_of_script = os.path.dirname(os.path.realpath(__file__))
-    alias_file = "ssh-aliases"
-    alias_file = dir_of_script+"/"+alias_file
-    
-    # If file exists read in data
-    try:   
-        with open(alias_file, "r") as file:
-            for line in file:
-                [alias, syscall] = line.split("=")
-                data[alias.lstrip("alias ")] = syscall.lstrip("'ssh -X ").rstrip("'\n").split("@")
-        data[hostname] = [user, ipaddress]
-    except IOError:
-        data = {hostname : [user, ipaddress]}
-    
-    # Write to the file
-    with open(alias_file, "w+") as file:
-        for key, val in data.iteritems():
-            file.write("alias {}='ssh -X {}@{}'\n".format(key, val[0], val[1]))
-    
+{% highlight python %}
+#!/usr/bin/python
+
+import subprocess
+import os
+
+# Read in the ipaddress, hostname and username
+command_line = "/sbin/ifconfig eth0 | grep 'inet addr:' | cut -d: -f2| awk '{print $1}'"
+ipaddress = subprocess.check_output(command_line, shell=True).rstrip("\n")
+hostname = subprocess.check_output("hostname", shell=True).rstrip("\n")
+user = subprocess.check_output("/usr/bin/whoami", shell=True).rstrip("\n")
+
+# Save results in a dictionary
+data = {}
+
+# Save aliases in a file
+dir_of_script = os.path.dirname(os.path.realpath(__file__))
+alias_file = "ssh-aliases"
+alias_file = dir_of_script+"/"+alias_file
+
+# If file exists read in data
+try:   
+    with open(alias_file, "r") as file:
+        for line in file:
+            [alias, syscall] = line.split("=")
+            data[alias.lstrip("alias ")] = syscall.lstrip("'ssh -X ").rstrip("'\n").split("@")
+    data[hostname] = [user, ipaddress]
+except IOError:
+    data = {hostname : [user, ipaddress]}
+
+# Write to the file
+with open(alias_file, "w+") as file:
+    for key, val in data.iteritems():
+        file.write("alias {}='ssh -X {}@{}'\n".format(key, val[0], val[1]))
+{% endhighlight %}
+
 When run, this will save a file in the current directory `ssh-aliases` containing
 an aliases to access the current machine. If a previous entry existed and the ip
 address has changed then the alias file will be updated. 
