@@ -3,7 +3,7 @@ html {
 }
 @media (min-width: 40rem) {
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
  
@@ -11,6 +11,7 @@ body {
   margin: 0;
   font: 1rem/1.5 "PT Sans", sans-serif;
   color: #5a5a5a;
+  background-color: #FFFFFF
 }
  
 /* Navigation bar */
@@ -33,7 +34,7 @@ a:hover {
  */
 
 .container {
-  max-width: 40rem;
+  max-width: 50rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
