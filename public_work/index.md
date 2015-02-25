@@ -1,7 +1,16 @@
 ---
 layout: default
-title: Projects
+title: Public work
 ---
+
+# Pulications
+
+* Ashton, G.; Jones, D. I.; Prix, R.: [The effect of timing noise on targeted 
+  and narrow-band coherent searches for continuous gravitational waves
+  ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
+
+* Institute of Physics Gravitational Physics Group [2015 newsletter](
+  http://www.iop.org/activity/groups/subject/gp/news/file_64991.pdf)
 
 # Presentations
 
