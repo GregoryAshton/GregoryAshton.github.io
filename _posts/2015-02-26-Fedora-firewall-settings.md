@@ -12,8 +12,6 @@ I experienced issues connecting to various networks and vpn's when using Fedora
 fix here since I suspect I may run into this error again and I have a terrible
 memory!
 
-``` bash
-ll-cmd --direct --add-rule ipv4 filter INPUT 0 -p gre -j ACCEPT
-firewall-cmd --direct --add-rule ipv6 filter INPUT 0 -p gre -j ACCEPT
-firewall-cmd --reload
-```
+    $ ll-cmd --direct --add-rule ipv4 filter INPUT 0 -p gre -j ACCEPT
+    $ firewall-cmd --direct --add-rule ipv6 filter INPUT 0 -p gre -j ACCEPT
+    $ firewall-cmd --reload
