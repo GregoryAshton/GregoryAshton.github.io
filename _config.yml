@@ -4,14 +4,14 @@ relative_permalinks: true
 
 # Setup
 title:            Gregory Ashton
-tagline:          
-url:              
+tagline:
+url:
 paginate:         3
 baseurl:          /
 author:
   name:           Gregory Ashton
-  url:            
-  email:          
+  url:
+  email:
 
 # Custom vars
 version:          1.0.0
