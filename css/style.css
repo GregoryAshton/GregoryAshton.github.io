@@ -74,15 +74,8 @@ pre code {
   background-color: transparent;
 }
 
-.preview {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1500px;
-  height: 700px;
+
+.footer-space {
+    margin-bottom: 3cm;
 }
 
-td {
-  padding: 0px;
-  align: center;
-  valign: center;
-}
