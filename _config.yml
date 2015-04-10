@@ -4,14 +4,14 @@ relative_permalinks: true
 
 # Setup
 title:            Gregory Ashton
-tagline:          
-url:              
+tagline:
+url:
 paginate:         3
 baseurl:          /
 author:
   name:           Gregory Ashton
-  url:            
-  email:          
+  url:
+  email:
 
 # Custom vars
 version:          1.0.0
@@ -20,3 +20,12 @@ github:
 
 # Conversions
 highliter: pygments
+
+# Markdown Processors
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+  fenced_code_blocks: true
