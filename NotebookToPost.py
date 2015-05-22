@@ -12,7 +12,7 @@ ipynb_content = subprocess.check_output(
 html_fn = ipynb_fn.strip("ipynb")+"html"
 html_fn = html_fn.replace("notebooks", "posts")
 
-post_title = ipynb_fn.split("/")[1].rstrip(".ipynb").replace("-", " ")
+post_title = ipynb_fn.split("/")[1].replace(".ipynb", "").replace("-", " ")
 post_title = ''.join([i for i in post_title if not i.isdigit()])
 post_title = post_title.lstrip()
 
