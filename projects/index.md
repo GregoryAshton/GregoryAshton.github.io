@@ -46,3 +46,23 @@ title: Projects
 * [Using the Google maps API to study average driving speeds around the
    globe](https://github.com/ga7g08/GoogleMapsAPI_experiment).
    To see the results [have a look here](https://github.com/ga7g08/GoogleMapsAPI_experiment/blob/master/Results.md)
+
+* [Printing latex elements](https://github.com/ga7g08/Scripts/blob/master/print_tex_elemnts):
+  This isn't so much a project as a useful script. Often in cleaning up latex
+  docs I trawl through the document searching for occurances of say
+  `includegraphics`. This script will simply print the elements (for example
+  in `\label{eqn: an equation}` the element would be `eqn: an equation`) to the
+  command line. It takes multiple files and if unspecified will search for 
+  proper tex files to use. It has default flags of `-f` to find figures and 
+  `-l` to find labels, but you can specify whatever you want with `-o`. For
+  example
+
+``` 
+    $ print_tex_elements somearticle.tex -o cite
+```
+
+  might for example produce
+
+    Einstein1916
+    Newton1675
+
