@@ -3,6 +3,7 @@ def name_clean(m):
     known = {'Beamwidth_Fixed': 'Noise-only',
              'Beamwidth_Perera': 'Switching',
              'Beamwidth_Jones': 'Modified-Gaussian Precession',
+             'Beamwidth_Jones_FixedP': 'Modified-Gaussian Precession (fixed P)',
              'Beamwidth_Gaussian': 'Gaussian Precession',
              'Spindown_Perera': 'Switching',
              'Spindown_Precession': 'Precession',
@@ -44,7 +45,7 @@ def GenerateTable(title, subtitle, models, comments):
   <tr>
     <td> {pretty_model_name} </td>
     <td>
-    <a href="{model_name}_nburn0_Walkers.png"> Initial </a>
+    <a href="{model_name}_nburn0.png"> Initial </a>
     <a href="{model_name}_nprod.png"> Production </a>
     <a href="{model_name}_PosteriorWithFit.pdf"> Posterior </a>
     </td>
@@ -89,8 +90,9 @@ with open(file_name, "w+") as f:
 
     title = "Spin-down data"
     subtitle = "uniform prior based on crude estimate to the data"
-    models = ["Spindown_Precession", "Spindown_Precession_FixedP", "Spindown_Perera"]
-    comments = ["", "Fixed value of P from ATNF", ""]
+    models = ["Spindown_Perera", "Spindown_Precession",
+              "Spindown_Precession_FixedP"]
+    comments = ["", "", "Fixed value of P from ATNF"]
     f.write(GenerateTable(title, subtitle, models, comments))
 
     title = "Beam-width data"
@@ -101,8 +103,9 @@ with open(file_name, "w+") as f:
 
     title = "Beam-width data"
     subtitle = "prior from the spin-down data"
-    models = ["Beamwidth_Fixed", "Beamwidth_Perera", "Beamwidth_Gaussian", "Beamwidth_Jones"]
-    comments = ["", "", "", ""]
+    models = ["Beamwidth_Fixed", "Beamwidth_Perera", "Beamwidth_Gaussian",
+              "Beamwidth_Jones", "Beamwidth_Jones_FixedP"]
+    comments = ["", "", "", "", "Fixed value of P from ATNF"]
     f.write(GenerateTable(title, subtitle, models, comments))
 
     title = "Averaged beam-width data"

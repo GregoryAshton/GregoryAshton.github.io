@@ -2,6 +2,21 @@
 layout: default
 ---
 
+<head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+
 <article class="post">
   <h2 class="post-title">{{ page.title }}</h2>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="page-date">{{ page.date | date_to_string }}</time>
