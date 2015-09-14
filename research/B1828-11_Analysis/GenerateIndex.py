@@ -2,8 +2,13 @@ def name_clean(m):
     """ Returns corresponding intelligble name """
     known = {'Beamwidth_Fixed': 'Noise-only',
              'Beamwidth_Perera': 'Switching',
+             'Beamwidth_Perera_Flat': 'Switching',
              'Beamwidth_Jones': 'Modified-Gaussian Precession',
+             'Beamwidth_Jones_Flat': 'Modified-Gaussian Precession',
              'Beamwidth_Jones_FixedP': 'Modified-Gaussian Precession (fixed P)',
+             'BeamwidthAveraged_Jones': 'Modified-Gaussian Precession',
+             'BeamwidthAveraged_Perera': 'Switching',
+             'BeamwidthAveraged_Perera_Flat': 'Switching',
              'Beamwidth_Gaussian': 'Gaussian Precession',
              'Spindown_Perera': 'Switching',
              'Spindown_Precession': 'Precession',
@@ -103,7 +108,7 @@ with open(file_name, "w+") as f:
 
     title = "Beam-width data"
     subtitle = "prior from the spin-down data"
-    models = ["Beamwidth_Fixed", "Beamwidth_Perera", "Beamwidth_Gaussian",
+    models = ["Beamwidth_Perera", "Beamwidth_Gaussian",
               "Beamwidth_Jones", "Beamwidth_Jones_FixedP"]
     comments = ["", "", "", "", "Fixed value of P from ATNF"]
     f.write(GenerateTable(title, subtitle, models, comments))

@@ -68,7 +68,7 @@ title: B1828-11 Data Analysis Results
   </tr>
 
   <tr>
-    <td> Beamwidth Perera Flat </td>
+    <td> Switching </td>
     <td>
     <a href="Beamwidth_Perera_Flat_nburn0.png"> Initial </a>
     <a href="Beamwidth_Perera_Flat_nprod.png"> Production </a>
@@ -80,7 +80,7 @@ title: B1828-11 Data Analysis Results
   
 
   <tr>
-    <td> Beamwidth Jones Flat </td>
+    <td> Modified-Gaussian Precession </td>
     <td>
     <a href="Beamwidth_Jones_Flat_nburn0.png"> Initial </a>
     <a href="Beamwidth_Jones_Flat_nprod.png"> Production </a>
@@ -180,7 +180,7 @@ title: B1828-11 Data Analysis Results
   </tr>
 
   <tr>
-    <td> BeamwidthAveraged Perera </td>
+    <td> Switching </td>
     <td>
     <a href="BeamwidthAveraged_Perera_nburn0.png"> Initial </a>
     <a href="BeamwidthAveraged_Perera_nprod.png"> Production </a>
@@ -192,7 +192,7 @@ title: B1828-11 Data Analysis Results
   
 
   <tr>
-    <td> BeamwidthAveraged Jones </td>
+    <td> Modified-Gaussian Precession </td>
     <td>
     <a href="BeamwidthAveraged_Jones_nburn0.png"> Initial </a>
     <a href="BeamwidthAveraged_Jones_nprod.png"> Production </a>
@@ -218,7 +218,7 @@ title: B1828-11 Data Analysis Results
   </tr>
 
   <tr>
-    <td> BeamwidthAveraged Perera Flat </td>
+    <td> Switching </td>
     <td>
     <a href="BeamwidthAveraged_Perera_Flat_nburn0.png"> Initial </a>
     <a href="BeamwidthAveraged_Perera_Flat_nprod.png"> Production </a>
