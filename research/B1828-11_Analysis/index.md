@@ -230,5 +230,64 @@ title: B1828-11 Data Analysis Results
   
 </table>
 
+
+## Using a longer length of the data
+<b> Description: </b> Table of results using a longer duration of data starting
+at MJD 50000
+
+<table style="width:100%" border="1|0" cellpadding="4" cellspacing="0" >
+  <tr>
+    <td><b> Model </b></td>
+    <td><b> Plots </b></td>
+    <td><b> Evidence </b></td>
+    <td><b> Comment </b></td>
+  </tr>
+
+  <tr>
+    <td> Spin-down Switching </td>
+    <td>
+    <a href="img/Spindown_Perera_nburn0.png"> Initial </a>
+    <a href="img/Spindown_Perera_nprod.png"> Production </a>
+    <a href="img/Spindown_Perera_PosteriorWithFit.pdf"> Posterior </a>
+    </td>
+    <td>   </td>
+    <td>  </td>
+  </tr>
+
+  <tr>
+    <td> Beam-width Switching </td>
+    <td>
+    <a href="img/Beamwidth_Perera_nburn0.png"> Initial </a>
+    <a href="img/Beamwidth_Perera_nprod.png"> Production </a>
+    <a href="img/Beamwidth_Perera_PosteriorWithFit.pdf"> Posterior </a>
+    </td>
+    <td> 1359.0 +/- 1.56 </td>
+    <td>  </td>
+  </tr>
+
+  <tr>
+    <td> Spin-down Precession </td>
+    <td>
+    <a href="img/Spindown_Precession_nburn0.png"> Initial </a>
+    <a href="img/Spindown_Precession_nprod.png"> Production </a>
+    <a href="img/Spindown_Precession_PosteriorWithFit.pdf"> Posterior </a>
+    </td>
+    <td>   </td>
+    <td>  </td>
+  </tr>
+
+  <tr>
+    <td> Beam-width Modified-Gaussian Precession </td>
+    <td>
+    <a href="img/Beamwidth_Jones_nburn0.png"> Initial </a>
+    <a href="img/Beamwidth_Jones_nprod.png"> Production </a>
+    <a href="img/Beamwidth_Jones_PosteriorWithFit.pdf"> Posterior </a>
+    </td>
+    <td> 1365.6 +/- 2.92  </td>
+    <td>  </td>
+  </tr>
+  
+</table>
+
 <div style="height:50px;"></div>
 &nbsp;
