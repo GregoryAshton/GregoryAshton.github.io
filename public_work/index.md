@@ -5,14 +5,21 @@ title: Public work
 
 # Pulications
 
+* Ashton, G.; Jones, D. I.; Prix, R.: [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
+
 * Ashton, G.; Jones, D. I.; Prix, R.: [The effect of timing noise on targeted 
   and narrow-band coherent searches for continuous gravitational waves
   ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
 
-* Institute of Physics Gravitational Physics Group [2015 newsletter](
+* Institute of Physics, Gravitational Physics Group [2015 newsletter](
   http://www.iop.org/activity/groups/subject/gp/news/file_64991.pdf)
 
 # Presentations
+
+* Parallel session talk at [Annual NewCompStar Conference in Budapest 
+  (2015)](https://indico.kfki.hu/event/254/) discussing 
+  [Comparing different models of pulsar timing 
+  noise](https://indico.kfki.hu/event/254/session/6/contribution/126/material/slides/0.pdf)
 
 * Presentation at [Birmingham BritGrav
   2015](http://www.sr.bham.ac.uk/britgrav15/) in which I presented work on
