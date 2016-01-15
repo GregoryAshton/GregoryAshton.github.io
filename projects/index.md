@@ -5,6 +5,10 @@ title: Projects
 
 # Projects
 
+* [Bayes Bimodal Test](https://github.com/ga7g08/BayesBimodalTest) A simple
+  python module using the emcee MCMC software to perform a Bayesian model
+  comparison of bimodality.
+
 * [GitCheck](https://github.com/ga7g08/GitCheck): A python appindicator which
   provides a visual check of the status of git repos. This builds on some of
   the functionality of [batchgit](https://github.com/maxhebditch/batchgit) by
