@@ -5,14 +5,18 @@ title: Public work
 
 # Pulications
 
-* Ashton, G.; Jones, D. I.; Prix, R.: [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
+* Baker, A et al.: [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)
+
+* Ashton, G.; Jones, D. I.; Prix, R.: [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
 
 * Ashton, G.; Jones, D. I.; Prix, R.: [The effect of timing noise on targeted 
-  and narrow-band coherent searches for continuous gravitational waves
+  and narrow-band coherent searches for continuous gravitational waves (2015)
   ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
 
 * Institute of Physics, Gravitational Physics Group [2015 newsletter](
   http://www.iop.org/activity/groups/subject/gp/news/file_64991.pdf)
+
+* Franchin, M et al.: [Current driven nucleation of domain walls in cylindrical nanowires (2011)](http://www.southampton.ac.uk/~fangohr/publications/poster/MMM_2011_CurrentNanowire_Franchin.pdf)
 
 # Presentations
 
