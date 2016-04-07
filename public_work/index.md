@@ -7,7 +7,7 @@ title: Public work
 
 * Baker, A et al.: [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)
 
-* Ashton, G.; Jones, D. I.; Prix, R.: [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
+* Ashton, G.; Jones, D. I.; Prix, R.: [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2016MNRAS.458..881A)
 
 * Ashton, G.; Jones, D. I.; Prix, R.: [The effect of timing noise on targeted 
   and narrow-band coherent searches for continuous gravitational waves (2015)
