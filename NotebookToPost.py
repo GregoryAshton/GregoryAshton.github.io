@@ -7,7 +7,7 @@ ipynb_fn = sys.argv[1]
 print "Converting {}".format(ipynb_fn)
 
 ipynb_content = subprocess.check_output(
-    "ipython nbconvert --to html --stdout {}".format(ipynb_fn), shell=True)
+    "jupyter nbconvert --to html --stdout {}".format(ipynb_fn), shell=True)
 
 html_fn = ipynb_fn.strip("ipynb")+"html"
 html_fn = html_fn.replace("notebooks", "posts")
