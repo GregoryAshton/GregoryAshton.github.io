@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 ---
-# Research: Pulsar timing noise: models and implications
+# PhD. research: Pulsar timing noise, models and implications
 
 I am currently a PhD candidate enrolled at the mathematics department of the
 [University of
