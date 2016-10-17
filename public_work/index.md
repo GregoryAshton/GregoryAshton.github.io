@@ -5,9 +5,9 @@ title: Public work
 
 # Pulications
 
-* D. I. Jones, G. Ashton G, R. Prix [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
+* D. I. Jones, G. Ashton G, R. Prix [On the occurrence of glitches in pulsar free precession candidates](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
 
-* G. Ashton, D. I. Jones, R. Prix [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
+* G. Ashton, D. I. Jones, R. Prix [On the free-precession candidate PSR B1828-11: Evidence for increasing deformation](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
 
 * A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)
 
