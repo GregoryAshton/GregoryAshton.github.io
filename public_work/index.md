@@ -5,6 +5,8 @@ title: Public work
 
 # Pulications
 
+* G. Ashton PhD thesis: [Timing variations in neutron stars: models, inference and their implications for gravitational waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
+
 * D. I. Jones, G. Ashton G, R. Prix [On the occurrence of glitches in pulsar free precession candidates](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
 
 * G. Ashton, D. I. Jones, R. Prix [On the free-precession candidate PSR B1828-11: Evidence for increasing deformation](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
