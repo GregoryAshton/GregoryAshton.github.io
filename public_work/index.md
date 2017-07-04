@@ -3,13 +3,14 @@ layout: default
 title: Public work
 ---
 
-# Pulications
+# Publications
 
-* G. Ashton PhD thesis: [Timing variations in neutron stars: models, inference and their implications for gravitational waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
-
+* G. Ashton, R. Prix, D. I. Jones [Statistical characterization of pulsar glitches and their potential impact on searches for continuous gravitational waves](http://adsabs.harvard.edu/abs/2017arXiv170400742A)
 * D. I. Jones, G. Ashton G, R. Prix [On the occurrence of glitches in pulsar free precession candidates](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
 
 * G. Ashton, D. I. Jones, R. Prix [On the free-precession candidate PSR B1828-11: Evidence for increasing deformation](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
+
+* G. Ashton PhD thesis: [Timing variations in neutron stars: models, inference and their implications for gravitational waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
 
 * A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)
 
@@ -30,7 +31,7 @@ title: Public work
   (2016)](https://indico.cern.ch/event/472448/) discussing
   [Learning about neutron stars from pulsar precession observations](
 https://indico.cern.ch/event/472448/contributions/1992071/attachments/1266420/1874875/GregAshtonIstanbul2016.pdf)
-for which I was pleased to recieve the best student talk prize.
+for which I was honoured to recieve the best student talk prize.
 
 * Parallel session talk at [Annual NewCompStar Conference in Budapest
   (2015)](https://indico.kfki.hu/event/254/) discussing
