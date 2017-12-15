@@ -11,13 +11,13 @@ title: Public work
 
 * D. I. Jones, G. Ashton G, R. Prix [On the occurrence of glitches in pulsar free precession candidates](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
 
-* G. Ashton, O. Birnholtz, M. Cabero, C. Capano, T. Dent, B. Krishnan, G. D. Meadors, A. B. Nielsen, A. Nitz, J. Westerweck [Comments on: "Echoes from the abyss: Evidence for Planck-scale structure at black hole horizons"](http://adsabs.harvard.edu/abs/2016arXiv161205625A)[^1]
+* G. Ashton, O. Birnholtz, M. Cabero, C. Capano, T. Dent, B. Krishnan, G. D. Meadors, A. B. Nielsen, A. Nitz, J. Westerweck [Comments on: "Echoes from the abyss: Evidence for Planck-scale structure at black hole horizons"](http://adsabs.harvard.edu/abs/2016arXiv161205625A)`*`
 
 * G. Ashton, D. I. Jones, R. Prix [On the free-precession candidate PSR B1828-11: Evidence for increasing deformation](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
 
 * G. Ashton PhD thesis: [Timing variations in neutron stars: models, inference and their implications for gravitational waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
 
-* A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)[^1]
+* A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)`*`
 
 * G. Ashton, D. I. Jones, R. Prix [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2016MNRAS.458..881A)
 
@@ -30,7 +30,7 @@ title: Public work
 
 * M. Franchin et al. [Current driven nucleation of domain walls in cylindrical nanowires (2011)](http://www.southampton.ac.uk/~fangohr/publications/poster/MMM_2011_CurrentNanowire_Franchin.pdf)
 
-[^1] Publications to which I contributed, but was not one of the lead authors.
+`*` Publications to which I contributed, but was not one of the lead authors.
 
 # Presentations
 
