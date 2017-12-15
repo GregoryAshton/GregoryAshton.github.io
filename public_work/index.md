@@ -5,14 +5,19 @@ title: Public work
 
 # Publications
 
+* G. Ashton, E. Burns, T. Dal Canton, T. Dent, H.-B. Eggenstein, A. B. Nielsen, R. Prix, M. Was, S. J. Zhu [Coincident detection significance in multimessenger astronomy](http://adsabs.harvard.edu/abs/2017arXiv171205392A)
+
 * G. Ashton, R. Prix, D. I. Jones [Statistical characterization of pulsar glitches and their potential impact on searches for continuous gravitational waves](http://adsabs.harvard.edu/abs/2017arXiv170400742A)
+
 * D. I. Jones, G. Ashton G, R. Prix [On the occurrence of glitches in pulsar free precession candidates](http://adsabs.harvard.edu/abs/2016arXiv161003509J)
+
+* G. Ashton, O. Birnholtz, M. Cabero, C. Capano, T. Dent, B. Krishnan, G. D. Meadors, A. B. Nielsen, A. Nitz, J. Westerweck [Comments on: "Echoes from the abyss: Evidence for Planck-scale structure at black hole horizons"](http://adsabs.harvard.edu/abs/2016arXiv161205625A)[^1]
 
 * G. Ashton, D. I. Jones, R. Prix [On the free-precession candidate PSR B1828-11: Evidence for increasing deformation](http://adsabs.harvard.edu/abs/2016arXiv161003508A)
 
 * G. Ashton PhD thesis: [Timing variations in neutron stars: models, inference and their implications for gravitational waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
 
-* A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)
+* A. Baker et al. [Proposal of a micromagnetic standard problem for ferromagnetic resonance simulations (2016)](http://adsabs.harvard.edu/abs/2016arXiv160305419B)[^1]
 
 * G. Ashton, D. I. Jones, R. Prix [Comparing models of the periodic variations in spin-down and beam-width for PSR B1828-11 (2016) ](http://adsabs.harvard.edu/abs/2016MNRAS.458..881A)
 
@@ -25,9 +30,14 @@ title: Public work
 
 * M. Franchin et al. [Current driven nucleation of domain walls in cylindrical nanowires (2011)](http://www.southampton.ac.uk/~fangohr/publications/poster/MMM_2011_CurrentNanowire_Franchin.pdf)
 
+[^1] Publications to which I contributed, but was not one of the lead authors.
+
 # Presentations
 
-* Talk at [Annual NewCompStar Conference in Istanbul
+* Invited presentation at the 2017 11th Bonn workshop on **Formation and Evolution of Neutron Stars**:  [Neutron stars as continuous
+gravitational wave emitters](https://astro.uni-bonn.de/conferences/ns2017/Bonn2017_Ashton.pdf)
+
+* Contributed talk at [Annual NewCompStar Conference in Istanbul
   (2016)](https://indico.cern.ch/event/472448/) discussing
   [Learning about neutron stars from pulsar precession observations](
 https://indico.cern.ch/event/472448/contributions/1992071/attachments/1266420/1874875/GregAshtonIstanbul2016.pdf)
