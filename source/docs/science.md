@@ -4,6 +4,8 @@
 
 I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) of my publications in addition to the following list.
 
+28. Ashton, Gregory; Lasky, Paul D.; Nathan, Rowina; Palfreyman, Jim [Flickering of the Vela pulsar during its 2016 glitch](https://ui.adsabs.harvard.edu/abs/2020arXiv201107927A/abstract)
+
 27. Ashton, Gregory; Ackley, Kendall; Magaña Hernandez, Ignacio; Piotrzkowski, Brandon [Current observations are insufficient to confidently associate the binary black hole merger GW190521 with AGN J124942.3+344929](https://ui.adsabs.harvard.edu/abs/2020arXiv200912346A/abstract)
 
 26. Xing-Jiang Zhu, Gregory Ashton [Characterizing Astrophysical Binary Neutron Stars with Gravitational Waves](https://ui.adsabs.harvard.edu/abs/2020arXiv200708198Z/abstract)
