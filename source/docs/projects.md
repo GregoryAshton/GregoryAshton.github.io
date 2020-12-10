@@ -3,10 +3,10 @@
 In this page, I collect various miscellaneous coding projects I have been
 involved in.
 
-# Projects
-
 * [kookaburra](https://github.com/GregoryAshton/kookaburra) A python package
 for profile-domain timing of radio pulsars
+
+* [parallel_bilby](https://git.ligo.org/lscsoft/parallel_bilby) A python package to leverage slurm-based HPC clusters. Enables scaling inference jobs up to many hundreds of cores.
 
 * [bilby_pipe](https://git.ligo.org/lscsoft/bilby_pipe) A python package for
 automating the job of running multiple jobs on LIGO Data Grid clusters.

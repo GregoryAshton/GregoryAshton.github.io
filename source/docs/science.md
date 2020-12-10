@@ -62,7 +62,17 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
   and narrow-band coherent searches for continuous gravitational waves (2015)
   ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
 
-## Misc.
+## Workshops
+
+* Aug/2020 [Parameter Estimation for Gravitational waves](https://github.com/GregoryAshton/GWParameterEstimationWorkshop2020). Lead organizer, invited by the LIGOIndia community to train 60+ astrophysicists
+
+* May/2020 [LIGO-Virgo Collaboration GW Open Data Workshop #3](https://www.gw-openscience.org/static/workshop3/). Co-organizer, invited to write and coordinate the Parameter Estimation tutorials for 100 students (virtual).
+
+* Nov/2018 OzGrav workshop: Towards O3. Lead organizer, 20 participants from the OzGrav inference program. A software development sprint.
+
+* July/2018 [OzGrav workshop: Introduction to Inference](https://github.com/GregoryAshton/OzGravInferenceWorkshop). Lead organiser, 33 international participants. Training in Bayesian inference and software development. Identifying new projects across the OzGrav nodes and themes..
+
+## Miscellaneous
 
 * Nature Astronomy Community, Behind the Paper: [Understanding the rotational evolution of the Vela pulsar during the 2016 glitch](https://astronomycommunity.nature.com/users/265242-greg-ashton/posts/52167-understanding-the-rotational-evolution-of-the-vela-pulsar-during-the-2016-glitch)
 
