@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 07/Jan/2021 I gave a talk titled ["The deepening mystery of the Vela radio-pulsar glitch"](pdfs/Bar-Ilan.pdf) at the Department of Physics, Bar-Ilan University on our recent Vela paper.
+
 * 04/Dec/2020 I gave an improptu talk to the University of Southampton's [astrophysics group](http://www.astro.soton.ac.uk/) on our recent Vela paper.
 
 * 16/Nov/2020 New paper ["Flickering of the Vela pulsar during its 2016 glitch"](https://ui.adsabs.harvard.edu/abs/2020arXiv201107927A/abstract) on the arXiv.
