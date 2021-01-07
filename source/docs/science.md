@@ -83,6 +83,8 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
 
 ## Selected Presentations
 
+* Seminar at Bar-Ilan University, Israel, January 2021: [The deepening mystery of the Vela radio-pulsar glitch](pdfs/Bar-Ilan.pdf)
+
 * GR22/Amaldi13 meeting, Valencia, Spain, July 2019: [Gravitational Wave Detection: A Fully Bayesian Approach](https://gr22amaldi13.com/contributed-speakers.php) (contributed)
 
 * IPTA annual meeting, Pune, India, June 2019: [Internal neutron-star physics from the 2016 Vela glitch](https://conf.ncra.tifr.res.in/event/2/page/23-scientific-programme) (contributed, remote)
