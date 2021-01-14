@@ -45,6 +45,10 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 14/Jan/2021 New paper! Work led by Eric Burns ["Identification of a Local Sample of Gamma-Ray Bursts Consistent with a Magnetar Giant Flare Origin"](https://ui.adsabs.harvard.edu/abs/2021arXiv210105144B/abstract) hits the arXiv.
+
+* 11/Jan/2021 Semester 2 gets underway at RHUL. I'm teaching FY1006 Mathematics II to 140 students in online mode for the foreseable future.
+
 * 07/Jan/2021 I gave a talk titled ["The deepening mystery of the Vela radio-pulsar glitch"](pdfs/Bar-Ilan.pdf) at the Department of Physics, Bar-Ilan University on our recent Vela paper.
 
 * 04/Dec/2020 I gave an improptu talk to the University of Southampton's [astrophysics group](http://www.astro.soton.ac.uk/) on our recent Vela paper.
