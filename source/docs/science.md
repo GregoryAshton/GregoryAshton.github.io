@@ -4,6 +4,8 @@
 
 I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) of my publications in addition to the following list.
 
+30. Keitel, David; Tenorio, Rodrigo; Ashton, Gregory; Prix, Reinhard [PyFstat: a Python package for continuous gravitational-wave data analysis](https://ui.adsabs.harvard.edu/abs/2021arXiv210110915K/abstract)
+
 29. Burns, Eric et al. [Identification of a Local Sample of Gamma-Ray Bursts Consistent with a Magnetar Giant Flare Origin](https://ui.adsabs.harvard.edu/abs/2021arXiv210105144B/abstract)
 
 28. Ashton, Gregory; Lasky, Paul D.; Nathan, Rowina; Palfreyman, Jim [Flickering of the Vela pulsar during its 2016 glitch](https://ui.adsabs.harvard.edu/abs/2020arXiv201107927A/abstract)

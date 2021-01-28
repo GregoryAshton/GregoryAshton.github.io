@@ -45,6 +45,10 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 28/Jan/2021 My PhD student Nikhil Sarin passed his pre-submission milestone. It has been a pleasure to watch Nik develop into a great researcher - his next employer will be lucky to have him.
+
+* 27/Jan/2021 New paper on arXiv! Work led by David Keitel ["PyFstat: a Python package for continuous gravitational-wave data analysis"](PyFstat: a Python package for continuous gravitational-wave data analysis) which updates the latest on the PyFstat package for Continuous-Wave analyses.
+
 * 14/Jan/2021 New paper! Work led by Eric Burns ["Identification of a Local Sample of Gamma-Ray Bursts Consistent with a Magnetar Giant Flare Origin"](https://ui.adsabs.harvard.edu/abs/2021arXiv210105144B/abstract) hits the arXiv.
 
 * 11/Jan/2021 Semester 2 gets underway at RHUL. I'm teaching FY1006 Mathematics II to 140 students in online mode for the foreseable future.
