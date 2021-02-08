@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 08/Feb/2021 I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf) to the [CAMK](https://www.camk.edu.pl/en/) journal club.
+
 * 28/Jan/2021 My PhD student Nikhil Sarin passed his pre-submission milestone. It has been a pleasure to watch Nik develop into a great researcher - his next employer will be lucky to have him.
 
 * 27/Jan/2021 New paper on arXiv! Work led by David Keitel ["PyFstat: a Python package for continuous gravitational-wave data analysis"](PyFstat: a Python package for continuous gravitational-wave data analysis) which updates the latest on the PyFstat package for Continuous-Wave analyses.

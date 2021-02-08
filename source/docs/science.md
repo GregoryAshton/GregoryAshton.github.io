@@ -87,6 +87,8 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
 
 ## Selected Presentations
 
+* Journal club at [CAMK](https://www.camk.edu.pl/en/) in which I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf).
+
 * Seminar at Bar-Ilan University, Israel, January 2021: [The deepening mystery of the Vela radio-pulsar glitch](pdfs/Bar-Ilan.pdf)
 
 * GR22/Amaldi13 meeting, Valencia, Spain, July 2019: [Gravitational Wave Detection: A Fully Bayesian Approach](https://gr22amaldi13.com/contributed-speakers.php) (contributed)
