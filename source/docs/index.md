@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 12/Mar/2021 My students successfully nominated me for a You’re Valued Award at Royal Holloway. I'm proud to add some of their comments here: “Greg is an amazing teacher. His enthusiastic approach to teaching maths to us foundation year students has made us enthusiastic as well. he is very friendly and approachable and when we need help he very patiently helps explain everything to us. He is dedicated to make us understand all  the concepts he teaches and help us learn to our best capacity.” and “Greg always focuses on our individual worries and makes sure we understand before moving on. He's very good at teaching and we're happy to have him as our maths professor :)”.
+
 * 08/Feb/2021 I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf) to the [CAMK](https://www.camk.edu.pl/en/) journal club.
 
 * 28/Jan/2021 My PhD student Nikhil Sarin passed his pre-submission milestone. It has been a pleasure to watch Nik develop into a great researcher - his next employer will be lucky to have him.

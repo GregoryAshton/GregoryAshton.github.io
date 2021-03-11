@@ -68,6 +68,8 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
 
 ## Workshops
 
+* Apr/2021 [Royal Hollaway's Astrophysics Residential](https://github.com/GregoryAshton/AstrophysicsResidentialApril21)
+
 * Aug/2020 [Parameter Estimation for Gravitational waves](https://github.com/GregoryAshton/GWParameterEstimationWorkshop2020). Lead organizer, invited by the LIGOIndia community to train 60+ astrophysicists
 
 * May/2020 [LIGO-Virgo Collaboration GW Open Data Workshop #3](https://www.gw-openscience.org/static/workshop3/). Co-organizer, invited to write and coordinate the Parameter Estimation tutorials for 100 students (virtual).
