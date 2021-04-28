@@ -1,6 +1,6 @@
 # Notes
 
-* [Splitting up a large Merge Request](notes/splitting_up_mrs.md)
+#* [Splitting up a large Merge Request](notes/splitting_up_mrs.md)
 
 ## Derivations
 * [Drawing samples from the Goodman & Weare (2010) proposal distribution](pdfs/derivation_stretch_move.pdf)
