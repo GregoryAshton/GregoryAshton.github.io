@@ -45,11 +45,15 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 11/May/2021 New paper with PhD student Zhi-Qiang You: [Optimized localization for gravitational-waves from merging binaries](https://arxiv.org/abs/2105.04263) submitted to MNRAS.
+
+* 10/May/2021 The Gravitational Wave Open Data Workshop #4 kicked off today on [gather.town](https://gather.town/).
+
 * 12/Apr/2021 Today I was elected as co-chair of the LIGO collaboration Compact Binary Coalescence (CBC) group. I join Chad Hanna and Walter Del Pozzo and look forward to helping coordinate the discovery and analysis of signals from colliding black holes and neutron stars.
 
 * 08/Apr/2021 Today I'm taking part in Royal Holloway's Astrophysics Residential for 2021. I'm covering an [introduction to programming and how to calculate Pi using random numbers](https://github.com/GregoryAshton/AstrophysicsResidentialApril21).
 
-* 12/Mar/2021 My students successfully nominated me for a You’re Valued Award at Royal Holloway. I'm proud to add some of their comments here: “Greg is an amazing teacher. His enthusiastic approach to teaching maths to us foundation year students has made us enthusiastic as well. he is very friendly and approachable and when we need help he very patiently helps explain everything to us. He is dedicated to make us understand all  the concepts he teaches and help us learn to our best capacity.” and “Greg always focuses on our individual worries and makes sure we understand before moving on. He's very good at teaching and we're happy to have him as our maths professor :)”.
+* 12/Mar/2021 My students successfully nominated me for a [You’re Valued Award at Royal Holloway](https://www.su.rhul.ac.uk/voice/awards/#:~:text=You're%20Valued%20is%20a,we%20and%20the%20College%20promote.). I'm proud to add some of their comments here: “Greg is an amazing teacher. His enthusiastic approach to teaching maths to us foundation year students has made us enthusiastic as well. he is very friendly and approachable and when we need help he very patiently helps explain everything to us. He is dedicated to make us understand all  the concepts he teaches and help us learn to our best capacity.” and “Greg always focuses on our individual worries and makes sure we understand before moving on. He's very good at teaching and we're happy to have him as our maths professor :)”.
 
 * 08/Feb/2021 I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf) to the [CAMK](https://www.camk.edu.pl/en/) journal club.
 
