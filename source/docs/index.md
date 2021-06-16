@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 16/Jun/2021 I helped out with the Royal Holloway [Particle Physics Masterclass](https://www.royalholloway.ac.uk/studying-here/schools-and-colleges/activities-by-subject/physics/) introducing python programming.
+
 * 11/May/2021 New paper with PhD student Zhi-Qiang You: [Optimized localization for gravitational-waves from merging binaries](https://arxiv.org/abs/2105.04263) submitted to MNRAS.
 
 * 10/May/2021 The Gravitational Wave Open Data Workshop #4 kicked off today on [gather.town](https://gather.town/).
