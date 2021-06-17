@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 17/Jun/2021 We released a new paper: [Bilby-MCMC: An MCMC sampler for gravitational-wave inference](https://ui.adsabs.harvard.edu/abs/2021arXiv210608730A/abstract). This was really fun as I got to write a sampler from scratch and remind myself of all the gory details.
+
 * 16/Jun/2021 I helped out with the Royal Holloway [Particle Physics Masterclass](https://www.royalholloway.ac.uk/studying-here/schools-and-colleges/activities-by-subject/physics/) introducing python programming.
 
 * 11/May/2021 New paper with PhD student Zhi-Qiang You: [Optimized localization for gravitational-waves from merging binaries](https://arxiv.org/abs/2105.04263) submitted to MNRAS.
