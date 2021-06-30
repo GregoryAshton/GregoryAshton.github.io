@@ -45,6 +45,8 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 29/Jun/2021 The LVK collaboration published [Observation of gravitational waves from two neutron star-black hole coalescences](https://arxiv.org/abs/2106.15163) in ApJL. This was a really fun project to be involved in. That we can make a definitive statement about the nature of the secondary (light-mass) object with a counterpart is testament to our understanding of controlling systematic uncertainty.
+
 * 17/Jun/2021 We released a new paper: [Bilby-MCMC: An MCMC sampler for gravitational-wave inference](https://ui.adsabs.harvard.edu/abs/2021arXiv210608730A/abstract). This was really fun as I got to write a sampler from scratch and remind myself of all the gory details.
 
 * 16/Jun/2021 I helped out with the Royal Holloway [Particle Physics Masterclass](https://www.royalholloway.ac.uk/studying-here/schools-and-colleges/activities-by-subject/physics/) introducing python programming.
