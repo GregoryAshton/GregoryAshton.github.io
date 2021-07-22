@@ -2,7 +2,7 @@
 
 ## About me
 
-I am a Adjunct Research Associate at Monash University and a Teaching Fellow
+I am an Adjunct Research Associate at Monash University and a Teaching Fellow
 at Royal Holloway (University of London), a gravitational-wave
 astrophysicist, and member of the [LIGO Scientific Collaboration](http://www.ligo.org).
 

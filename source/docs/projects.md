@@ -3,6 +3,10 @@
 In this page, I collect various miscellaneous coding projects I have been
 involved in.
 
+* [Python for Science](https://github.com/GregoryAshton/Python-for-science-programming) A set of workbooks to introduce python for scientific programming
+
+* [koala_html](https://github.com/GregoryAshton/koala_html) A package to quickly create html pages from collections of images
+
 * [kookaburra](https://github.com/GregoryAshton/kookaburra) A python package
 for profile-domain timing of radio pulsars
 
