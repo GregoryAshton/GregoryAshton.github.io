@@ -4,6 +4,8 @@
 
 I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) of my publications in addition to the following list.
 
+32. Vajpeyi, Avi, et al [A search for intermediate-mass black holes mergers in the second LIGO--Virgo observing run with the Bayes Coherence Ratio](https://ui.adsabs.harvard.edu/abs/2021arXiv210712109V/abstract)
+
 31. Ashton, Gregory; Talbot, Colm [Bilby-MCMC: An MCMC sampler for gravitational-wave inference](https://ui.adsabs.harvard.edu/abs/2021arXiv210608730A/abstract)
 
 30. Keitel, David; Tenorio, Rodrigo; Ashton, Gregory; Prix, Reinhard [PyFstat: a Python package for continuous gravitational-wave data analysis](https://ui.adsabs.harvard.edu/abs/2021arXiv210110915K/abstract)
