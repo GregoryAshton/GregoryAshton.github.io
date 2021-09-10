@@ -2,9 +2,8 @@
 
 ## About me
 
-I am an Adjunct Research Associate at Monash University and a Teaching Fellow
-at Royal Holloway (University of London), a gravitational-wave
-astrophysicist, and member of the [LIGO Scientific Collaboration](http://www.ligo.org).
+I am a Research Fellow in the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth.
+My interest is the relativistic astrophysics of neutron stars and black holes and I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org).
 
 In 2016, I completed my PhD [Timing variations in neutron stars: models,
 inference and their implications for gravitational
@@ -16,8 +15,9 @@ Institute, Hannover). I then worked as a Postdoc in Hannover with Reinhard and
 others in the [Continuous Gravitational Wave
 group](https://www.aei.mpg.de/continuouswaves), before moving to Melbourne to
 work with [Paul Lasky](http://users.monash.edu.au/~plasky/) in Monash
-University (Melbourne Australia). In 2020, I moved back to the UK and am
-currently teaching foundation year maths at Royal Holloway.
+University (Melbourne Australia). In 2020, I moved back to the UK to
+teach foundation year maths at Royal Holloway before moving to the ICG
+to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregAshton_CV.pdf)
@@ -47,7 +47,7 @@ currently teaching foundation year maths at Royal Holloway.
 
 * 29/Jul/2021 New paper led by PhD student Avi Vajpeyi on [A search for intermediate-mass black holes mergers in the second LIGO--Virgo observing run with the Bayes Coherence Ratio](https://ui.adsabs.harvard.edu/abs/2021arXiv210712109V/abstract)
 
-* 14/Jul/2021 Today I helped out in Royal Holloway's Girls into Physics program run by the [Small Peice trust](https://www.smallpeicetrust.org.uk/) where we did [Python programming for science](https://github.com/GregoryAshton/Python-for-science-programming)
+* 14/Jul/2021 Today I helped out in Royal Holloway's Girls into Physics program run by the [Small Piece trust](https://www.smallpeicetrust.org.uk/) where we did [Python programming for science](https://github.com/GregoryAshton/Python-for-science-programming)
 
 * 29/Jun/2021 The LVK collaboration published [Observation of gravitational waves from two neutron star-black hole coalescences](https://arxiv.org/abs/2106.15163) in ApJL. This was a really fun project to be involved in. That we can make a definitive statement about the nature of the secondary (light-mass) object with a counterpart is testament to our understanding of controlling systematic uncertainty.
 
