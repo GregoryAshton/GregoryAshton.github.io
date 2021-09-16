@@ -22,6 +22,7 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregAshton_CV.pdf)
 * [My list of publications](pdfs/GregAshton_references.pdf)
+* [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
 
 ## Gallery
 <figure>
