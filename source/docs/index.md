@@ -2,9 +2,8 @@
 
 ## About me
 
-I am a Adjunct Research Associate at Monash University and a Teaching Fellow
-at Royal Holloway (University of London), a gravitational-wave
-astrophysicist, and member of the [LIGO Scientific Collaboration](http://www.ligo.org).
+I am a Research Fellow in the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth.
+My interest is the relativistic astrophysics of neutron stars and black holes and I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org).
 
 In 2016, I completed my PhD [Timing variations in neutron stars: models,
 inference and their implications for gravitational
@@ -16,12 +15,14 @@ Institute, Hannover). I then worked as a Postdoc in Hannover with Reinhard and
 others in the [Continuous Gravitational Wave
 group](https://www.aei.mpg.de/continuouswaves), before moving to Melbourne to
 work with [Paul Lasky](http://users.monash.edu.au/~plasky/) in Monash
-University (Melbourne Australia). In 2020, I moved back to the UK and am
-currently teaching foundation year maths at Royal Holloway.
+University (Melbourne Australia). In 2020, I moved back to the UK to
+teach foundation year maths at Royal Holloway before moving to the ICG
+to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregAshton_CV.pdf)
 * [My list of publications](pdfs/GregAshton_references.pdf)
+* [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
 
 ## Gallery
 <figure>
@@ -45,11 +46,25 @@ currently teaching foundation year maths at Royal Holloway.
 
 ## News
 
+* 29/Jul/2021 New paper led by PhD student Avi Vajpeyi on [A search for intermediate-mass black holes mergers in the second LIGO--Virgo observing run with the Bayes Coherence Ratio](https://ui.adsabs.harvard.edu/abs/2021arXiv210712109V/abstract)
+
+* 14/Jul/2021 Today I helped out in Royal Holloway's Girls into Physics program run by the [Small Piece trust](https://www.smallpeicetrust.org.uk/) where we did [Python programming for science](https://github.com/GregoryAshton/Python-for-science-programming)
+
+* 29/Jun/2021 The LVK collaboration published [Observation of gravitational waves from two neutron star-black hole coalescences](https://arxiv.org/abs/2106.15163) in ApJL. This was a really fun project to be involved in. That we can make a definitive statement about the nature of the secondary (light-mass) object with a counterpart is testament to our understanding of controlling systematic uncertainty.
+
+* 17/Jun/2021 We released a new paper: [Bilby-MCMC: An MCMC sampler for gravitational-wave inference](https://ui.adsabs.harvard.edu/abs/2021arXiv210608730A/abstract). This was really fun as I got to write a sampler from scratch and remind myself of all the gory details.
+
+* 16/Jun/2021 I helped out with the Royal Holloway [Particle Physics Masterclass](https://www.royalholloway.ac.uk/studying-here/schools-and-colleges/activities-by-subject/physics/) introducing python programming.
+
+* 11/May/2021 New paper with PhD student Zhi-Qiang You: [Optimized localization for gravitational-waves from merging binaries](https://arxiv.org/abs/2105.04263) submitted to MNRAS.
+
+* 10/May/2021 The Gravitational Wave Open Data Workshop #4 kicked off today on [gather.town](https://gather.town/).
+
 * 12/Apr/2021 Today I was elected as co-chair of the LIGO collaboration Compact Binary Coalescence (CBC) group. I join Chad Hanna and Walter Del Pozzo and look forward to helping coordinate the discovery and analysis of signals from colliding black holes and neutron stars.
 
 * 08/Apr/2021 Today I'm taking part in Royal Holloway's Astrophysics Residential for 2021. I'm covering an [introduction to programming and how to calculate Pi using random numbers](https://github.com/GregoryAshton/AstrophysicsResidentialApril21).
 
-* 12/Mar/2021 My students successfully nominated me for a You’re Valued Award at Royal Holloway. I'm proud to add some of their comments here: “Greg is an amazing teacher. His enthusiastic approach to teaching maths to us foundation year students has made us enthusiastic as well. he is very friendly and approachable and when we need help he very patiently helps explain everything to us. He is dedicated to make us understand all  the concepts he teaches and help us learn to our best capacity.” and “Greg always focuses on our individual worries and makes sure we understand before moving on. He's very good at teaching and we're happy to have him as our maths professor :)”.
+* 12/Mar/2021 My students successfully nominated me for a [You’re Valued Award at Royal Holloway](https://www.su.rhul.ac.uk/voice/awards/#:~:text=You're%20Valued%20is%20a,we%20and%20the%20College%20promote.). I'm proud to add some of their comments here: “Greg is an amazing teacher. His enthusiastic approach to teaching maths to us foundation year students has made us enthusiastic as well. he is very friendly and approachable and when we need help he very patiently helps explain everything to us. He is dedicated to make us understand all  the concepts he teaches and help us learn to our best capacity.” and “Greg always focuses on our individual worries and makes sure we understand before moving on. He's very good at teaching and we're happy to have him as our maths professor :)”.
 
 * 08/Feb/2021 I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf) to the [CAMK](https://www.camk.edu.pl/en/) journal club.
 
