@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://www.GregoryAshton.github.io/</loc>
-     <lastmod>2021-05-11</lastmod>
+     <lastmod>2021-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://www.GregoryAshton.github.io/science/</loc>
-     <lastmod>2021-05-11</lastmod>
+     <lastmod>2021-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://www.GregoryAshton.github.io/projects/</loc>
-     <lastmod>2021-05-11</lastmod>
+     <lastmod>2021-09-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://www.GregoryAshton.github.io/help/</loc>
+     <lastmod>2021-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://www.GregoryAshton.github.io/notes/</loc>
-     <lastmod>2021-05-11</lastmod>
+     <lastmod>2021-09-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
