@@ -46,6 +46,10 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 
 ## News
 
+* 07/Oct/2021 New paper day! [Parameterised population models of transient non-Gaussian noise in the LIGO gravitational-wave detectors](https://ui.adsabs.harvard.edu/abs/2021arXiv211002689A/abstract). This work has taken nearly 2 years from the initial conception, a huge amount of computing, and lots of thinking. I really enjoyed getting into a new aspect of GW astronomy, namely the characterisation of the detector.
+
+* 17/Sep/2021 My daughter Ada was born at 4am. Very happy, excited, and tired!
+
 * 29/Jul/2021 New paper led by PhD student Avi Vajpeyi on [A search for intermediate-mass black holes mergers in the second LIGO--Virgo observing run with the Bayes Coherence Ratio](https://ui.adsabs.harvard.edu/abs/2021arXiv210712109V/abstract)
 
 * 14/Jul/2021 Today I helped out in Royal Holloway's Girls into Physics program run by the [Small Piece trust](https://www.smallpeicetrust.org.uk/) where we did [Python programming for science](https://github.com/GregoryAshton/Python-for-science-programming)
