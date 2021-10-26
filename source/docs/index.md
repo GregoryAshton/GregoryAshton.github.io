@@ -46,6 +46,8 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 
 ## News
 
+* 26/Oct/2021 A paper led by the ICG's Simone Mozzon [Does non-stationary noise in LIGO and Virgo affect the estimation of H0?](https://arxiv.org/abs/2110.11731) hit the arXiv today.
+
 * 07/Oct/2021 New paper day! [Parameterised population models of transient non-Gaussian noise in the LIGO gravitational-wave detectors](https://ui.adsabs.harvard.edu/abs/2021arXiv211002689A/abstract). This work has taken nearly 2 years from the initial conception, a huge amount of computing, and lots of thinking. I really enjoyed getting into a new aspect of GW astronomy, namely the characterisation of the detector.
 
 * 17/Sep/2021 My daughter Ada was born at 4am. Very happy, excited, and tired!
