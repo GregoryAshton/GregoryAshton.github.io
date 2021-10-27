@@ -24,25 +24,6 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 * [My list of publications](pdfs/GregAshton_references.pdf)
 * [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
 
-## Gallery
-<figure>
-    <a href="https://www.ligo.org/science/Publication-GW190425/">
-    <img src="https://www.ligo.org/science/Publication-GW190425/images/Mtot_DNS.png" alt="GW190425" style="height:200px;">
-    </a>
-    <a href="https://physicsworld.com/a/pulsar-glitch-suggests-superfluid-layers-lie-within-neutron-star/">
-    <img src="https://physicsworld.com/wp-content/uploads/2019/08/Pulsar-635x449.jpg" alt="Vela" style="height:200px;">
-    </a>
-    <a href=https://www.smh.com.au/national/patient-astronomers-crack-the-code-of-super-dense-spinning-stars-20190812-p52gbm.html>
-    <img src="https://www.ozgrav.org/uploads/9/8/0/0/98009268/ozgrav-paul-lasky-and-greg-ashton-7653_orig.jpg" style="height:350px;">
-    </a>
-    <a href=https://astronomycommunity.nature.com/posts/52167-understanding-the-rotational-evolution-of-the-vela-pulsar-during-the-2016-glitch>
-    <img src="https://astronomycommunity.nature.com/cdn-cgi/image/quality=45/https://images.zapnito.com/uploads/de4bef17409e3ef69ca266d7f4849150/71b5106b-416a-4698-9527-6cacdd640bf3.jpeg" style="height:300px;">
-    </a>
-    <a href=https://git.ligo.org/lscsoft/bilby>
-    <img src="https://s3.amazonaws.com/zapnito/uploads/3a1ef7c69fe9f78897c748117f493d9e/ae24dde3-4753-45ab-bee0-ed68a7172964.jpeg" style="height:300px;">
-    </a>
-</figure>
-
 
 ## News
 
@@ -91,3 +72,24 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 * 10/Nov/2020 I was awarded the [2020 USERN Physical and Chemical Sciences prize](https://en.wikipedia.org/wiki/USERN_Prize#Laureates_2020).
 
 * 04/Nov/2020 I gave a presentation to Royal Holloway's Physics group ["Turning Wiggles into Science"](https://docs.google.com/presentation/d/11MZHN7b9J_f_HiNVovemcG2IuKSGWXeKzdRh7Kv54v0/edit?usp=sharing)
+
+## Gallery
+<figure>
+    <a href="https://www.ligo.org/science/Publication-GW190425/">
+    <img src="https://www.ligo.org/science/Publication-GW190425/images/Mtot_DNS.png" alt="GW190425" style="height:200px;">
+    </a>
+    <a href="https://physicsworld.com/a/pulsar-glitch-suggests-superfluid-layers-lie-within-neutron-star/">
+    <img src="https://physicsworld.com/wp-content/uploads/2019/08/Pulsar-635x449.jpg" alt="Vela" style="height:200px;">
+    </a>
+    <a href=https://www.smh.com.au/national/patient-astronomers-crack-the-code-of-super-dense-spinning-stars-20190812-p52gbm.html>
+    <img src="https://www.ozgrav.org/uploads/9/8/0/0/98009268/ozgrav-paul-lasky-and-greg-ashton-7653_orig.jpg" style="height:350px;">
+    </a>
+    <a href=https://astronomycommunity.nature.com/posts/52167-understanding-the-rotational-evolution-of-the-vela-pulsar-during-the-2016-glitch>
+    <img src="https://astronomycommunity.nature.com/cdn-cgi/image/quality=45/https://images.zapnito.com/uploads/de4bef17409e3ef69ca266d7f4849150/71b5106b-416a-4698-9527-6cacdd640bf3.jpeg" style="height:300px;">
+    </a>
+    <a href=https://git.ligo.org/lscsoft/bilby>
+    <img src="https://s3.amazonaws.com/zapnito/uploads/3a1ef7c69fe9f78897c748117f493d9e/ae24dde3-4753-45ab-bee0-ed68a7172964.jpeg" style="height:300px;">
+    </a>
+</figure>
+
+
