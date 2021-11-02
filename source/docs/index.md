@@ -2,22 +2,15 @@
 
 ## About me
 
-I am a Research Fellow in the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth.
-My interest is the relativistic astrophysics of neutron stars and black holes and I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org).
-
-In 2016, I completed my PhD [Timing variations in neutron stars: models,
-inference and their implications for gravitational
-waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf)
-at the University of Southampton under the joint supervision of [Prof. David
-Ian Jones ](https://www.southampton.ac.uk/maths/about/staff/dij.page) and [Dr.
-Reinhard Prix ](https://www.aei.mpg.de/person/23802/2168") (Albert Einstein
-Institute, Hannover). I then worked as a Postdoc in Hannover with Reinhard and
-others in the [Continuous Gravitational Wave
-group](https://www.aei.mpg.de/continuouswaves), before moving to Melbourne to
-work with [Paul Lasky](http://users.monash.edu.au/~plasky/) in Monash
-University (Melbourne Australia). In 2020, I moved back to the UK to
-teach foundation year maths at Royal Holloway before moving to the ICG
-to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
+I am a Lecturer in Physics at [Royal Holloway, University of
+London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
+I began my research career at the University of Southampton working with Ian
+Jones and Reinhard Prix where I completed by PhD in 2016 on [Timing variations in neutron stars:
+models, inference and their implications for gravitational
+waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf).
+Following this I held a postdoc position at the Albert Einstein Insitute, Hannover before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
+I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth working with Laura Nuttall as a Research Fellow before taking up my current post.
+My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaborations largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
 
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregAshton_CV.pdf)
@@ -26,6 +19,8 @@ to work with [Dr Laura Nutall](http://www.icg.port.ac.uk/author/laura.nuttall/).
 
 
 ## News
+
+* 01/Nov/2021 Today I joined Royal Holloway as a Lecturer in Physics!
 
 * 26/Oct/2021 A paper led by the ICG's Simone Mozzon [Does non-stationary noise in LIGO and Virgo affect the estimation of H0?](https://arxiv.org/abs/2110.11731) hit the arXiv today.
 
