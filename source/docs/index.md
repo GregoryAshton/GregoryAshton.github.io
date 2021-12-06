@@ -20,6 +20,12 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 01/Dec/2021 Today I joined the SEPNet workshop [Equality, Diversity & Inclusion – Revisiting the leaky pipeline – short-term contracts and career planning](https://www.sepnet.ac.uk/he-stem-equality-diversity-inclusion-revisiting-the-leaky-pipeline-short-term-contracts-and-career-planning/). You can find my slides [here](pdfs/SEPNet-EDI-GA.pdf).
+
+* 18/Nov/2021 I presented at the Banff IRS workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).
+
+* 17/Nov/2021 With Tim Dietrich, we put out a new preprint [Understanding binary neutron star collisions with hypermodels](https://ui.adsabs.harvard.edu/abs/2021arXiv211109214A/abstract). This one shows some tentative evidence for waveform systematics in a BNS.
+
 * 01/Nov/2021 Today I joined Royal Holloway as a Lecturer in Physics!
 
 * 26/Oct/2021 A paper led by the ICG's Simone Mozzon [Does non-stationary noise in LIGO and Virgo affect the estimation of H0?](https://arxiv.org/abs/2110.11731) hit the arXiv today.

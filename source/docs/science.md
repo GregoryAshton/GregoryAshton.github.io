@@ -93,6 +93,10 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
 
 ## Selected Presentations
 
+* Invited to SEPNet workshop [Equality, Diversity & Inclusion – Revisiting the leaky pipeline – short-term contracts and career planning](https://www.sepnet.ac.uk/he-stem-equality-diversity-inclusion-revisiting-the-leaky-pipeline-short-term-contracts-and-career-planning/). My slides are available [here](pdfs/SEPNet-EDI-GA.pdf).
+
+* Banff workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).
+
 * Journal club at [CAMK](https://www.camk.edu.pl/en/) in which I presented [Flickering of the Vela pulsar](pdfs/Flickering_of_the_vela_pulsar.pdf).
 
 * Seminar at Bar-Ilan University, Israel, January 2021: [The deepening mystery of the Vela radio-pulsar glitch](pdfs/Bar-Ilan.pdf)
