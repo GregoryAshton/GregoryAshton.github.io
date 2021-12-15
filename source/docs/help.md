@@ -89,4 +89,46 @@ There is a guide to getting started in the Collaboration, you can find this [her
 
 2. Want to email someone in the collaboration, but not sure of their address? You can head to https://contacts.google.com/ and log in with your LIGO Credentials. This will provide you with all the `albert.einstein@ligo.org` addresses. With this, you can download it as a CSV and upload it to your email client. Now you have all of LIGO on tab completion!
 
+## Getting a usable linux environment on Windows
 
+The Windows OS used to be unusable for most scientists due to a host of compatibility issues. But, Windows now offers the "Windows Subsystem for Linux" which has changed that. Here are some links to useful guides
+
+1. [Installing Ubuntu in WSL](https://docs.microsoft.com/en-us/windows/wsl/install). The default OS is Ubuntu, this has worked well for me. It is worth making sure you install WSL2.
+
+2. In theory, WSL now supports GUI apps natively (see [here](https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps)). I have yet to get this working, but it looks great.
+
+3. I have found that the [Windows Terminal](https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab) works really well. I actually prefer this to the native terminal in Ubuntu itself. There is a SO post [here](https://stackoverflow.com/questions/56765067/how-do-i-get-windows-10-terminal-to-launch-wsl) on getting it to launch WSL, but I think this may be a little out of date. You can add WSL by simply adding a new profile.
+
+
+## Getting a usable python environment (in WSL or in Linux)
+I strongly recommend people use anaconda (AKA conda) to manage their python installation. The full instructions can be found [here](https://docs.anaconda.com/anaconda/install/index.html). If you are working in Ubuntu through WSL, follow the instructions for [Linux/Debian](https://docs.anaconda.com/anaconda/install/linux/). I'll provide a quick TLDR here:
+
+1. Install the [prerequisites](https://docs.anaconda.com/anaconda/install/linux/#prerequisites)
+
+2. Scroll to the bottom of [this page](https://www.anaconda.com/products/individual#linux) and copy the link address for the Linux install, something like "64-Bit (x86) Installer (581 MB)" i.e. right click "Download" and hit Copy link address)
+
+3. Run `wget <THE LINK ADDRESS` to download the file (Note: you can just download it from the browser, but if you are working in a virtual machine/on a cluster/in WSL you'll then need to move the file from your local machine to the target. Using `wget` directly skips this step).
+
+4. Install `anaconda` by running `bash ~/PATH/TO/FILE` where the `FILE` will be something like `Anaconda3-2020.02-Linux-x86_64.sh`
+
+5. Finally, once you have installed `conda` and restarted, your command prompt will have start with `(base)`. This tells you that you are in the `base` conda environment. DO NOT INSTALL THINGS IN THE BASE ENVIRONMENT.
+
+6. Instead, follow [this guide](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) to create a new environment. For example, to create an environment called `testing` with `python 3.9`, run `conda create -n testing python=3.9`. Once complete, you'll need to activate the environment `conda activate testing`.
+
+7. While `conda` may seem like a headache (you will no doubt forget to activate the environment occasionally and wonder why nothing works!). This headache is minor compared to the headache which occurs when you need to install two different versions of `numpy` for two different projects. As such, use a new environment for each project you work on.
+
+
+## Using git to track initial project progress
+
+`git` is a super powerful tool. Most people have heard of `github` or `gitlab`, these are websites that store `git` repositories and allow people to collaborate in building software, to provide easy access, and to track developments in a meaningful way. However, `git` itself is simply a [version control software](https://git-scm.com/) and can be used without pushing the repository to `github` or `gitlab`. Here I describe a simple way I use `git` to track progress of projects during the initial conception.
+
+1. Okay, so you have a cool idea for a project and you spent a day writing a hacky script which is the proof of concept. Great, now you want to expand it out, maybe add some bells and whistles.
+
+2. Before you do anything else. Put the script + anything else into a directory with a half sensible name, then run `git init`, `git add *`, and `git commit -m "Initial commit adding everything"`. Now you have a snapshot of the code.
+
+3. Now continue as you would anyway, perhaps adding a first bell then a whistle. But oh no! You broke the proof of concept... but how? Let's figure it out.. run `git diff` and you'll see the changes against your last working version. You spot the type fix it and then again add and commit everything.
+
+4. Continue this process. The more often you stop and commit things the better.
+
+5. At some point either you will figure out the project is a donut, in which case put it in the failed projects directory and move on. Or, you think it has legs. At this point you may choose to start a "fresh" git repo and try to make your commits more serious (no more curse words when you break it!). Or, you could just push your current repo to github. Who knows, when you win the Nobel prize for your ieda people may look back at those early commits to spot your genious!
+I think too often we wait far to long to start using proper project management tools. By allowing yourself to just use `git` locally (i.e. you don't need to push to a repo, set up a CI, and add testing), we gain a lot of benefits without the overhead. 
