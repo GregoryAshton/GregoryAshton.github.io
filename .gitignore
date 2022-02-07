@@ -1,0 +1,6 @@
+_site
+node_modules
+validation-report.json
+validation-status.json
+
+*ipynb_checkpoints
