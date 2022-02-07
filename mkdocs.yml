@@ -1,8 +1,8 @@
 site_name: Gregory Ashton
 site_url: http://www.GregoryAshton.github.io
 site_author: Gregory Ashton
-site_dir: ../docs/
-docs_dir: .
+site_dir: docs/
+docs_dir: source/
 repo_url: https://github.com/GregoryAshton/GregoryAshton.github.io
 nav:
     - Home: index.md
