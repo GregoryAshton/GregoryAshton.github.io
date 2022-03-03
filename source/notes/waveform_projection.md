@@ -190,8 +190,8 @@ def get_gw_waveform(time, parameters, waveform_approximant, reference_frequency,
     # only the leading order Newtonian coefficient.
     f_min = fudge * lalsim.SimInspiralChirpStartFrequencyBound(
         pre_trigger_duration, 
-        par["mass_1"] * solar_mass, 
-        par["mass_2"] * solar_mass
+        mass_1_SI,
+        mass_2_SI,
     )
     
     # Check if the reference frequency is used, if not use f_min
@@ -201,8 +201,6 @@ def get_gw_waveform(time, parameters, waveform_approximant, reference_frequency,
         f_ref = f_min
     else:
         f_ref = reference_frequency
-        
-    f_ref = int(f_ref)
         
     iota, spin_1x, spin_1y, spin_1z, spin_2x, spin_2y, spin_2z = bilby.gw.conversion.bilby_to_lalsimulation_spins(
         theta_jn=par["theta_jn"], phi_jl=par["phi_jl"], tilt_1=par["tilt_1"], tilt_2=par["tilt_2"],
@@ -260,7 +258,7 @@ def get_gw_waveform(time, parameters, waveform_approximant, reference_frequency,
 ```python
 parameters = dict(
     mass_1=36., mass_2=29., chi_1=0.4, chi_2=0.3, luminosity_distance=2000., theta_jn=0.4, psi=2.659,
-    phase=2.8, geocent_time=1126259642.413, ra=1.375, dec=-1.2108
+    phase=2.8, geocent_time=geocent_time, ra=1.375, dec=-1.2108
 )
 
 for waveform in ["IMRPhenomT", "SEOBNRv4T", "TEOBResumS"]:
@@ -273,14 +271,9 @@ plt.legend()
 plt.show()
 ```
 
-    Generated waveform was too short
-    Generated waveform was too short
-    Generated waveform was too short
-
-
 
     
-![png](waveform_projection_files/waveform_projection_20_1.png)
+![png](waveform_projection_files/waveform_projection_20_0.png)
     
 
 
@@ -292,32 +285,32 @@ prior = bilby.gw.prior.BBHPriorDict()
 prior["geocent_time"] = bilby.core.prior.Uniform(geocent_time - 0.1, geocent_time + 0.1)
 ```
 
-    10:16 bilby INFO    : No prior given, using default BBH priors in /home/greg/bilby/bilby/gw/prior_files/precessing_spins_bbh.prior.
+    10:29 bilby INFO    : No prior given, using default BBH priors in /home/greg/bilby/bilby/gw/prior_files/precessing_spins_bbh.prior.
 
 
 
 ```python
 %%timeit
-_ = get_gw_waveform(data_detector_time, prior.sample(), "SEOBNRv4P", 20, H1, fudge=0.85)
+_ = get_gw_waveform(data_detector_time, prior.sample(), "SEOBNRv4P", 20, H1, fudge=0.8)
 
 ```
 
-    1.34 s ± 85.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+    1.28 s ± 96.5 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
 
 ```python
 %%timeit
-_ = get_gw_waveform(data_detector_time, prior.sample(), "IMRPhenomTP", 20, H1, fudge=0.85)
+_ = get_gw_waveform(data_detector_time, prior.sample(), "IMRPhenomTP", 20, H1, fudge=0.8)
 ```
 
-    27.9 ms ± 1.73 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+    30.9 ms ± 2.82 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
 
 
 
 ```python
 %%timeit
-_ = get_gw_waveform(data_detector_time, prior.sample(), "IMRPhenomPv2", 20, H1, fudge=0.85, pre_trigger_duration=pre_trigger_duration)
+_ = get_gw_waveform(data_detector_time, prior.sample(), "IMRPhenomPv2", 20, H1, fudge=0.8, pre_trigger_duration=pre_trigger_duration)
 ```
 
     13.6 ms ± 237 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
