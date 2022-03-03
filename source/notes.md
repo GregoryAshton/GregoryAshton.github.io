@@ -1,5 +1,7 @@
 # Notes
 
+* [Projecting waveforms](notes/waveform_projection.md)
+
 ## Derivations
 * [Drawing samples from the Goodman & Weare (2010) proposal distribution](pdfs/derivation_stretch_move.pdf)
 
