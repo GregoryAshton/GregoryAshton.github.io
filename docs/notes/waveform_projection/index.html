@@ -354,6 +354,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#profile-the-generation" class="md-nav__link">
+    Profile the generation
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -372,41 +379,6 @@
 
 
 <div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">bilby</span> <span class="n">lalsuite</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>Requirement already satisfied: bilby in /home/greg/bilby (1.1.5)
-Requirement already satisfied: lalsuite in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (7.3)
-Requirement already satisfied: dynesty&lt;1.1 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (1.0.1)
-Requirement already satisfied: emcee in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (3.1.1)
-Requirement already satisfied: corner in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (2.2.1)
-Requirement already satisfied: numpy in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (1.22.1)
-Requirement already satisfied: matplotlib&gt;=2.1 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (3.5.1)
-Requirement already satisfied: scipy&gt;=1.5 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (1.7.3)
-Requirement already satisfied: pandas in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (1.4.0)
-Requirement already satisfied: dill in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (0.3.4)
-Requirement already satisfied: tqdm in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (4.62.3)
-Requirement already satisfied: h5py in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (3.6.0)
-Requirement already satisfied: tables in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (3.7.0)
-Requirement already satisfied: astropy in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (5.0.1)
-Requirement already satisfied: attrs in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from bilby) (21.4.0)
-Requirement already satisfied: ligo-segments in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from lalsuite) (1.4.0)
-Requirement already satisfied: python-dateutil in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from lalsuite) (2.8.2)
-Requirement already satisfied: lscsoft-glue in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from lalsuite) (3.0.1)
-Requirement already satisfied: six in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from dynesty&lt;1.1-&gt;bilby) (1.16.0)
-Requirement already satisfied: fonttools&gt;=4.22.0 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (4.29.1)
-Requirement already satisfied: cycler&gt;=0.10 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (0.11.0)
-Requirement already satisfied: pyparsing&gt;=2.2.1 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (3.0.7)
-Requirement already satisfied: pillow&gt;=6.2.0 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (9.0.0)
-Requirement already satisfied: packaging&gt;=20.0 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (21.3)
-Requirement already satisfied: kiwisolver&gt;=1.0.1 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from matplotlib&gt;=2.1-&gt;bilby) (1.3.2)
-Requirement already satisfied: pyerfa&gt;=2.0 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from astropy-&gt;bilby) (2.0.0.1)
-Requirement already satisfied: PyYAML&gt;=3.13 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from astropy-&gt;bilby) (5.4.1)
-Requirement already satisfied: pyRXP in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from lscsoft-glue-&gt;lalsuite) (3.0.1)
-Requirement already satisfied: pyOpenSSL in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from lscsoft-glue-&gt;lalsuite) (21.0.0)
-Requirement already satisfied: pytz&gt;=2020.1 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from pandas-&gt;bilby) (2021.3)
-Requirement already satisfied: cryptography&gt;=3.3 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from pyOpenSSL-&gt;lscsoft-glue-&gt;lalsuite) (3.3.1)
-Requirement already satisfied: cffi&gt;=1.12 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from cryptography&gt;=3.3-&gt;pyOpenSSL-&gt;lscsoft-glue-&gt;lalsuite) (1.15.0)
-Requirement already satisfied: pycparser in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from cffi&gt;=1.12-&gt;cryptography&gt;=3.3-&gt;pyOpenSSL-&gt;lscsoft-glue-&gt;lalsuite) (2.21)
-Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/testing/lib/python3.9/site-packages (from tables-&gt;bilby) (2.8.1)
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">lalsimulation</span> <span class="k">as</span> <span class="nn">lalsim</span>
 <span class="kn">import</span> <span class="nn">lal</span>
@@ -431,13 +403,14 @@ Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/te
 <h2 id="generate-a-waveform">Generate a waveform</h2>
 <p>Now, we'll use <code>lalsim.SimInspiralChooseTDWaveform</code> to generate the plus and cross polarization</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Define the parameters in SI units</span>
-<span class="n">m1</span> <span class="o">=</span> <span class="mi">30</span> <span class="o">*</span> <span class="n">solar_mass</span>
-<span class="n">m2</span> <span class="o">=</span> <span class="mi">30</span> <span class="o">*</span> <span class="n">solar_mass</span>
-<span class="n">S1x</span><span class="p">,</span> <span class="n">S1y</span><span class="p">,</span> <span class="n">S1z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-<span class="n">S2x</span><span class="p">,</span> <span class="n">S2y</span><span class="p">,</span> <span class="n">S2z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
-<span class="n">distance</span> <span class="o">=</span> <span class="mf">50e6</span> <span class="o">*</span> <span class="n">parsec</span>
-<span class="n">inclination</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">phiRef</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mass_1</span> <span class="o">=</span> <span class="mi">30</span> <span class="o">*</span> <span class="n">solar_mass</span>
+<span class="n">mass_2</span> <span class="o">=</span> <span class="mi">30</span> <span class="o">*</span> <span class="n">solar_mass</span>
+<span class="n">spin_1x</span><span class="p">,</span> <span class="n">spin_1y</span><span class="p">,</span> <span class="n">spin_1z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">spin_2x</span><span class="p">,</span> <span class="n">spin_2y</span><span class="p">,</span> <span class="n">spin_2z</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+<span class="n">luminosity_distance</span> <span class="o">=</span> <span class="mi">2000</span>
+<span class="n">theta_jn</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">phase</span> <span class="o">=</span> <span class="mi">0</span>
+
 <span class="n">longAscNodes</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">eccentricity</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">meanPerAno</span> <span class="o">=</span> <span class="mi">0</span>
@@ -450,14 +423,14 @@ Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/te
 <span class="c1"># Estimate a minimum frequency required to ensure the waveform covers the data</span>
 <span class="c1"># Note the 0.95 is a fudge factor as SimInspiralChirpStartFrequencyBound includes</span>
 <span class="c1"># only the leading order Newtonian coefficient.</span>
-<span class="n">f_min</span> <span class="o">=</span> <span class="mf">0.95</span> <span class="o">*</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChirpStartFrequencyBound</span><span class="p">(</span><span class="n">pre_trigger_duration</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">)</span>
+<span class="n">f_min</span> <span class="o">=</span> <span class="mf">0.95</span> <span class="o">*</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChirpStartFrequencyBound</span><span class="p">(</span><span class="n">pre_trigger_duration</span><span class="p">,</span> <span class="n">mass_1</span><span class="p">,</span> <span class="n">mass_2</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralGetSpinFreqFromApproximant</span><span class="p">(</span><span class="n">approximant</span><span class="p">)</span> <span class="o">==</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SIM_INSPIRAL_SPINS_FLOW</span><span class="p">:</span>
     <span class="n">f_ref</span> <span class="o">=</span> <span class="n">f_min</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="n">f_ref</span> <span class="o">=</span> <span class="mi">20</span>
 
 <span class="n">h_plus_timeseries</span><span class="p">,</span> <span class="n">h_cross_timeseries</span> <span class="o">=</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChooseTDWaveform</span><span class="p">(</span>
-    <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">S1x</span><span class="p">,</span> <span class="n">S1y</span><span class="p">,</span> <span class="n">S1z</span><span class="p">,</span> <span class="n">S2x</span><span class="p">,</span> <span class="n">S2y</span><span class="p">,</span> <span class="n">S2z</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">inclination</span><span class="p">,</span> <span class="n">phiRef</span><span class="p">,</span> 
+    <span class="n">mass_1</span><span class="p">,</span> <span class="n">mass_2</span><span class="p">,</span> <span class="n">spin_1x</span><span class="p">,</span> <span class="n">spin_1y</span><span class="p">,</span> <span class="n">spin_1z</span><span class="p">,</span> <span class="n">spin_2x</span><span class="p">,</span> <span class="n">spin_2y</span><span class="p">,</span> <span class="n">spin_2z</span><span class="p">,</span> <span class="n">luminosity_distance</span><span class="p">,</span> <span class="n">theta_jn</span><span class="p">,</span> <span class="n">phase</span><span class="p">,</span> 
     <span class="n">longAscNodes</span><span class="p">,</span> <span class="n">eccentricity</span><span class="p">,</span> <span class="n">meanPerAno</span><span class="p">,</span> <span class="n">deltaT</span><span class="p">,</span> <span class="n">f_min</span><span class="p">,</span> <span class="n">f_ref</span><span class="p">,</span> <span class="n">LALParams</span><span class="p">,</span>
     <span class="n">approximant</span>
 <span class="p">)</span>
@@ -517,21 +490,32 @@ Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/te
 </code></pre></div>
 <p><img alt="png" src="../waveform_projection_files/waveform_projection_17_0.png" /></p>
 <h2 id="putting-it-all-together-into-a-single-function">Putting it all together into a single function</h2>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_gw_waveform</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">waveform_approximant</span><span class="p">,</span> <span class="n">reference_frequency</span><span class="p">,</span> <span class="n">bilby_detector</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.95</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">bilby.gw.utils</span> <span class="kn">import</span> <span class="n">_get_lalsim_approximant</span><span class="p">,</span> <span class="n">convert_args_list_to_float</span>
+
+<span class="k">def</span> <span class="nf">get_gw_waveform</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">waveform_approximant</span><span class="p">,</span> <span class="n">reference_frequency</span><span class="p">,</span> <span class="n">bilby_detector</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">reference_frame</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pre_trigger_duration</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">par</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">conversion</span><span class="o">.</span><span class="n">convert_to_lal_binary_black_hole_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+
+    <span class="n">mass_1_SI</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;mass_1&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">solar_mass</span>
+    <span class="n">mass_2_SI</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;mass_2&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">solar_mass</span>
+    <span class="n">luminosity_distance_SI</span> <span class="o">=</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;luminosity_distance&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mf">1e6</span> <span class="o">*</span> <span class="n">parsec</span>
 
     <span class="c1"># Extract information about the time series</span>
     <span class="n">deltaT</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">duration</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">nearest_trigger_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">time</span> <span class="o">-</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">]))</span>
-    <span class="n">pre_trigger_duration</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="n">nearest_trigger_idx</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">pre_trigger_duration</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">nearest_trigger_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">time</span> <span class="o">-</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">]))</span>
+        <span class="n">pre_trigger_duration</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="n">nearest_trigger_idx</span><span class="p">]</span> <span class="o">-</span> <span class="n">time</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="c1"># Get the approximant number from the name</span>
-    <span class="n">approximant</span> <span class="o">=</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">GetApproximantFromString</span><span class="p">(</span><span class="n">waveform_approximant</span><span class="p">)</span>
+    <span class="n">approximant</span> <span class="o">=</span> <span class="n">_get_lalsim_approximant</span><span class="p">(</span><span class="n">waveform_approximant</span><span class="p">)</span>
 
     <span class="c1"># Estimate a minimum frequency required to ensure the waveform covers the data</span>
     <span class="c1"># Note the 0.95 is a fudge factor as SimInspiralChirpStartFrequencyBound includes</span>
     <span class="c1"># only the leading order Newtonian coefficient.</span>
-    <span class="n">f_min</span> <span class="o">=</span> <span class="mf">0.95</span> <span class="o">*</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChirpStartFrequencyBound</span><span class="p">(</span><span class="n">pre_trigger_duration</span><span class="p">,</span> <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">)</span>
+    <span class="n">f_min</span> <span class="o">=</span> <span class="n">fudge</span> <span class="o">*</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChirpStartFrequencyBound</span><span class="p">(</span>
+        <span class="n">pre_trigger_duration</span><span class="p">,</span> 
+        <span class="n">par</span><span class="p">[</span><span class="s2">&quot;mass_1&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">solar_mass</span><span class="p">,</span> 
+        <span class="n">par</span><span class="p">[</span><span class="s2">&quot;mass_2&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">solar_mass</span>
+    <span class="p">)</span>
 
     <span class="c1"># Check if the reference frequency is used, if not use f_min</span>
     <span class="k">if</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralGetSpinFreqFromApproximant</span><span class="p">(</span><span class="n">approximant</span><span class="p">)</span> <span class="o">==</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SIM_INSPIRAL_SPINS_FLOW</span><span class="p">:</span>
@@ -541,50 +525,59 @@ Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/te
     <span class="k">else</span><span class="p">:</span>
         <span class="n">f_ref</span> <span class="o">=</span> <span class="n">reference_frequency</span>
 
-    <span class="n">params</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">conversion</span><span class="o">.</span><span class="n">convert_to_lal_binary_black_hole_parameters</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+    <span class="n">f_ref</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">f_ref</span><span class="p">)</span>
 
     <span class="n">iota</span><span class="p">,</span> <span class="n">spin_1x</span><span class="p">,</span> <span class="n">spin_1y</span><span class="p">,</span> <span class="n">spin_1z</span><span class="p">,</span> <span class="n">spin_2x</span><span class="p">,</span> <span class="n">spin_2y</span><span class="p">,</span> <span class="n">spin_2z</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">conversion</span><span class="o">.</span><span class="n">bilby_to_lalsimulation_spins</span><span class="p">(</span>
-        <span class="n">theta_jn</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;theta_jn&quot;</span><span class="p">],</span> <span class="n">phi_jl</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;phi_jl&quot;</span><span class="p">],</span> <span class="n">tilt_1</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;tilt_1&quot;</span><span class="p">],</span> <span class="n">tilt_2</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;tilt_2&quot;</span><span class="p">],</span>
-        <span class="n">phi_12</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;phi_12&quot;</span><span class="p">],</span> <span class="n">a_1</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;a_1&quot;</span><span class="p">],</span> <span class="n">a_2</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;a_2&quot;</span><span class="p">],</span> <span class="n">mass_1</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;mass_1&quot;</span><span class="p">],</span> <span class="n">mass_2</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;mass_2&quot;</span><span class="p">],</span>
-        <span class="n">reference_frequency</span><span class="o">=</span><span class="n">f_ref</span><span class="p">,</span> <span class="n">phase</span><span class="o">=</span><span class="n">params</span><span class="p">[</span><span class="s2">&quot;phase&quot;</span><span class="p">])</span>
+        <span class="n">theta_jn</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;theta_jn&quot;</span><span class="p">],</span> <span class="n">phi_jl</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;phi_jl&quot;</span><span class="p">],</span> <span class="n">tilt_1</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;tilt_1&quot;</span><span class="p">],</span> <span class="n">tilt_2</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;tilt_2&quot;</span><span class="p">],</span>
+        <span class="n">phi_12</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;phi_12&quot;</span><span class="p">],</span> <span class="n">a_1</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;a_1&quot;</span><span class="p">],</span> <span class="n">a_2</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;a_2&quot;</span><span class="p">],</span> <span class="n">mass_1</span><span class="o">=</span><span class="n">mass_1_SI</span><span class="p">,</span> <span class="n">mass_2</span><span class="o">=</span><span class="n">mass_2_SI</span><span class="p">,</span>
+        <span class="n">reference_frequency</span><span class="o">=</span><span class="n">f_ref</span><span class="p">,</span> <span class="n">phase</span><span class="o">=</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;phase&quot;</span><span class="p">])</span>
 
-    <span class="k">if</span> <span class="s2">&quot;zenith&quot;</span> <span class="ow">in</span> <span class="n">params</span> <span class="ow">and</span> <span class="s2">&quot;azimuth&quot;</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
-        <span class="n">params</span><span class="p">[</span><span class="s2">&quot;ra&quot;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s2">&quot;dec&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">zenith_azimuth_to_ra_dec</span><span class="p">(</span>
-            <span class="n">params</span><span class="p">[</span><span class="s1">&#39;zenith&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s1">&#39;azimuth&#39;</span><span class="p">],</span> <span class="n">params</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">],</span> <span class="n">inputs</span><span class="o">.</span><span class="n">reference_frame</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s2">&quot;zenith&quot;</span> <span class="ow">in</span> <span class="n">par</span> <span class="ow">and</span> <span class="s2">&quot;azimuth&quot;</span> <span class="ow">in</span> <span class="n">par</span><span class="p">:</span>
+        <span class="n">par</span><span class="p">[</span><span class="s2">&quot;ra&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;dec&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">zenith_azimuth_to_ra_dec</span><span class="p">(</span>
+            <span class="n">par</span><span class="p">[</span><span class="s1">&#39;zenith&#39;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s1">&#39;azimuth&#39;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">],</span> <span class="n">reference_frame</span><span class="p">)</span>
 
-    <span class="n">longAscNodes</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">eccentricity</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">meanPerAno</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">LALParams</span> <span class="o">=</span> <span class="n">lal</span><span class="o">.</span><span class="n">CreateDict</span><span class="p">()</span>
+    <span class="n">longitude_ascending_nodes</span> <span class="o">=</span> <span class="mf">0.</span>
+    <span class="n">eccentricity</span> <span class="o">=</span> <span class="mf">0.</span>
+    <span class="n">mean_per_ano</span> <span class="o">=</span> <span class="mf">0.</span>
+    <span class="n">waveform_dictionary</span> <span class="o">=</span> <span class="n">lal</span><span class="o">.</span><span class="n">CreateDict</span><span class="p">()</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">convert_args_list_to_float</span><span class="p">(</span>
+        <span class="n">mass_1_SI</span><span class="p">,</span> <span class="n">mass_2_SI</span><span class="p">,</span>
+        <span class="n">spin_1x</span><span class="p">,</span> <span class="n">spin_1y</span><span class="p">,</span> <span class="n">spin_1z</span><span class="p">,</span>
+        <span class="n">spin_2x</span><span class="p">,</span> <span class="n">spin_2y</span><span class="p">,</span> <span class="n">spin_2z</span><span class="p">,</span>
+        <span class="n">luminosity_distance_SI</span><span class="p">,</span> <span class="n">iota</span><span class="p">,</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;phase&quot;</span><span class="p">],</span>
+        <span class="n">longitude_ascending_nodes</span><span class="p">,</span> <span class="n">eccentricity</span><span class="p">,</span> <span class="n">mean_per_ano</span><span class="p">,</span>
+        <span class="n">deltaT</span><span class="p">,</span> <span class="n">f_min</span><span class="p">,</span> <span class="n">f_ref</span><span class="p">)</span>
 
     <span class="n">h_plus_timeseries</span><span class="p">,</span> <span class="n">h_cross_timeseries</span> <span class="o">=</span> <span class="n">lalsim</span><span class="o">.</span><span class="n">SimInspiralChooseTDWaveform</span><span class="p">(</span>
-        <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">S1x</span><span class="p">,</span> <span class="n">S1y</span><span class="p">,</span> <span class="n">S1z</span><span class="p">,</span> <span class="n">S2x</span><span class="p">,</span> <span class="n">S2y</span><span class="p">,</span> <span class="n">S2z</span><span class="p">,</span> <span class="n">distance</span><span class="p">,</span> <span class="n">inclination</span><span class="p">,</span> <span class="n">phiRef</span><span class="p">,</span> 
-        <span class="n">longAscNodes</span><span class="p">,</span> <span class="n">eccentricity</span><span class="p">,</span> <span class="n">meanPerAno</span><span class="p">,</span> <span class="n">deltaT</span><span class="p">,</span> <span class="n">f_min</span><span class="p">,</span> <span class="n">f_ref</span><span class="p">,</span> <span class="n">LALParams</span><span class="p">,</span>
-        <span class="n">approximant</span>
+        <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">waveform_dictionary</span><span class="p">,</span> <span class="n">approximant</span>   
     <span class="p">)</span>
 
-    <span class="n">plus_polarization_tensor</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">get_polarization_tensor</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span> <span class="n">dec</span><span class="p">,</span> <span class="n">geocent_time</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="s2">&quot;plus&quot;</span><span class="p">)</span>
-    <span class="n">f_plus</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;ij,ij-&gt;&#39;</span><span class="p">,</span> <span class="n">H1</span><span class="o">.</span><span class="n">detector_tensor</span><span class="p">,</span> <span class="n">plus_polarization_tensor</span><span class="p">)</span>
+    <span class="n">plus_polarization_tensor</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">get_polarization_tensor</span><span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;ra&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;dec&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;psi&quot;</span><span class="p">],</span> <span class="s2">&quot;plus&quot;</span><span class="p">)</span>
+    <span class="n">f_plus</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;ij,ij-&gt;&#39;</span><span class="p">,</span> <span class="n">bilby_detector</span><span class="o">.</span><span class="n">detector_tensor</span><span class="p">,</span> <span class="n">plus_polarization_tensor</span><span class="p">)</span>
 
-    <span class="n">cross_polarization_tensor</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">get_polarization_tensor</span><span class="p">(</span><span class="n">ra</span><span class="p">,</span> <span class="n">dec</span><span class="p">,</span> <span class="n">geocent_time</span><span class="p">,</span> <span class="n">psi</span><span class="p">,</span> <span class="s2">&quot;cross&quot;</span><span class="p">)</span>
-    <span class="n">f_cross</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;ij,ij-&gt;&#39;</span><span class="p">,</span> <span class="n">H1</span><span class="o">.</span><span class="n">detector_tensor</span><span class="p">,</span> <span class="n">cross_polarization_tensor</span><span class="p">)</span>
-
+    <span class="n">cross_polarization_tensor</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">get_polarization_tensor</span><span class="p">(</span><span class="n">par</span><span class="p">[</span><span class="s2">&quot;ra&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;dec&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">],</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;psi&quot;</span><span class="p">],</span> <span class="s2">&quot;cross&quot;</span><span class="p">)</span>
+    <span class="n">f_cross</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">einsum</span><span class="p">(</span><span class="s1">&#39;ij,ij-&gt;&#39;</span><span class="p">,</span> <span class="n">bilby_detector</span><span class="o">.</span><span class="n">detector_tensor</span><span class="p">,</span> <span class="n">cross_polarization_tensor</span><span class="p">)</span>
 
     <span class="n">h_plus</span> <span class="o">=</span> <span class="n">h_plus_timeseries</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">data</span>
     <span class="n">h_cross</span> <span class="o">=</span> <span class="n">h_cross_timeseries</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">data</span>
     <span class="n">h_plus_time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">h_plus</span><span class="p">))</span> <span class="o">*</span> <span class="n">h_plus_timeseries</span><span class="o">.</span><span class="n">deltaT</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">h_plus_timeseries</span><span class="o">.</span><span class="n">epoch</span><span class="p">)</span>
 
     <span class="n">h</span> <span class="o">=</span> <span class="n">f_plus</span> <span class="o">*</span> <span class="n">h_plus</span> <span class="o">+</span> <span class="n">f_cross</span> <span class="o">*</span> <span class="n">h_cross</span>
-    <span class="n">t</span> <span class="o">=</span> <span class="n">h_plus_time</span> <span class="o">+</span> <span class="n">geocent_time</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">h_plus_time</span> <span class="o">+</span> <span class="n">par</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">]</span>
 
     <span class="n">h_interp</span> <span class="o">=</span> <span class="n">interp1d</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">bounds_error</span><span class="o">=</span><span class="kc">False</span><span class="p">)(</span><span class="n">time</span><span class="p">)</span>
+
     <span class="k">if</span> <span class="n">h_interp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Generated waveform was too short&quot;</span><span class="p">)</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;Generated waveform was too short&quot;</span>
+        <span class="k">if</span> <span class="n">error</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">h_interp</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="n">parameters</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-    <span class="n">mass_1</span><span class="o">=</span><span class="mf">36.</span><span class="p">,</span> <span class="n">mass_2</span><span class="o">=</span><span class="mf">29.</span><span class="p">,</span> <span class="n">a_1</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">a_2</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">tilt_1</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">tilt_2</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-    <span class="n">phi_12</span><span class="o">=</span><span class="mf">1.7</span><span class="p">,</span> <span class="n">phi_jl</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">luminosity_distance</span><span class="o">=</span><span class="mf">2000.</span><span class="p">,</span> <span class="n">theta_jn</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">psi</span><span class="o">=</span><span class="mf">2.659</span><span class="p">,</span>
+    <span class="n">mass_1</span><span class="o">=</span><span class="mf">36.</span><span class="p">,</span> <span class="n">mass_2</span><span class="o">=</span><span class="mf">29.</span><span class="p">,</span> <span class="n">chi_1</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">chi_2</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">luminosity_distance</span><span class="o">=</span><span class="mf">2000.</span><span class="p">,</span> <span class="n">theta_jn</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">psi</span><span class="o">=</span><span class="mf">2.659</span><span class="p">,</span>
     <span class="n">phase</span><span class="o">=</span><span class="mf">2.8</span><span class="p">,</span> <span class="n">geocent_time</span><span class="o">=</span><span class="mf">1126259642.413</span><span class="p">,</span> <span class="n">ra</span><span class="o">=</span><span class="mf">1.375</span><span class="p">,</span> <span class="n">dec</span><span class="o">=-</span><span class="mf">1.2108</span>
 <span class="p">)</span>
 
@@ -597,27 +590,87 @@ Requirement already satisfied: numexpr&gt;=2.6.2 in /home/greg/anaconda3/envs/te
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
-<p><img alt="png" src="../waveform_projection_files/waveform_projection_20_0.png" /></p>
+<div class="highlight"><pre><span></span><code>Generated waveform was too short
+Generated waveform was too short
+Generated waveform was too short
+</code></pre></div>
+<p><img alt="png" src="../waveform_projection_files/waveform_projection_20_1.png" /></p>
 <h2 id="time-the-generation">Time the generation</h2>
 <div class="highlight"><pre><span></span><code><span class="n">prior</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">gw</span><span class="o">.</span><span class="n">prior</span><span class="o">.</span><span class="n">BBHPriorDict</span><span class="p">()</span>
 <span class="n">prior</span><span class="p">[</span><span class="s2">&quot;geocent_time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">bilby</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">prior</span><span class="o">.</span><span class="n">Uniform</span><span class="p">(</span><span class="n">geocent_time</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">geocent_time</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>08:59 bilby INFO    : No prior given, using default BBH priors in /home/greg/bilby/bilby/gw/prior_files/precessing_spins_bbh.prior.
+<div class="highlight"><pre><span></span><code>10:16 bilby INFO    : No prior given, using default BBH priors in /home/greg/bilby/bilby/gw/prior_files/precessing_spins_bbh.prior.
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">timeit</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;SEOBNRv4T&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;SEOBNRv4P&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>415 ms ± 7.58 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">timeit</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomT&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>5.82 ms ± 96.9 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<div class="highlight"><pre><span></span><code>1.34 s ± 85.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">timeit</span>
-<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomD&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomTP&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>6.57 ms ± 182 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+<div class="highlight"><pre><span></span><code>27.9 ms ± 1.73 ms per loop (mean ± std. dev. of 7 runs, 10 loops each)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">%%</span><span class="n">timeit</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomPv2&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">pre_trigger_duration</span><span class="o">=</span><span class="n">pre_trigger_duration</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>13.6 ms ± 237 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+</code></pre></div>
+<h2 id="profile-the-generation">Profile the generation</h2>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">load_ext</span> <span class="n">line_profiler</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">lprun</span> <span class="o">-</span><span class="n">T</span> <span class="n">profile</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">u</span> <span class="mf">1e-3</span> <span class="o">-</span><span class="n">f</span> <span class="n">get_gw_waveform</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomTP&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.85</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>*** Profile printout saved to text file &#39;profile.txt&#39;.
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">head</span> <span class="o">-</span><span class="n">n</span> <span class="mi">15</span> <span class="n">profile</span><span class="o">.</span><span class="n">txt</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>Timer unit: 0.001 s
+
+Total time: 0.029128 s
+File: /tmp/ipykernel_1170/3049955836.py
+Function: get_gw_waveform at line 3
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     3                                           def get_gw_waveform(time, parameters, waveform_approximant, reference_frequency, bilby_detector, fudge=0.95, reference_frame=None, pre_trigger_duration=None, error=False):
+     4         1          0.1      0.1      0.2      par, _ = bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters(parameters)
+     5                                                   
+     6         1          0.0      0.0      0.0      mass_1_SI = par[&quot;mass_1&quot;] * solar_mass
+     7         1          0.0      0.0      0.0      mass_2_SI = par[&quot;mass_2&quot;] * solar_mass
+     8         1          0.0      0.0      0.0      luminosity_distance_SI = par[&quot;luminosity_distance&quot;] * 1e6 * parsec
+     9
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">tail</span> <span class="o">-</span><span class="n">n</span> <span class="o">+</span><span class="mi">9</span> <span class="n">profile</span><span class="o">.</span><span class="n">txt</span> <span class="o">|</span> <span class="n">sort</span> <span class="o">-</span><span class="n">nr</span> <span class="o">-</span><span class="n">k</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">head</span> <span class="o">-</span><span class="n">n</span> <span class="mi">10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>    60         4         27.6      6.9     94.7      h_plus_timeseries, h_cross_timeseries = lalsim.SimInspiralChooseTDWaveform(
+    77         1          0.6      0.6      2.0      h_interp = interp1d(t, h, fill_value=0, bounds_error=False)(time)
+    64         1          0.3      0.3      0.9      plus_polarization_tensor = bilby.gw.utils.get_polarization_tensor(par[&quot;ra&quot;], par[&quot;dec&quot;], par[&quot;geocent_time&quot;], par[&quot;psi&quot;], &quot;plus&quot;)
+    38         2          0.2      0.1      0.7      iota, spin_1x, spin_1y, spin_1z, spin_2x, spin_2y, spin_2z = bilby.gw.conversion.bilby_to_lalsimulation_spins(
+    74         1          0.1      0.1      0.3      h = f_plus * h_plus + f_cross * h_cross
+    72         1          0.1      0.1      0.3      h_plus_time = np.arange(len(h_plus)) * h_plus_timeseries.deltaT + float(h_plus_timeseries.epoch)
+    67         1          0.1      0.1      0.2      cross_polarization_tensor = bilby.gw.utils.get_polarization_tensor(par[&quot;ra&quot;], par[&quot;dec&quot;], par[&quot;geocent_time&quot;], par[&quot;psi&quot;], &quot;cross&quot;)
+    13         1          0.1      0.1      0.4          nearest_trigger_idx = np.argmin(np.abs(time - par[&quot;geocent_time&quot;]))
+     4         1          0.1      0.1      0.2      par, _ = bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters(parameters)
+    85         1          0.0      0.0      0.0      return h_interp
+</code></pre></div>
+<p>We can remove that lookup for the <code>pre_trigger_duration</code> if we know it</p>
+<div class="highlight"><pre><span></span><code><span class="o">%</span><span class="n">lprun</span> <span class="o">-</span><span class="n">T</span> <span class="n">profile</span><span class="o">.</span><span class="n">txt</span> <span class="o">-</span><span class="n">s</span> <span class="o">-</span><span class="n">u</span> <span class="mf">1e-3</span> <span class="o">-</span><span class="n">f</span> <span class="n">get_gw_waveform</span> <span class="n">get_gw_waveform</span><span class="p">(</span><span class="n">data_detector_time</span><span class="p">,</span> <span class="n">prior</span><span class="o">.</span><span class="n">sample</span><span class="p">(),</span> <span class="s2">&quot;IMRPhenomTP&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">H1</span><span class="p">,</span> <span class="n">fudge</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">pre_trigger_duration</span><span class="o">=</span><span class="n">pre_trigger_duration</span><span class="p">)</span>
+<span class="err">!</span><span class="n">tail</span> <span class="o">-</span><span class="n">n</span> <span class="o">+</span><span class="mi">9</span> <span class="n">profile</span><span class="o">.</span><span class="n">txt</span> <span class="o">|</span> <span class="n">sort</span> <span class="o">-</span><span class="n">nr</span> <span class="o">-</span><span class="n">k</span> <span class="mi">3</span> <span class="o">|</span> <span class="n">head</span> <span class="o">-</span><span class="n">n</span> <span class="mi">10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>*** Profile printout saved to text file &#39;profile.txt&#39;. 
+    60         4         38.3      9.6     91.5      h_plus_timeseries, h_cross_timeseries = lalsim.SimInspiralChooseTDWaveform(
+    77         1          1.5      1.5      3.7      h_interp = interp1d(t, h, fill_value=0, bounds_error=False)(time)
+    74         1          0.8      0.8      2.0      h = f_plus * h_plus + f_cross * h_cross
+    38         2          0.4      0.2      0.9      iota, spin_1x, spin_1y, spin_1z, spin_2x, spin_2y, spin_2z = bilby.gw.conversion.bilby_to_lalsimulation_spins(
+    64         1          0.2      0.2      0.6      plus_polarization_tensor = bilby.gw.utils.get_polarization_tensor(par[&quot;ra&quot;], par[&quot;dec&quot;], par[&quot;geocent_time&quot;], par[&quot;psi&quot;], &quot;plus&quot;)
+     4         1          0.2      0.2      0.4      par, _ = bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters(parameters)
+    75         1          0.1      0.1      0.1      t = h_plus_time + par[&quot;geocent_time&quot;]
+    72         1          0.1      0.1      0.3      h_plus_time = np.arange(len(h_plus)) * h_plus_timeseries.deltaT + float(h_plus_timeseries.epoch)
+    85         1          0.0      0.0      0.0      return h_interp
+    84                                                       print(msg)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
               
