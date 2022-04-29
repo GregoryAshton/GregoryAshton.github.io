@@ -18,6 +18,11 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 
 ## News
+
+* 29/Apr/2022 It is a new paper day! [GWCloud](https://arxiv.org/abs/2204.13267) hit the arXiv which details the inner workings of searchable repository for the creation and curation of gravitational-wave inference results. This project started back in 2018 IIRC with several ADACS applications by Paul Lasky. It has been a pleasure to work on and I look forward to the future of the project.
+
+* 27/Apr/2022 Today I had the pleasure of examing a PhD student thesis. I'll delay in giving the name until it is all official. But, they defended very well and can now proudly call themselves Docter!
+
 * 06/Apr/2022 I was a judge for the best Student Prize at [BritGrav 2022](https://www.gla.ac.uk/events/conferences/britgrav22/). The conference consisted of two days of talks from students/postdocs and served as a great display of the exciting science done by scientists in the UK. The quality of talks was fantastic and it was hard to pick between them, but in the end Lucy Thomas won the best talk prize with Marion Cromb and Elsa Teixeira as runners up. Congratulations to them all.
 
 * 01/Feb/2022 I am an Award Lead for the Alan Turing Network [Development Award](https://www.turing.ac.uk/news/24-uk-universities-receive-first-ever-turing-network-development-awards). I'm looking forward to using this to develop some interdisciplinary projects.
