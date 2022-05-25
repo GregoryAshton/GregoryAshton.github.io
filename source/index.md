@@ -19,6 +19,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 25/May/2022 Today, I joined the [smallpeice trust](https://www.smallpeicetrust.org.uk/) and RHUL's Girl's Into Astrophysics event!
 * 29/Apr/2022 It is a new paper day! [GWCloud](https://arxiv.org/abs/2204.13267) hit the arXiv which details the inner workings of searchable repository for the creation and curation of gravitational-wave inference results. This project started back in 2018 IIRC with several ADACS applications by Paul Lasky. It has been a pleasure to work on and I look forward to the future of the project.
 
 * 27/Apr/2022 Today I had the pleasure of examing a PhD student thesis. I'll delay in giving the name until it is all official. But, they defended very well and can now proudly call themselves Docter!
