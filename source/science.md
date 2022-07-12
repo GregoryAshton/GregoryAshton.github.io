@@ -2,8 +2,9 @@
 
 ## Publications
 
-I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) of my publications in addition to the following list.
+You can find all publications to which I have made significant contributions in this [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ).
 
+<!---
 32. Vajpeyi, Avi, et al [A search for intermediate-mass black holes mergers in the second LIGO--Virgo observing run with the Bayes Coherence Ratio](https://ui.adsabs.harvard.edu/abs/2021arXiv210712109V/abstract)
 
 31. Ashton, Gregory; Talbot, Colm [Bilby-MCMC: An MCMC sampler for gravitational-wave inference](https://ui.adsabs.harvard.edu/abs/2021arXiv210608730A/abstract)
@@ -69,6 +70,8 @@ I maintain an [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-
 1. G. Ashton, D. I. Jones, R. Prix [The effect of timing noise on targeted
   and narrow-band coherent searches for continuous gravitational waves (2015)
   ](http://adsabs.harvard.edu/abs/2014arXiv1410.8044A)
+
+--->
 
 ## Workshops
 

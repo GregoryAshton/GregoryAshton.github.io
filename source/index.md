@@ -19,6 +19,11 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 11/Jul/2022 I led the organisation of the Gravitational-wave astronomy parallel session at [NAM2022](https://nam2022.org/science/parallel-sessions/details/2/174). We where over subscribed by a factor of 2 on talks and the room was full too. Really exciting to see the breadth and talent of people working on GWs in the UK. Thanks to all the other organisers who helped make it happen.
+  ![NAM2022](img/NAM2022.jpg)
+
+* 04/Jul/2022 My paper with Tim Dietrich [The use of hypermodels to understand binary neutron star collisions](https://www.nature.com/articles/s41550-022-01707-x) was published in Nature Astronomy.
+
 * 01/Jun/2022 Our [Nested Sampling primer](https://ui.adsabs.harvard.edu/abs/2022arXiv220515570A/abstract) was published in [Nature Reviews](https://www.nature.com/articles/s43586-022-00121-x). While I am first author, you should realise this is because "A" is the first letter of the alphabet! Andrew Fowlie led the effort and I am deeply indepted to him as I learned a lot. My contribution, along with Matt Pitkin and John Veitch was to the gravitational-wave application section.
 
 * 25/May/2022 Today, I joined the [smallpeice trust](https://www.smallpeicetrust.org.uk/) and RHUL's Girl's Into Astrophysics event!
