@@ -19,6 +19,12 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 06/Feb/2023 My paper [Gaussian Processes for Glitch-robust Gravitational-wave Astronomy](https://academic.oup.com/mnras/article-abstract/520/2/2983/7028786) was published in MNRAS.
+
+* 06/Dec/2022 I was invited to speak on [Key results from ground-based gravitational-wave detectors](https://www.gwpaw2022.org/program.html) at the GWPAW 2022 meeting.
+
+* 01/Sep/2022 PhD student Mattia Emma started in my group!
+
 * 13/Jul/2022 Our paper [Parameterised population models of transient non-Gaussian noise in the LIGO gravitational-wave detectors](https://iopscience.iop.org/article/10.1088/1361-6382/ac8094) has been published in CQG.
 
 * 11/Jul/2022 I led the organisation of the Gravitational-wave astronomy parallel session at [NAM2022](https://nam2022.org/science/parallel-sessions/details/2/174). We where over subscribed by a factor of 2 on talks and the room was full too. Really exciting to see the breadth and talent of people working on GWs in the UK. Thanks to all the other organisers who helped make it happen.
