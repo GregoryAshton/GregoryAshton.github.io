@@ -13,11 +13,13 @@ I then briefly joined the [Institute for Cosmology and Gravitation](http://www.i
 My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaborations largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
 
 * Contact: gregory.ashton@ligo.org
-* [My CV](pdfs/GregAshton_CV.pdf)
+* [My CV](pdfs/GregoryAshton_CV.pdf)
 * [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
 
 
 ## News
+
+* Double new paper day! Jack Heinzel submitted [Inferring the Astrophysical Population of Gravitational Wave Sources in the Presence of Noise Transients](https://arxiv.org/abs/2304.02665) to MNRAS for review while Rowina Nathan submitted [Improving pulsar-timing solutions through dynamic pulse fitting](https://arxiv.org/abs/2304.02793) also to MNRAS for review. Both of these are excellent PhD students I have had the good forture to help with their project.
 
 * 06/Feb/2023 My paper [Gaussian Processes for Glitch-robust Gravitational-wave Astronomy](https://academic.oup.com/mnras/article-abstract/520/2/2983/7028786) was published in MNRAS.
 
