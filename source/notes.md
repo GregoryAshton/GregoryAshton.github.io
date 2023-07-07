@@ -1,6 +1,7 @@
 # Notes
 
 * [Projecting waveforms](notes/waveform_projection.md)
+* [Splitting up merge requests](notes/splitting_up_mrs.md)
 
 ## Derivations
 * [Drawing samples from the Goodman & Weare (2010) proposal distribution](pdfs/derivation_stretch_move.pdf)

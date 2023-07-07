@@ -7,6 +7,7 @@ repo_url: https://github.com/GregoryAshton/GregoryAshton.github.io
 nav:
     - Home: index.md
     - Science: science.md
+    - Group: group.md
     - Projects: projects.md
     - Help: help.md
     - Notes: notes.md

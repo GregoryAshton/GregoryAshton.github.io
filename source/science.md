@@ -6,11 +6,9 @@ You can find all publications to which I have made significant contributions in 
 
 ## Workshops
 
-* May 2023 [GWOSC ODW #6](https://www.gw-openscience.org/odw/odw2023/)
+* June 2023 [A Taste of Physics and Astronomy - RH23016](https://www.london.ac.uk/a-taste-physics-and-astronomy-rh23016/apply). Lead organiser: 30 A-level students given a taste of University life, including lectures, admission discussions, and acitivities across the department.
 
-* Apr/2021 [Royal Hollaway's Astrophysics Residential](https://github.com/GregoryAshton/AstrophysicsResidentialApril21)
-
-* Aug/2020 [Parameter Estimation for Gravitational waves](https://github.com/GregoryAshton/GWParameterEstimationWorkshop2020). Lead organizer, invited by the LIGOIndia community to train 60+ astrophysicists
+* May 2023 [GWOSC ODW #6](https://www.gw-openscience.org/odw/odw2023/). Co-organiser: a hybrid workshop with 2000+ people enrolled, 22 study local study hubs, and 300 active participants. I ran a local study up in London (UK) at the Institute of Physics and the Royal Astronomical Society.
 
 * May/2020 [LIGO-Virgo Collaboration GW Open Data Workshop #3](https://www.gw-openscience.org/static/workshop3/). Co-organizer, invited to write and coordinate the Parameter Estimation tutorials for 100 students (virtual).
 
