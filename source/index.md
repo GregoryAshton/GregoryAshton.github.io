@@ -19,6 +19,9 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 07/Aug/2023 We hosted an In2Science student Pavan at RHUL. Pavan built the first iteration of the Duck Detector, a concept idea for a gravitational-wave outreach project (see image below). Overall the project was a success and afterwards Pavan said *"He's relentless and passionate about physics and astronomy. He's handled the work experience like an absolute professional rightfully so. My experience couldn't have been any better, thanks to my mentor and his passion towards the subject and his willingness to outreach and teach the ways to young children. The best someone could expect."* which I of course was very happy to hear.
+
+![Duck Detector](img/duck_detector_v1.jpg)
 
 * 18/May/2023 I gave a colloqium on Glitch-robust gravitational wave astronomy at Los Alamos (virtually).
 
@@ -55,9 +58,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 01/Feb/2022 I am an Award Lead for the Alan Turing Network [Development Award](https://www.turing.ac.uk/news/24-uk-universities-receive-first-ever-turing-network-development-awards). I'm looking forward to using this to develop some interdisciplinary projects.
 
 * 01/Dec/2021 Today I joined the SEPNet workshop [Equality, Diversity & Inclusion – Revisiting the leaky pipeline – short-term contracts and career planning](https://www.sepnet.ac.uk/he-stem-equality-diversity-inclusion-revisiting-the-leaky-pipeline-short-term-contracts-and-career-planning/). You can find my slides [here](pdfs/SEPNet-EDI-GA.pdf).
-
-* 18/Nov/2021 I presented at the Banff IRS workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).
-
+* 18/Nov/2021 I presented at the Banff IRS workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).  
 * 17/Nov/2021 With Tim Dietrich, we put out a new preprint [Understanding binary neutron star collisions with hypermodels](https://ui.adsabs.harvard.edu/abs/2021arXiv211109214A/abstract). This one shows some tentative evidence for waveform systematics in a BNS.
 
 * 01/Nov/2021 Today I joined Royal Holloway as a Lecturer in Physics!
@@ -126,5 +127,4 @@ My research interest is the relativistic astrophysics of neutron stars and black
     <img src="https://s3.amazonaws.com/zapnito/uploads/3a1ef7c69fe9f78897c748117f493d9e/ae24dde3-4753-45ab-bee0-ed68a7172964.jpeg" style="height:300px;">
     </a>
 </figure>
-
 
