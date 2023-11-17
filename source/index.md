@@ -19,6 +19,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 17/11/2023 New paper day: Work led by Ronaldas Macas [Revisiting GW200129 with machine learning noise mitigation: it is (still) precessing](https://arxiv.org/abs/2311.09921)
+
 * 07/Aug/2023 We hosted an In2Science student Pavan at RHUL. Pavan built the first iteration of the Duck Detector, a concept idea for a gravitational-wave outreach project (see image below). Overall the project was a success and afterwards Pavan said *"He's relentless and passionate about physics and astronomy. He's handled the work experience like an absolute professional rightfully so. My experience couldn't have been any better, thanks to my mentor and his passion towards the subject and his willingness to outreach and teach the ways to young children. The best someone could expect."* which I of course was very happy to hear.
 
 ![Duck Detector](img/duck_detector_v1.jpg)
