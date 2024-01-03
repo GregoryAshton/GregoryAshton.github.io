@@ -5,7 +5,7 @@
 I am a Lecturer in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
 I began my research career at the University of Southampton working with Ian
-Jones and Reinhard Prix where I completed by PhD in 2016 on [Timing variations in neutron stars:
+Jones and Reinhard Prix where I completed my PhD in 2016 on [Timing variations in neutron stars:
 models, inference and their implications for gravitational
 waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf).
 Following this I held a postdoc position at the Albert Einstein Institute, Hannover before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
