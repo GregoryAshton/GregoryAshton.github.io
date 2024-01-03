@@ -4,13 +4,13 @@
 
 I am a Lecturer in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
-I began my research career at the University of Southampton working with Ian
-Jones and Reinhard Prix where I completed my PhD in 2016 on [Timing variations in neutron stars:
+I began my research career at the University of Southampton, working with Ian
+Jones and Reinhard Prix, where I completed my PhD in 2016 on [Timing variations in neutron stars:
 models, inference and their implications for gravitational
 waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf).
-Following this I held a postdoc position at the Albert Einstein Institute, Hannover before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
-I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth working with Laura Nuttall as a Research Fellow before taking up my current post.
-My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaborations largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
+Following this, I held a postdoc position at the Albert Einstein Institute, Hannover, before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
+I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth, working with Laura Nuttall as a Research Fellow before taking up my current post.
+My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaboration's largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
 
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregoryAshton_CV.pdf)
