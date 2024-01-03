@@ -15,6 +15,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * Contact: gregory.ashton@ligo.org
 * [My CV](pdfs/GregoryAshton_CV.pdf)
 * [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
+* [RHUL Pure portal](https://pure.royalholloway.ac.uk/en/persons/gregory-ashton)
 
 
 ## News
@@ -23,12 +24,21 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 * 07/Aug/2023 We hosted an In2Science student Pavan at RHUL. Pavan built the first iteration of the Duck Detector, a concept idea for a gravitational-wave outreach project (see image below). Overall the project was a success and afterwards Pavan said *"He's relentless and passionate about physics and astronomy. He's handled the work experience like an absolute professional rightfully so. My experience couldn't have been any better, thanks to my mentor and his passion towards the subject and his willingness to outreach and teach the ways to young children. The best someone could expect."* which I of course was very happy to hear.
 
-![Duck Detector](img/duck_detector_v1.jpg)
+<figure markdown>
+  ![Duck Detector](img/duck_detector_v1.jpg){ width="500" }
+  <figcaption>Image of the v1 Duck Detector</figcaption>
+</figure>
 
 * 18/May/2023 I gave a colloqium on Glitch-robust gravitational wave astronomy at Los Alamos (virtually).
 
 * 15/May/2023 I co-organised and helped to run the 6th GWOSC [Open Data Workshop](https://gw-odw.thinkific.com/courses/gw-open-data-workshop-6). Below is a map of all the study hubs!
-  ![ODW2023](img/open-data-workshop.png)
+
+<figure markdown>
+  ![ODW2023](img/open-data-workshop.png){ width="500" }
+
+  <figcaption>The map of study jubs for the sixth GWODW</figcaption>
+</figure>
+
 
 * 11/May/2023 I gave a colloqium at the Institute for Cosmology and Gravitation, University of Portsmouth. I talked about Glitch-robust gravitational-wave astronomy!
 
@@ -43,7 +53,13 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 13/Jul/2022 Our paper [Parameterised population models of transient non-Gaussian noise in the LIGO gravitational-wave detectors](https://iopscience.iop.org/article/10.1088/1361-6382/ac8094) has been published in CQG.
 
 * 11/Jul/2022 I led the organisation of the Gravitational-wave astronomy parallel session at [NAM2022](https://nam2022.org/science/parallel-sessions/details/2/174). We where over subscribed by a factor of 2 on talks and the room was full too. Really exciting to see the breadth and talent of people working on GWs in the UK. Thanks to all the other organisers who helped make it happen.
-  ![NAM2022](img/NAM2022.jpg)
+
+<figure markdown>
+  ![NAM2022](img/NAM2022.jpg){ width="500" }
+
+  <figcaption>Image of the packed room at NAM 2022 </figcaption>
+</figure>
+
 
 * 04/Jul/2022 My paper with Tim Dietrich [The use of hypermodels to understand binary neutron star collisions](https://www.nature.com/articles/s41550-022-01707-x) was published in Nature Astronomy.
 
