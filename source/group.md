@@ -6,7 +6,13 @@ to put you in touch.
 
 ## Postdoctoral researchers
 
+![Adriana Dias](img/Adriana.jpg){ width="150" align=right }
 ### Dr Adriana Dias
+I am an Research Fellow working with Greg Ashton on timing variations of radio pulsars, with a particular interest on the glitch phenomena observed in the PSR B1828-11 radio pulsar. My background is in Particle Physics, having obtained a Masters degree in 2019 and a PhD degree in 2023 at Royal Holloway, University of London. My Masters project, Calibration of a High-Pressure Time Projection Chamber, involved working on the hardware and calibration systems of a High-Pressure Time Projection Chamber, to be used in Neutrino Physics Research. I was directly involved in the calibration and construction of this detector. My PhD project, Detector Development for Particle Physics and Applications to Environmental Monitoring, involved the development of a novel device, called PlomBOX, employing a CMOS sensor and lead-sensing bacteria to assay lead in drinking water, up to the World Health Organisation’s upper limit of 10 ppb. I was involved in the development of the data acquisition and slow control tools and developed the analysis interface used by the PlomBOX.
+
+Outside research, I am passionate about making physics available to people from working class backgrounds and as such I help lead a Working Class in Physics Forum at Royal Holloway.
+I am an avid gamer, love to read and enjoy nature walks.
+
 
 ## PhD students supervision
 
