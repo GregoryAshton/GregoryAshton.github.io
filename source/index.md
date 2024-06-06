@@ -20,7 +20,28 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 05/06/2024 Today I gave a talk to the [Cardiff Gravity Exploration Institute](https://www.cardiff.ac.uk/physics-astronomy/research/research-groups/gravity-exploration-institute) on "Searching and characterizing compact binary coalescence signals: challenges and solutions in real data"
+
+* 29/05/2024 This afternoon I presented at our local seminar on [Quantifying Uncertainty with Conformal Prediction](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/physics-events/2024-05-29-particle-physics-seminar-quantifying-uncertainty-with-conformal-prediction/).
+
+* 15/05/2024 I visited the [Keele Data Science and Astrophysics group](https://www.keele.ac.uk/research/ourresearch/chemicalandphysicalsciences/astrophysicsanddatascience/#:~:text=At%20Keele%20we%20study%20the,ground%2Dbased%20photometry%20and%20spectroscopy.) and gave a seminar "Gravitational Wave Astronomy: from interferometric strain to astrophysics"
+
+* 25/04/2025  New paper day: Work led by PhD strudent Mattia Emma on [Comparing advanced-era interferometric gravitational-wave detector network configurations: sky localization and source properties](https://arxiv.org/abs/2404.16949). We used a lot of CPU hours on this thanks to Oracle for Research for their support. This work also had contributions from Tiago Fernandes de Nobrega, an undergraduate who began the work on low-frequency analyses last year. 
+
+* 05/04/2024 This week, I am visiting the [IJCLab](https://www.ijclab.in2p3.fr/en/home/) and gave the [invited colloqium](https://indico.ijclab.in2p3.fr/event/10523/)
+
+<figure markdown>
+  ![ODW2023](img/IJCLab.jpg){ width="500" }
+
+  <figcaption>A photo of the presentation at the IJCLab</figcaption>
+</figure>
+
+* 18/03/2024 Ronaldas' paper is [now published in Phys Rev D](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.062006)! 
+
+* 29/02/2024 New paper day: [Calibrating gravitational-wave search algorithms with conformal prediction](https://arxiv.org/abs/2402.19313) is on the arXiv and submitted to Phys Rev D.
+
 * 17/11/2023 New paper day: Work led by Ronaldas Macas [Revisiting GW200129 with machine learning noise mitigation: it is (still) precessing](https://arxiv.org/abs/2311.09921)
+
 
 * 07/Aug/2023 We hosted an In2Science student Pavan at RHUL. Pavan built the first iteration of the Duck Detector, a concept idea for a gravitational-wave outreach project (see image below). Overall the project was a success and afterwards Pavan said *"He's relentless and passionate about physics and astronomy. He's handled the work experience like an absolute professional rightfully so. My experience couldn't have been any better, thanks to my mentor and his passion towards the subject and his willingness to outreach and teach the ways to young children. The best someone could expect."* which I of course was very happy to hear.
 
@@ -36,7 +57,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 <figure markdown>
   ![ODW2023](img/open-data-workshop.png){ width="500" }
 
-  <figcaption>The map of study jubs for the sixth GWODW</figcaption>
+  <figcaption>The map of study hubs for the sixth GWODW</figcaption>
 </figure>
 
 

@@ -27,6 +27,12 @@ You can find all publications to which I have made significant contributions in 
 
 ## Selected Presentations
 
+* Seminar given at the Cardiff Gravity Exploration Institute [Searching and characterizing compact binary coalescence signals: challenges and solutions in real data](pdfs/Cardiff_2024.pdf)
+
+* Invited colloqium at the IJCLab on [Gravitatational Wave Astronomy: from interferometric strain to astrophysics](pdfs/Gravitational_wave_astronomy_IJCLab.pdf)
+
+* A presentation I have given at a few schools on [Inferring the properties of gravitational-wave signals using Bayesian Inference](pdfs/GregAshton_GWBayes.pdf)
+
 * Invited to SEPNet workshop [Equality, Diversity & Inclusion – Revisiting the leaky pipeline – short-term contracts and career planning](https://www.sepnet.ac.uk/he-stem-equality-diversity-inclusion-revisiting-the-leaky-pipeline-short-term-contracts-and-career-planning/). My slides are available [here](pdfs/SEPNet-EDI-GA.pdf).
 
 * Banff workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).
