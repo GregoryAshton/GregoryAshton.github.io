@@ -20,6 +20,16 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 18/06/2024 [Calibrating gravitational-wave search algorithms with conformal prediction](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.123027) was published in PRD.
+
+* 15/06/2024 Today I lead the Physics department's contributions to the RHUL Science Festival, below is the "Big Bang" explosion from my talk on "Colliding black holes and what they can tell us about quantum gravity".
+
+<figure markdown>
+  ![Big Bang](img/bigbang.gif){ width="320" }
+
+  <figcaption>A gif of the Big Bang explosion: credit to Andrew Casey for getting the cryotechnics correct and not exploding the bin as well!</figcaption>
+</figure>
+
 * 05/06/2024 Today I gave a talk to the [Cardiff Gravity Exploration Institute](https://www.cardiff.ac.uk/physics-astronomy/research/research-groups/gravity-exploration-institute) on "Searching and characterizing compact binary coalescence signals: challenges and solutions in real data"
 
 * 29/05/2024 This afternoon I presented at our local seminar on [Quantifying Uncertainty with Conformal Prediction](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/physics-events/2024-05-29-particle-physics-seminar-quantifying-uncertainty-with-conformal-prediction/).
@@ -31,7 +41,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 05/04/2024 This week, I am visiting the [IJCLab](https://www.ijclab.in2p3.fr/en/home/) and gave the [invited colloqium](https://indico.ijclab.in2p3.fr/event/10523/)
 
 <figure markdown>
-  ![ODW2023](img/IJCLab.jpg){ width="500" }
+  ![IJCLab](img/IJCLab.jpg){ width="500" }
 
   <figcaption>A photo of the presentation at the IJCLab</figcaption>
 </figure>
