@@ -69,3 +69,16 @@ Below, I list students to which I have contributed to their supervision.
 - Zhi-Qiang You
 - Rowina Nathan
 - Simone Mozzon
+
+## Summer project students
+* 2024
+  * Julianna Ostrovska
+  * Kristina (Kika) Latkoczyova (Royal Astonomical Society Bursary)
+  * Lucie Robbins
+* 2023
+  * Julianna Ostrovska joined us for a 6-week RHUL summer placement studying the periodic modulations of the radio pulsar B1828-11
+  * Tiago Fernandes De Nobrega joined us for a 6-week RHUL summer placement on "Gravitational Wave Detectors: Exploring the Configuration to Optimise Source Parameter Interference"
+  * A-level student Pavan joined us for the 2-week project funded by In2Science to build a "duck detector" to simulate the triangulation of gravitational-wave detectors
+* 2022
+  * Floyd Hyatt joined us for a 6-week summer placement on optimisation methods for gravitational-wave parameter estimation
+  * Rahmah Mackie joined us for a 3-week summer placement helping to develop new teaching materials for our "Advanced Skills" module
