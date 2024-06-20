@@ -1,5 +1,6 @@
 # Notes
 
+* [Python scripting](notes/python_scripting.html)
 * [Projecting waveforms](notes/waveform_projection.md)
 * [Splitting up merge requests](notes/splitting_up_mrs.md)
 
