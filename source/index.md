@@ -20,6 +20,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 01/07/2024 Today I was invited to talk at the [Gravitational Waves Astrophysics Conference 2024](https://gwac2024.bnu.edu.cn/index/index/getarticle?menuid=7) on "An overview of observational results from the LVK detectors up to the fourth observing run". This was a for-the-LVK talk.
+
 * 18/06/2024 [Calibrating gravitational-wave search algorithms with conformal prediction](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.123027) was published in PRD.
 
 * 15/06/2024 Today I lead the Physics department's contributions to the RHUL Science Festival, below is the "Big Bang" explosion from my talk on "Colliding black holes and what they can tell us about quantum gravity".
