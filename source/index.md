@@ -20,6 +20,23 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 23/09/2024 This week is the LVK meeting in Barcelona!
+<figure markdown>
+  ![Barcelona LVK](img/BCN.png){ width="500" }
+  <figcaption>
+    The conference venue: The Hotel Barcalona with views over Plaça Catalunya 
+  </figcaption>
+  ![Barcelona LVK](img/Mattia_LVK_Sep24.png){ width="500" }
+  <figcaption>
+    Mattia Emma presenting recently-published work on <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240416949E/abstract">Comparing advanced-era interferometric gravitational-wave detector network configurations: sky localization and source properties </a>.
+  </figcaption>
+  ![Barcelona LVK](img/Ann_LVK_Sep24.png){ width="500" }
+  <figcaption>
+    Ann Malz presenting her work on the application of Conformal Prediction to the GravitySpy glitch classification algorithm.
+  </figcaption>
+
+</figure>
+
 * 11/09/2024 At [SPINS-2024](https://sites.google.com/view/spins-uk-2024/schedule?authuser=0) Dr Adriana Dias gave a talk on observing step changes in the periodicities of PSR B1828-11.
 
 * 01/07/2024 Today I was invited to talk at the [Gravitational Waves Astrophysics Conference 2024](https://gwac2024.bnu.edu.cn/index/index/getarticle?menuid=7) on "An overview of observational results from the LVK detectors up to the fourth observing run". This was a for-the-LVK talk.
