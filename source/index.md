@@ -69,6 +69,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 * 18/03/2024 Ronaldas' paper is [now published in Phys Rev D](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.109.062006)! 
 
+* 13/03/2024 Mattia ran a IOP-supported student conference [Physics is You!](https://areyouphysics.wixsite.com/physics-is-you)
+
 * 29/02/2024 New paper day: [Calibrating gravitational-wave search algorithms with conformal prediction](https://arxiv.org/abs/2402.19313) is on the arXiv and submitted to Phys Rev D.
 
 * 17/11/2023 New paper day: Work led by Ronaldas Macas [Revisiting GW200129 with machine learning noise mitigation: it is (still) precessing](https://arxiv.org/abs/2311.09921)
