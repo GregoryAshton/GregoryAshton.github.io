@@ -22,6 +22,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 * 13/12/2024 On the final day of a long semester I gave a talk at the [ODSL](https://origins-cluster.de/en/) AI4Science Seminar series on Calibrating gravitational-wave search algorithms with conformal prediction
 
+* 23/09/2024 Mattia's paper was published in [Phys Rev D](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.064068)
+
 * 23/09/2024 This week is the LVK meeting in Barcelona!
 <figure markdown>
   ![Barcelona LVK](img/BCN.png){ width="500" }
