@@ -20,6 +20,7 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 17/12/2024 PhD student Ann Malz posted her paper to the arXiv: [Classification uncertainty for transient gravitational-wave noise artefacts with optimised conformal prediction](https://arxiv.org/abs/2412.11801)
 * 13/12/2024 On the final day of a long semester I gave a talk at the [ODSL](https://origins-cluster.de/en/) AI4Science Seminar series on Calibrating gravitational-wave search algorithms with conformal prediction
 
 * 23/09/2024 Mattia's paper was published in [Phys Rev D](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.064068)
