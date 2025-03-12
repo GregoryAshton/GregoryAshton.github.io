@@ -20,6 +20,20 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+* 19/03/2024 RHUL PhD student Ann Malz is co-hosting the SEPNet student-led conference [Exploring the Diversity of Astronomy and Astrophysics Research within GRADnet](https://sites.google.com/view/gradnetnewfrontiers/home?authuser=0)
+* 01/02/2025 Through January and Febuary, we have been observing with RHUL's astrodom
+
+<figure markdown>
+  ![RHUL dome A](img/rhul_dome_A.jpg){ width="500" }
+  <figcaption>
+    RHUL BSc and MSc students using RHUL's astrodome to observe NGC 744 to find variable stars
+  </figcaption>
+
+  ![RHUL dome B](img/rhul_dome_B.jpg){ width="500" }
+  <figcaption>
+    The RHUL astrodome
+  </figcaption>
+</figure>
 * 17/12/2024 PhD student Ann Malz posted her paper to the arXiv: [Classification uncertainty for transient gravitational-wave noise artefacts with optimised conformal prediction](https://arxiv.org/abs/2412.11801)
 * 13/12/2024 On the final day of a long semester I gave a talk at the [ODSL](https://origins-cluster.de/en/) AI4Science Seminar series on Calibrating gravitational-wave search algorithms with conformal prediction
 
