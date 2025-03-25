@@ -2,7 +2,7 @@
 
 ## About me
 
-I am a Lecturer in Physics at [Royal Holloway, University of
+I am a Senior Lecturer in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
 I began my research career at the University of Southampton, working with Ian
 Jones and Reinhard Prix, where I completed my PhD in 2016 on [Timing variations in neutron stars:
@@ -12,10 +12,8 @@ Following this, I held a postdoc position at the Albert Einstein Institute, Hann
 I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth, working with Laura Nuttall as a Research Fellow before taking up my current post.
 My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaboration's largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
 
-* Contact: gregory.ashton@ligo.org
-* [My CV](pdfs/GregoryAshton_CV.pdf)
-* [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ)
-* [RHUL Pure portal](https://pure.royalholloway.ac.uk/en/persons/gregory-ashton)
+* **Contact:** Send me an email at [gregory.ashton@ligo.org](mailto:gregory.ashton@ligo.org)
+* **Publications:** See this [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) or my [RHUL Pure portal](https://pure.royalholloway.ac.uk/en/persons/gregory-ashton)
 
 
 ## News

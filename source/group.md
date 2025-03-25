@@ -7,7 +7,7 @@ to put you in touch.
 ## Postdoctoral researchers
 
 ![Adriana Dias](img/Adriana.jpg){ width="150" align=right }
-### Dr Adriana Dias
+### Dr Adriana Dias (2023-2024)
 I am an Research Fellow working with Greg Ashton on timing variations of radio pulsars, with a particular interest on the glitch phenomena observed in the PSR B1828-11 radio pulsar. My background is in Particle Physics, having obtained a Masters degree in 2019 and a PhD degree in 2023 at Royal Holloway, University of London. My Masters project, Calibration of a High-Pressure Time Projection Chamber, involved working on the hardware and calibration systems of a High-Pressure Time Projection Chamber, to be used in Neutrino Physics Research. I was directly involved in the calibration and construction of this detector. My PhD project, Detector Development for Particle Physics and Applications to Environmental Monitoring, involved the development of a novel device, called PlomBOX, employing a CMOS sensor and lead-sensing bacteria to assay lead in drinking water, up to the World Health Organisation’s upper limit of 10 ppb. I was involved in the development of the data acquisition and slow control tools and developed the analysis interface used by the PlomBOX.
 
 Outside research, I am passionate about making physics available to people from working class backgrounds and as such I help lead a Working Class in Physics Forum at Royal Holloway.
@@ -33,7 +33,12 @@ Besides research, I enjoy volunteering with projects promoting science and engag
 - Start date: 2023
 - Thesis title: TBC
 
-I'm currently a PhD student at Royal Holloway, under Xavier Rojas and Greg Ashton. My work is focused on an idea to further the Weber bar resonance bar concept using Low-Temperature methods and Optical Mechanics. I completed my MSci at Royal Holloway, my dissertation was on modelling many body quantum systems; this also included a research review on quantum computers and associated algorithms. My research interests focus mainly on Low-Temperature physics and Condensed matter. 
+I'm currently a PhD student at Royal Holloway, working with Xavier Rojas and
+Greg Ashton who is my second supervisor. My work is focused on an idea to
+further the Weber bar resonance bar concept using Low-Temperature superdluid
+optomechanics. I completed my MSci at Royal Holloway, my dissertation was
+on modelling many body quantum systems; this also included a research review on
+quantum computers and associated algorithms.
 
 My previous projects include
 
@@ -71,10 +76,12 @@ Below, I list students to which I have contributed to their supervision.
 - Simone Mozzon
 
 ## Summer project students
+* 2025
+    * TBC
 * 2024
-    * **Julianna Ostrovska**
-    * **Kristina (Kika) Latkoczyova** (Royal Astonomical Society Bursary)
-    * **Lucie Robbins**
+    * **Julianna Ostrovska** Joined us (again!) for anotehr 6-week RHUL summer placement. This time, Julianna investigated Simulation Based Inference approaches and compared them with likelihood-based stochastic samplers. (Co-supervised by Mattia Emma)
+    * **Kristina (Kika) Latkoczyova** (Royal Astonomical Society Bursary). Kika joined us and developed a demonstration of using a supervised ML approach for gravitational-wave search. (Co-supervised by Ann Malz)
+    * **Lucie Robbins** joined us and continued the investigation of the periodic modulations in PSR B1828-11.
 
 * 2023
     * **Julianna Ostrovska** joined us for a 6-week RHUL summer placement studying the periodic modulations of the radio pulsar B1828-11
