@@ -1,5 +1,6 @@
 # Notes
 
+* [Hints and tips on working in Latex](notes/latex.md)
 * [ImportError liblapack on MacOS](notes/mac_os_liblapack.md)
 * [Python scripting](notes/python_scripting.html)
 * [Projecting waveforms](notes/waveform_projection.md)
