@@ -17,8 +17,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 
 ## News
-
-* 19/03/2024 RHUL PhD student Ann Malz is co-hosting the SEPNet student-led conference [Exploring the Diversity of Astronomy and Astrophysics Research within GRADnet](https://sites.google.com/view/gradnetnewfrontiers/home?authuser=0)
+* 21/05/2025 RHUL is hosting [SPINS-UK 2025](https://sites.google.com/view/spins-uk2025/home)
+* 19/03/2025 RHUL PhD student Ann Malz is co-hosting the SEPNet student-led conference [Exploring the Diversity of Astronomy and Astrophysics Research within GRADnet](https://sites.google.com/view/gradnetnewfrontiers/home?authuser=0)
 * 01/02/2025 Through January and Febuary, we have been observing with RHUL's astrodom
 
 <figure markdown>
