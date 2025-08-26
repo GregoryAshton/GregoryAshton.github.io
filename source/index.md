@@ -17,6 +17,13 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 
 ## News
+* 26/08/2025 It has been a very busy summer, but today the GWTC-4.0 [introduction](https://arxiv.org/abs/2508.18080), [methods](https://arxiv.org/abs/2508.18081), and [results](https://arxiv.org/abs/2508.18082) papers landed on arXiv. Below I have added a plot I mocked up for EPO showing the component masses:
+<figure markdown>
+  ![RHUL dome A](img/GWTC-4p0-mass_mass.png){ width="500" }
+  <figcaption>
+    The mass-mass plot for all events in GWTC-4.0, showing new events added from O4a data (blue) alongside O1-O3 observations (grey). Each marker is the median of the component mass posterior distribution from either an equally mixed set of waveforms or a preferred waveform. The size of the marker corresponds to the network signal-to-noise ratio with an arbitrary scaling. Dashed lines indicate curves of constant total mass M, while dotted lines indicate curves of constant mass ratio q.
+  </figcaption>
+</figure>
 * 21/05/2025 RHUL is hosting [SPINS-UK 2025](https://sites.google.com/view/spins-uk2025/home)
 * 19/03/2025 RHUL PhD student Ann Malz is co-hosting the SEPNet student-led conference [Exploring the Diversity of Astronomy and Astrophysics Research within GRADnet](https://sites.google.com/view/gradnetnewfrontiers/home?authuser=0)
 * 01/02/2025 Through January and Febuary, we have been observing with RHUL's astrodom
