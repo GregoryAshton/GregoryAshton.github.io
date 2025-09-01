@@ -1,5 +1,6 @@
 # Notes
 
+* [Notes from a workshop I gave at QMUL](notes/QMUL.html)
 * [Hints and tips on working in Latex](notes/latex.md)
 * [ImportError liblapack on MacOS](notes/mac_os_liblapack.md)
 * [Python scripting](notes/python_scripting.html)
