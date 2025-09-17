@@ -17,6 +17,14 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 
 ## News
+* 17/09/2025 Today concludes SPINS-2025 hosted at RHUL!
+<figure markdown>
+  ![RHUL dome A](img/rhul_spins_2025.jpg){ width="500" }
+  <figcaption>
+    The attendees of the [SPINS-UK](https://sites.google.com/view/spins-uk2025/home/) conference outside of RHUL's founders building
+  </figcaption>
+</figure>
+
 * 26/08/2025 It has been a very busy summer, but today the GWTC-4.0 [introduction](https://arxiv.org/abs/2508.18080), [methods](https://arxiv.org/abs/2508.18081), and [results](https://arxiv.org/abs/2508.18082) papers landed on arXiv. Below I have added a plot I mocked up for EPO showing the component masses:
 <figure markdown>
   ![RHUL dome A](img/GWTC-4p0-mass_mass.png){ width="500" }
