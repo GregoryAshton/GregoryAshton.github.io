@@ -74,7 +74,7 @@ data, but it can also be used for more general problems.
 
 * [Printing latex elements](https://github.com/ga7g08/Scripts/blob/master/print_tex_elemnts):
   This isn't so much a project as a useful script. Often in cleaning up latex
-  docs I trawl through the document searching for occurances of say
+  docs I trawl through the document searching for occurrences of say
   `includegraphics`. This script will simply print the elements (for example
   in `\label{eqn: an equation}` the element would be `eqn: an equation`) to the
   command line. It takes multiple files and if unspecified will search for 

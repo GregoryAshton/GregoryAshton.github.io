@@ -77,12 +77,12 @@ Below, I list students to which I have contributed to their supervision.
 
 ## Summer project students
 * 2025
-    * TBC
+    * **Michael Das** took up an RHUL-supported project to compare stochastic samplers and work on measuring the rate of sub-threshold glitches.
+    * **Sam Di-Folco** (RAS bursary) first developed improved ML models for pipeline combination, showing that random forests outperformed neural networks and then worked on noise simulation.
 * 2024
-    * **Julianna Ostrovska** Joined us (again!) for anotehr 6-week RHUL summer placement. This time, Julianna investigated Simulation Based Inference approaches and compared them with likelihood-based stochastic samplers. (Co-supervised by Mattia Emma)
-    * **Kristina (Kika) Latkoczyova** (Royal Astonomical Society Bursary). Kika joined us and developed a demonstration of using a supervised ML approach for gravitational-wave search. (Co-supervised by Ann Malz)
+    * **Julianna Ostrovska** Joined us (again!) for another 6-week RHUL summer placement. This time, Julianna investigated Simulation Based Inference approaches and compared them with likelihood-based stochastic samplers. (Co-supervised by Mattia Emma)
+    * **Kristina (Kika) Latkoczyova** (Royal Astronomical Society Bursary). Kika joined us and developed a demonstration of using a supervised ML approach for gravitational-wave search. (Co-supervised by Ann Malz)
     * **Lucie Robbins** joined us and continued the investigation of the periodic modulations in PSR B1828-11.
-
 * 2023
     * **Julianna Ostrovska** joined us for a 6-week RHUL summer placement studying the periodic modulations of the radio pulsar B1828-11
     * **Tiago Fernandes De Nobrega** joined us for a 6-week RHUL summer placement on "Gravitational Wave Detectors: Exploring the Configuration to Optimise Source Parameter Interference"

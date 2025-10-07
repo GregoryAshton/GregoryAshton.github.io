@@ -6,7 +6,7 @@ You can find all publications to which I have made significant contributions in 
 
 ## Workshops
 
-* June 2023 [A Taste of Physics and Astronomy - RH23016](https://www.london.ac.uk/a-taste-physics-and-astronomy-rh23016/apply). Lead organiser: 30 A-level students given a taste of University life, including lectures, admission discussions, and acitivities across the department.
+* June 2023 [A Taste of Physics and Astronomy - RH23016](https://www.london.ac.uk/a-taste-physics-and-astronomy-rh23016/apply). Lead organiser: 30 A-level students given a taste of University life, including lectures, admission discussions, and activities across the department.
 
 * May 2023 [GWOSC ODW #6](https://www.gw-openscience.org/odw/odw2023/). Co-organiser: a hybrid workshop with 2000+ people enrolled, 22 study local study hubs, and 300 active participants. I ran a local study up in London (UK) at the Institute of Physics and the Royal Astronomical Society.
 
