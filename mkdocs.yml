@@ -1,5 +1,5 @@
 site_name: Gregory Ashton
-site_url: http://www.GregoryAshton.github.io
+site_url: https://www.GregoryAshton.github.io
 site_author: Gregory Ashton
 site_dir: docs/
 docs_dir: source/
@@ -11,7 +11,7 @@ nav:
     - Projects: projects.md
     - Help: help.md
     - Notes: notes.md
-theme: material
+theme: cinder
 markdown_extensions:
     - attr_list
     - pymdownx.highlight
