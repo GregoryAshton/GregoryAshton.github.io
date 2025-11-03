@@ -18,6 +18,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ## News
 
+### 2025 
+
 * 03/11/2025 Today we had a visit from Hampton High School for a collaborative project developing workshops connect to the art exhibition [Shadowscapes: Heaney, JMW Turner and Quantum](https://www.orleanshousegallery.org/events/shadowscapes-heaney-jmw-turner-and-quantum/) being hosted at the Orleans House Gallery. The twelve students, all enrolled in art GCSE had a varied interest/knowledge of Physics, but Prof. Andrew Casey did a great job of introducing them to some of the key evidence used in the development of Quantum Mechanics, hopefully providing some creative input to their project.
 
 * 17/09/2025 Today concludes SPINS-2025 hosted at RHUL!
@@ -94,6 +96,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 * 25/04/2025  New paper day: Work led by PhD strudent Mattia Emma on [Comparing advanced-era interferometric gravitational-wave detector network configurations: sky localization and source properties](https://arxiv.org/abs/2404.16949). We used a lot of CPU hours on this thanks to Oracle for Research for their support. This work also had contributions from Tiago Fernandes de Nobrega, an undergraduate who began the work on low-frequency analyses last year. 
 
+### 2024
+
 * 05/04/2024 This week, I am visiting the [IJCLab](https://www.ijclab.in2p3.fr/en/home/) and gave the [invited colloqium](https://indico.ijclab.in2p3.fr/event/10523/)
 
 <figure markdown>
@@ -107,6 +111,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 13/03/2024 Mattia ran a IOP-supported student conference [Physics is You!](https://areyouphysics.wixsite.com/physics-is-you)
 
 * 29/02/2024 New paper day: [Calibrating gravitational-wave search algorithms with conformal prediction](https://arxiv.org/abs/2402.19313) is on the arXiv and submitted to Phys Rev D.
+
+### 2023
 
 * 17/11/2023 New paper day: Work led by Ronaldas Macas [Revisiting GW200129 with machine learning noise mitigation: it is (still) precessing](https://arxiv.org/abs/2311.09921)
 
@@ -134,6 +140,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 05/Apr/2023 Double new paper day! Jack Heinzel submitted [Inferring the Astrophysical Population of Gravitational Wave Sources in the Presence of Noise Transients](https://arxiv.org/abs/2304.02665) to MNRAS for review while Rowina Nathan submitted [Improving pulsar-timing solutions through dynamic pulse fitting](https://arxiv.org/abs/2304.02793) also to MNRAS for review. Both of these are excellent PhD students I have had the good forture to help with their project.
 
 * 06/Feb/2023 My paper [Gaussian Processes for Glitch-robust Gravitational-wave Astronomy](https://academic.oup.com/mnras/article-abstract/520/2/2983/7028786) was published in MNRAS.
+
+### 2022
 
 * 06/Dec/2022 I was invited to speak on [Key results from ground-based gravitational-wave detectors](https://www.gwpaw2022.org/program.html) at the GWPAW 2022 meeting.
 
@@ -163,6 +171,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 * 06/Apr/2022 I was a judge for the best Student Prize at [BritGrav 2022](https://www.gla.ac.uk/events/conferences/britgrav22/). The conference consisted of two days of talks from students/postdocs and served as a great display of the exciting science done by scientists in the UK. The quality of talks was fantastic and it was hard to pick between them, but in the end Lucy Thomas won the best talk prize with Marion Cromb and Elsa Teixeira as runners up. Congratulations to them all.
 
 * 01/Feb/2022 I am an Award Lead for the Alan Turing Network [Development Award](https://www.turing.ac.uk/news/24-uk-universities-receive-first-ever-turing-network-development-awards). I'm looking forward to using this to develop some interdisciplinary projects.
+
+### 2021
 
 * 01/Dec/2021 Today I joined the SEPNet workshop [Equality, Diversity & Inclusion – Revisiting the leaky pipeline – short-term contracts and career planning](https://www.sepnet.ac.uk/he-stem-equality-diversity-inclusion-revisiting-the-leaky-pipeline-short-term-contracts-and-career-planning/). You can find my slides [here](pdfs/SEPNet-EDI-GA.pdf).
 * 18/Nov/2021 I presented at the Banff IRS workshop [Detection and Analysis of Gravitational Waves in the era of Multi-Messenger Astronomy: From Mathematical Modelling to Machine Learning](http://www.birs.ca/events/2021/5-day-workshops/21w5066/schedule). You can find a recording [here](http://www.birs.ca/events/2021/5-day-workshops/21w5066/videos/watch/202111180950-Ashton.html) and my slides [here](pdfs/GregAshton_BIRF2021.pdf).  
@@ -208,30 +218,27 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 * 07/Jan/2021 I gave a talk titled ["The deepening mystery of the Vela radio-pulsar glitch"](pdfs/Bar-Ilan.pdf) at the Department of Physics, Bar-Ilan University on our recent Vela paper.
 
+### 2020
 * 04/Dec/2020 I gave an improptu talk to the University of Southampton's [astrophysics group](http://www.astro.soton.ac.uk/) on our recent Vela paper.
 
 * 16/Nov/2020 New paper ["Flickering of the Vela pulsar during its 2016 glitch"](https://ui.adsabs.harvard.edu/abs/2020arXiv201107927A/abstract) on the arXiv.
+
+<figure>
+    </a>
+    <a href="https://physicsworld.com/a/pulsar-glitch-suggests-superfluid-layers-lie-within-neutron-star/">
+    <img src="https://physicsworld.com/wp-content/uploads/2019/08/Pulsar-635x449.jpg" alt="Vela" style="height:200px;">
+    </a>
+</figure>
+
 
 * 10/Nov/2020 I was awarded the [2020 USERN Physical and Chemical Sciences prize](https://en.wikipedia.org/wiki/USERN_Prize#Laureates_2020).
 
 * 04/Nov/2020 I gave a presentation to Royal Holloway's Physics group ["Turning Wiggles into Science"](https://docs.google.com/presentation/d/11MZHN7b9J_f_HiNVovemcG2IuKSGWXeKzdRh7Kv54v0/edit?usp=sharing)
 
-## Gallery
-<figure>
-    <a href="https://www.ligo.org/science/Publication-GW190425/">
-    <img src="https://www.ligo.org/science/Publication-GW190425/images/Mtot_DNS.png" alt="GW190425" style="height:200px;">
-    </a>
-    <a href="https://physicsworld.com/a/pulsar-glitch-suggests-superfluid-layers-lie-within-neutron-star/">
-    <img src="https://physicsworld.com/wp-content/uploads/2019/08/Pulsar-635x449.jpg" alt="Vela" style="height:200px;">
-    </a>
-    <a href=https://www.smh.com.au/national/patient-astronomers-crack-the-code-of-super-dense-spinning-stars-20190812-p52gbm.html>
-    <img src="https://www.ozgrav.org/uploads/9/8/0/0/98009268/ozgrav-paul-lasky-and-greg-ashton-7653_orig.jpg" style="height:350px;">
-    </a>
-    <a href=https://astronomycommunity.nature.com/posts/52167-understanding-the-rotational-evolution-of-the-vela-pulsar-during-the-2016-glitch>
-    <img src="https://astronomycommunity.nature.com/cdn-cgi/image/quality=45/https://images.zapnito.com/uploads/de4bef17409e3ef69ca266d7f4849150/71b5106b-416a-4698-9527-6cacdd640bf3.jpeg" style="height:300px;">
-    </a>
-    <a href=https://git.ligo.org/lscsoft/bilby>
-    <img src="https://s3.amazonaws.com/zapnito/uploads/3a1ef7c69fe9f78897c748117f493d9e/ae24dde3-4753-45ab-bee0-ed68a7172964.jpeg" style="height:300px;">
-    </a>
+<figure markdown>
+  ![A radio telescope](https://astronomycommunity.nature.com/cdn-cgi/image/quality=45/https://images.zapnito.com/uploads/de4bef17409e3ef69ca266d7f4849150/71b5106b-416a-4698-9527-6cacdd640bf3.jpeg){ width="500" }
+  <figcaption>
+    The University of Tasmania radio telescope at Mount Pleasant. See this <a href="https://communities.springernature.com/posts/understanding-the-rotational-evolution-of-the-vela-pulsar-during-the-2016-glitch"> article </a>for more information.
+  </figcaption>
 </figure>
 
