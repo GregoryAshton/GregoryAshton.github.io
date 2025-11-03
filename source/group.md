@@ -1,13 +1,17 @@
 # Group
 
-On this page, I list students that I have supervised and their projects. If you
-would like to contact a student, please reach out and I would be more than happy
-to put you in touch.
+On this page, I list people that that I work with. I've tried to provide contact details and links to their websites, but if something is missing and you would like to contact someone, please reach out and I would be more than happy to put you in touch.
 
 ## Postdoctoral researchers
 
-![Adriana Dias](img/Adriana.jpg){ width="150" align=right }
+### Dr Sai Chaitanya Susarla (2025-)
+![Sai Chaitanya Susarla](img/Sai.jpg){ width="150" align=right }
+I am a research fellow working with Prof. Greg Ashton on hierarchical profile domain timing of radio pulsars. My background is in using pulsars as tools to study interstellar medium. I graduated from a Masters at the Indian Institute of Science Education and Research, Thiruvananthapuram (IISER TVM). I then went on to pursue my PhD at the University of Galway working with Prof. Aaron Golden and Prof. Evan Keane. My PhD thesis title is "Examining ecliptic pulsars using the LOFAR telescope" focussing on studying solar wind and interstellar medium using pulsar timing methods of ecliptic pulsars. In addition to this, I am a member of the International Pulsar Timing Array (IPTA) aiming to discover nano-hertz Gravitational waves. I was instrumental in leading observations on several LOFAR stations to contribute to the IPTA efforts.
+
+Aside from academics, I am passionate about promoting astronomy among young people. I have taken part in outreach activities, including representing radio astronomy at a Trinity College Dublin Space Society event held at the Irish LOFAR Observatory. I have also contributed to initiatives aimed at raising scientific awareness among underprivileged children in India. Outside of work, I enjoy travelling, playing badminton, and watching cricket.
+
 ### Dr Adriana Dias (2023-2024)
+![Adriana Dias](img/Adriana.jpg){ width="150" align=right }
 I am an Research Fellow working with Greg Ashton on timing variations of radio pulsars, with a particular interest on the glitch phenomena observed in the PSR B1828-11 radio pulsar. My background is in Particle Physics, having obtained a Masters degree in 2019 and a PhD degree in 2023 at Royal Holloway, University of London. My Masters project, Calibration of a High-Pressure Time Projection Chamber, involved working on the hardware and calibration systems of a High-Pressure Time Projection Chamber, to be used in Neutrino Physics Research. I was directly involved in the calibration and construction of this detector. My PhD project, Detector Development for Particle Physics and Applications to Environmental Monitoring, involved the development of a novel device, called PlomBOX, employing a CMOS sensor and lead-sensing bacteria to assay lead in drinking water, up to the World Health Organisation’s upper limit of 10 ppb. I was involved in the development of the data acquisition and slow control tools and developed the analysis interface used by the PlomBOX.
 
 Outside research, I am passionate about making physics available to people from working class backgrounds and as such I help lead a Working Class in Physics Forum at Royal Holloway.
@@ -16,8 +20,9 @@ I am an avid gamer, love to read and enjoy nature walks.
 
 ## PhD students supervision
 
-![Ann Malz](img/Ann.jpg){ width="150" align=right }
 ### Ann Malz 
+![Ann Malz](img/Ann.jpg){ width="150" align=right }
+
 - Start date: 2023
 - Thesis title: TBC
 
@@ -28,8 +33,9 @@ My background is in theoretical physics and astrophysics, with a Masters degree 
 
 Besides research, I enjoy volunteering with projects promoting science and engaging young people in STEM, and have been involved in various projects with the Swedish Federation of Young Scientists, such as organising Rays Research Academy for Young Scientists. In my free time I also enjoy a variety of outdoor activities as well as good literature.
 
-![Sean Hibbit](img/Sean.png){ width="150" align=right }
 ### Sean Hibbit
+![Sean Hibbit](img/Sean.png){ width="150" align=right }
+
 - Start date: 2023
 - Thesis title: TBC
 
@@ -46,8 +52,9 @@ My previous projects include
 - Designing and building a successful low-temperature experiment, currently used to introduce undergraduate to low temperature physics. This was under L. V. Levitin.
 - Designing and creating software in python to manage a vapor deposition nano-fabrication tool for Phil Meeson.
 
-![Mattia Emma](img/Mattia.jpeg){ width="150" align=right }
 ### Mattia Emma
+![Mattia Emma](img/Mattia.jpeg){ width="150" align=right }
+
 - Start date: 2022
 - Thesis title: TBC
 
@@ -58,8 +65,9 @@ Following my MSc in Astrophysics in Potsdam, where I focused on Numerical Relati
 Beyond the academic realm, I am passionately committed to fostering equal access to education globally. As a Cumberland Lodge Fellow in the 2023-2025 cohort, I actively participate in initiatives aimed at raising awareness of societal issues and trying to find solutions through dialogue. In this pursuit, in 2019 I founded a non-governmental organization dedicated to combating educational disparities, with a specific focus on enabling girls from underprivileged backgrounds to access secondary education. Additionally, I am a basketball player for the University team and my interests extend to the realms of African literature, history, and cooperative endeavors.
 
 
-![Nikhil Sarin](img/Nikhil.jpg){ width="150" align=right }
 ### Nikhil Sarin
+![Nikhil Sarin](img/Nikhil.jpg){ width="150" align=right }
+
 - Start date: 2018
 - Graduated: 10/2021
 - Thesis title: "The observational consequences of neutron star postmerger remnants"
