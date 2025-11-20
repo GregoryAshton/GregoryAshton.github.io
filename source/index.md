@@ -20,6 +20,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2025 
 
+* 13/11/2025 The LVK hosted a webinar to cover the [GWTC 4.0 Introduction and Data Release](https://www.youtube.com/watch?v=fFKD-6parxY). It was great to be part of this project and nice to give the introduction to the webinar.
+
 * 03/11/2025 Today we had a visit from Hampton High School for a collaborative project developing workshops connect to the art exhibition [Shadowscapes: Heaney, JMW Turner and Quantum](https://www.orleanshousegallery.org/events/shadowscapes-heaney-jmw-turner-and-quantum/) being hosted at the Orleans House Gallery. The twelve students, all enrolled in art GCSE had a varied interest/knowledge of Physics, but Prof. Andrew Casey did a great job of introducing them to some of the key evidence used in the development of Quantum Mechanics, hopefully providing some creative input to their project.
 
 * 17/09/2025 Today concludes SPINS-2025 hosted at RHUL!
