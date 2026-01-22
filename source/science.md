@@ -4,9 +4,15 @@
 
 You can find all publications to which I have made significant contributions in this [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ).
 
-## Workshops
+## Conferences/Workshops
 
-* June 2023 [A Taste of Physics and Astronomy - RH23016](https://www.london.ac.uk/a-taste-physics-and-astronomy-rh23016/apply). Lead organiser: 30 A-level students given a taste of University life, including lectures, admission discussions, and activities across the department.
+* September 2025 [SPINS-UK](https://sites.google.com/view/spins-uk2025/home/). I was on the organising committee, though it should be said the excellent Vanessa Graber and Adriana Dias did most of the work. 
+
+* June 2025 [A Taste of Physics and Astronomy](https://www.royalholloway.ac.uk/research-and-education/departments-and-schools/physics/physics-events/events-archive/2025-06-25-a-taste-of-physics-and-astronomy/). Back again for a repeat of our taster day. This time we changed the format up and got the students more involved in the activities.
+
+* January 2025 [Gravitational Wave Analysis in the Era of Machine Learning](https://ras.ac.uk/events-and-meetings/ras-meetings/gravitational-wave-analysis-era-machine-learning)
+
+* June 2023 [A Taste of Physics and Astronomy](https://www.london.ac.uk/a-taste-physics-and-astronomy-rh23016/apply). Lead organiser: 30 A-level students given a taste of University life, including lectures, admission discussions, and activities across the department.
 
 * May 2023 [GWOSC ODW #6](https://www.gw-openscience.org/odw/odw2023/). Co-organiser: a hybrid workshop with 2000+ people enrolled, 22 study local study hubs, and 300 active participants. I ran a local study up in London (UK) at the Institute of Physics and the Royal Astronomical Society.
 

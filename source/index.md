@@ -2,14 +2,14 @@
 
 ## About me
 
-I am a Senior Lecturer in Physics at [Royal Holloway, University of
+I am an Associate Professor of Mathematical Sciences at the [University of Southampton](https://www.southampton.ac.uk/about/faculties-schools-departments/school-of-mathematical-sciences). I joined the [Gravity group](https://www.southampton.ac.uk/research/groups/gravity) here in 2026 after 5 years working my way from Lecturer to Professor in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
 I began my research career at the University of Southampton, working with Ian
 Jones and Reinhard Prix, where I completed my PhD in 2016 on [Timing variations in neutron stars:
 models, inference and their implications for gravitational
 waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf).
 Following this, I held a postdoc position at the Albert Einstein Institute, Hannover, before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
-I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth, working with Laura Nuttall as a Research Fellow before taking up my current post.
+I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth, working with Laura Nuttall as a Research Fellow before moving to Royal Holloway.
 My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaboration's largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
 
 * **Contact:** Send me an email at [gregory.ashton@ligo.org](mailto:gregory.ashton@ligo.org)
@@ -17,6 +17,14 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 
 ## News
+
+### 2026
+
+- **22/01/2025**: Final-year student Mattia put his latest work on the arXiv today [RNLE: Residual neural likelihood estimation and its application to gravitational-wave astronomy](https://arxiv.org/abs/2601.13857). This is a really nice body of work that explores a different way to use Simulation Based Inference with a focus on learning the likelihood of glitchy data.
+
+- **15/01/2025:** I am visiting Nottingham today for the inaugural [GW:UK](https://indico.global/event/16345/) meeting and a celeberation of 10-years of gravitational waves.
+
+- **05/01/2025:** Today I started a new position as an Associate Professor of Mathematical Sciences at the University of Southampton!
 
 ### 2025 
 
