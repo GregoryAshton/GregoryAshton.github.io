@@ -1,5 +1,7 @@
 ## Autobib
 
+**Note**: After writing this post, I then got carried away turned it into a python package: https://github.com/GregoryAshton/easybib (I had to rename it because there is already an autobib). 
+
 This program will search for `bibtex` keys in all `.tex` files for a given directory.
 The code assumes the `.tex` files are using either [INSPIREs](https://inspirehep.net/) keys or [NASA/ADS](https://ui.adsabs.harvard.edu/) (i.e., the keys given by default by these websites).
 It will then lookup bibtex entries using the source key and write it to a file.

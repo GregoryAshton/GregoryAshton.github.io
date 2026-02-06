@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Gregory Ashton">
+    <link rel="canonical" href="https://www.GregoryAshton.github.io/notes/autobib/">
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+
+    
+    <title>Autobib - Gregory Ashton</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+
+            
+              <a class="navbar-brand" href="../..">Gregory Ashton</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../science/">Science</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../group/">Group</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../projects/">Projects</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../help/">Help</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../">Notes</a>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GregoryAshton/GregoryAshton.github.io/edit/master/docs/notes/autobib.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#autobib">Autobib</a></li>
+    </ul>
+</div></div>
+        <div class="col-md-9" role="main">
+
+<h2 id="autobib">Autobib</h2>
+<p><strong>Note</strong>: After writing this post, I then got carried away turned it into a python package: https://github.com/GregoryAshton/easybib (I had to rename it because there is already an autobib). </p>
+<p>This program will search for <code>bibtex</code> keys in all <code>.tex</code> files for a given directory.
+The code assumes the <code>.tex</code> files are using either <a href="https://inspirehep.net/">INSPIREs</a> keys or <a href="https://ui.adsabs.harvard.edu/">NASA/ADS</a> (i.e., the keys given by default by these websites).
+It will then lookup bibtex entries using the source key and write it to a file.
+Download the file and save as <code>autobib.py</code> then check </p>
+<p><div class="highlight"><pre><span></span><code>$ python autobib.py --help
+</code></pre></div>
+for options on how to use it.</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/usr/bin/env python3</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+
+
+<span class="k">def</span> <span class="nf">extract_cite_keys</span><span class="p">(</span><span class="n">tex_file</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Extract all citation keys from a LaTeX file.</span>
+
+<span class="sd">    Returns a tuple of (keys, warnings) where keys is a list of valid citation keys</span>
+<span class="sd">    and warnings is a list of warning messages for invalid keys.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">tex_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="c1"># Match all citation commands: \cite{}, \citep{}, \citet{}, \citealt{}, \citealp{},</span>
+    <span class="c1"># \citeauthor{}, \citeyear{}, \Citep{}, \Citet{}, etc.</span>
+    <span class="c1"># Also handles optional arguments like \citep[e.g.][]{key}</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;</span><span class="se">\\</span><span class="s2">[Cc]ite[a-zA-Z]*(?:\[[^\]]*\])*\{([^}]+)\}&quot;</span>
+    <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+    <span class="c1"># Split multiple keys in single cite command</span>
+    <span class="n">keys</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">warnings</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">match</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">):</span>
+            <span class="n">key</span> <span class="o">=</span> <span class="n">key</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">key</span><span class="p">:</span>
+                <span class="n">warnings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">tex_file</span><span class="si">}</span><span class="s2">: Empty citation key found&quot;</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="s2">&quot;:&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">key</span><span class="p">:</span>
+                <span class="n">warnings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">tex_file</span><span class="si">}</span><span class="s2">: Skipping key &#39;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&#39; (not an INSPIRE/ADS key)&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">keys</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">keys</span><span class="p">,</span> <span class="n">warnings</span>
+
+
+<span class="k">def</span> <span class="nf">get_inspire_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX directly from INSPIRE for a given INSPIRE key.&quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://inspirehep.net/api/literature?q=texkeys:</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/x-bibtex&quot;</span><span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">get_ads_info_from_inspire</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch ADS bibcode and arXiv ID from INSPIRE for a given INSPIRE key.</span>
+
+<span class="sd">    Returns a tuple of (ads_bibcode, arxiv_id), either may be None.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Use texkeys field to avoid colon being interpreted as field operator</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://inspirehep.net/api/literature?q=texkeys:</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+    <span class="n">ads_bibcode</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">arxiv_id</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">hits</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;hits&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;hits&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">hits</span><span class="p">:</span>
+            <span class="n">metadata</span> <span class="o">=</span> <span class="n">hits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;metadata&quot;</span><span class="p">,</span> <span class="p">{})</span>
+
+            <span class="c1"># Try to get ADS bibcode</span>
+            <span class="n">external_ids</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;external_system_identifiers&quot;</span><span class="p">,</span> <span class="p">[])</span>
+            <span class="k">for</span> <span class="n">ext_id</span> <span class="ow">in</span> <span class="n">external_ids</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">ext_id</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;schema&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;ADS&quot;</span><span class="p">:</span>
+                    <span class="n">ads_bibcode</span> <span class="o">=</span> <span class="n">ext_id</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+                    <span class="k">break</span>
+
+            <span class="c1"># Get arXiv ID as fallback</span>
+            <span class="n">arxiv_eprints</span> <span class="o">=</span> <span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;arxiv_eprints&quot;</span><span class="p">,</span> <span class="p">[])</span>
+            <span class="k">if</span> <span class="n">arxiv_eprints</span><span class="p">:</span>
+                <span class="n">arxiv_id</span> <span class="o">=</span> <span class="n">arxiv_eprints</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">arxiv_id</span>
+
+
+<span class="k">def</span> <span class="nf">search_ads_by_arxiv</span><span class="p">(</span><span class="n">arxiv_id</span><span class="p">,</span> <span class="n">api_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Search ADS for a paper by arXiv ID and return its bibcode.&quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.adsabs.harvard.edu/v1/search/query&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">api_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;q&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;arXiv:</span><span class="si">{</span><span class="n">arxiv_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;fl&quot;</span><span class="p">:</span> <span class="s2">&quot;bibcode&quot;</span><span class="p">}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">docs</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;response&quot;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;docs&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">docs</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">docs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;bibcode&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">get_ads_bibtex</span><span class="p">(</span><span class="n">bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX from ADS for a given bibcode.&quot;&quot;&quot;</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api.adsabs.harvard.edu/v1/export/bibtex&quot;</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">api_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;bibcode&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">bibcode</span><span class="p">]}</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+        <span class="n">export</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;export&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">export</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">export</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;No records&quot;</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">export</span>
+    <span class="k">return</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">extract_existing_bib_keys</span><span class="p">(</span><span class="n">bib_file</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Extract citation keys from an existing BibTeX file.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">bib_file</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="k">return</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">bib_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="c1"># Match @type{key,</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;@\w+\s*\{\s*([^,\s]+)\s*,&quot;</span>
+    <span class="k">return</span> <span class="nb">set</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">content</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">replace_bibtex_key</span><span class="p">(</span><span class="n">bibtex</span><span class="p">,</span> <span class="n">new_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Replace the citation key in a BibTeX entry with a new key.&quot;&quot;&quot;</span>
+    <span class="c1"># Match the entry type and key: @article{old_key,</span>
+    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;(@\w+\s*\{)\s*([^,\s]+)\s*,&quot;</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="sa">rf</span><span class="s2">&quot;\1</span><span class="si">{</span><span class="n">new_key</span><span class="si">}</span><span class="s2">,&quot;</span><span class="p">,</span> <span class="n">bibtex</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">truncate_authors</span><span class="p">(</span><span class="n">bibtex</span><span class="p">,</span> <span class="n">max_authors</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Truncate the author list in a BibTeX entry to max_authors.</span>
+
+<span class="sd">    If there are more than max_authors, keep the first max_authors and add &quot;and others&quot;.</span>
+<span class="sd">    If max_authors is None or 0, no truncation is performed.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">max_authors</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span>
+
+    <span class="c1"># Match the author field (handles multiline author fields)</span>
+    <span class="n">author_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;(\s*author\s*=\s*\{)(.+?)(\},?\s*\n)&quot;</span>
+    <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">author_pattern</span><span class="p">,</span> <span class="n">bibtex</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">match</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span>
+
+    <span class="n">prefix</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">authors_str</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">suffix</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+    <span class="c1"># Split authors by &quot; and &quot; (BibTeX standard separator)</span>
+    <span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\s+and\s+&quot;</span><span class="p">,</span> <span class="n">authors_str</span><span class="p">)]</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">authors</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">max_authors</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span>
+
+    <span class="c1"># Keep first max_authors and add &quot;others&quot;</span>
+    <span class="n">truncated_authors</span> <span class="o">=</span> <span class="n">authors</span><span class="p">[:</span><span class="n">max_authors</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&quot;others&quot;</span><span class="p">]</span>
+    <span class="n">new_authors_str</span> <span class="o">=</span> <span class="s2">&quot; and &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">truncated_authors</span><span class="p">)</span>
+
+    <span class="c1"># Replace the author field</span>
+    <span class="n">new_author_field</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">prefix</span><span class="si">}{</span><span class="n">new_authors_str</span><span class="si">}{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="k">return</span> <span class="n">bibtex</span><span class="p">[:</span> <span class="n">match</span><span class="o">.</span><span class="n">start</span><span class="p">()]</span> <span class="o">+</span> <span class="n">new_author_field</span> <span class="o">+</span> <span class="n">bibtex</span><span class="p">[</span><span class="n">match</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="p">:]</span>
+
+
+<span class="k">def</span> <span class="nf">is_ads_bibcode</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if a key looks like an ADS bibcode (e.g., 2016PhRvL.116f1102A).&quot;&quot;&quot;</span>
+    <span class="c1"># ADS bibcodes are typically 19 characters: 4-digit year + journal code + volume + page + author initial</span>
+    <span class="c1"># Pattern: YYYYJJJJJVVVVMPPPPA where Y=year, J=journal, V=volume, M=section, P=page, A=author</span>
+    <span class="n">ads_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;^\d</span><span class="si">{4}</span><span class="s2">[A-Za-z&amp;.]+\..*[A-Z]$&quot;</span>
+    <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">ads_pattern</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">15</span>
+
+
+<span class="k">def</span> <span class="nf">is_inspire_key</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check if a key looks like an INSPIRE texkey (e.g., Author:2020abc).&quot;&quot;&quot;</span>
+    <span class="c1"># INSPIRE keys are typically Author:YYYYxxx where xxx is 2-3 lowercase letters</span>
+    <span class="n">inspire_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;^[A-Za-z][A-Za-z0-9-]+:\d</span><span class="si">{4}</span><span class="s2">[a-z]{2,3}$&quot;</span>
+    <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">inspire_pattern</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">fetch_bibtex_ads_preferred</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX preferring ADS, with INSPIRE as fallback.&quot;&quot;&quot;</span>
+    <span class="c1"># First check if it&#39;s already an ADS bibcode</span>
+    <span class="k">if</span> <span class="n">is_ads_bibcode</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;ADS (direct)&quot;</span>
+
+    <span class="c1"># Try to get ADS bibcode or arXiv ID from INSPIRE</span>
+    <span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">arxiv_id</span> <span class="o">=</span> <span class="n">get_ads_info_from_inspire</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+
+    <span class="c1"># Try ADS bibcode first</span>
+    <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS via INSPIRE (</span><span class="si">{</span><span class="n">ads_bibcode</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="c1"># Fall back to arXiv ID search on ADS</span>
+    <span class="k">if</span> <span class="n">arxiv_id</span><span class="p">:</span>
+        <span class="n">ads_bibcode</span> <span class="o">=</span> <span class="n">search_ads_by_arxiv</span><span class="p">(</span><span class="n">arxiv_id</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+            <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS via arXiv (</span><span class="si">{</span><span class="n">arxiv_id</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="c1"># Try the key directly as ADS bibcode</span>
+    <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;ADS (direct fallback)&quot;</span>
+
+    <span class="c1"># Final fallback: fetch BibTeX directly from INSPIRE</span>
+    <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_inspire_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;INSPIRE (fallback)&quot;</span>
+
+    <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">fetch_bibtex_inspire_preferred</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX preferring INSPIRE, with ADS as fallback.&quot;&quot;&quot;</span>
+    <span class="c1"># Try INSPIRE first</span>
+    <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_inspire_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;INSPIRE&quot;</span>
+
+    <span class="c1"># Fall back to ADS</span>
+    <span class="k">if</span> <span class="n">is_ads_bibcode</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;ADS (fallback, direct)&quot;</span>
+
+    <span class="c1"># Try to get ADS bibcode from INSPIRE metadata</span>
+    <span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">arxiv_id</span> <span class="o">=</span> <span class="n">get_ads_info_from_inspire</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS (fallback, via INSPIRE)&quot;</span>
+
+    <span class="k">if</span> <span class="n">arxiv_id</span><span class="p">:</span>
+        <span class="n">ads_bibcode</span> <span class="o">=</span> <span class="n">search_ads_by_arxiv</span><span class="p">(</span><span class="n">arxiv_id</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+            <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS (fallback, via arXiv)&quot;</span>
+
+    <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">fetch_bibtex_auto</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX using the source that matches the key format.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">is_ads_bibcode</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+        <span class="c1"># Key looks like ADS bibcode, prefer ADS</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;ADS (auto)&quot;</span>
+        <span class="c1"># Fallback to INSPIRE</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_inspire_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;INSPIRE (fallback)&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Key looks like INSPIRE key, prefer INSPIRE</span>
+        <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_inspire_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="s2">&quot;INSPIRE (auto)&quot;</span>
+        <span class="c1"># Fallback to ADS via INSPIRE cross-reference</span>
+        <span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">arxiv_id</span> <span class="o">=</span> <span class="n">get_ads_info_from_inspire</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+            <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS (fallback, via INSPIRE)&quot;</span>
+        <span class="k">if</span> <span class="n">arxiv_id</span><span class="p">:</span>
+            <span class="n">ads_bibcode</span> <span class="o">=</span> <span class="n">search_ads_by_arxiv</span><span class="p">(</span><span class="n">arxiv_id</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ads_bibcode</span><span class="p">:</span>
+                <span class="n">bibtex</span> <span class="o">=</span> <span class="n">get_ads_bibtex</span><span class="p">(</span><span class="n">ads_bibcode</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">bibtex</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;ADS (fallback, via arXiv)&quot;</span>
+
+    <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>
+
+
+<span class="k">def</span> <span class="nf">fetch_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s2">&quot;ads&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Fetch BibTeX using the specified source preference.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">source</span> <span class="o">==</span> <span class="s2">&quot;ads&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fetch_bibtex_ads_preferred</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">source</span> <span class="o">==</span> <span class="s2">&quot;inspire&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fetch_bibtex_inspire_preferred</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">source</span> <span class="o">==</span> <span class="s2">&quot;auto&quot;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fetch_bibtex_auto</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">fetch_bibtex_ads_preferred</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="kn">import</span> <span class="nn">os</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Extract citations and download BibTeX from NASA/ADS&quot;</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;directory&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Directory containing LaTeX files&quot;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;-o&quot;</span><span class="p">,</span> <span class="s2">&quot;--output&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;references.bib&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Output BibTeX file&quot;</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;-a&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--max-authors&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Maximum number of authors before truncating with &#39;and others&#39; (default: 3, use 0 for no limit)&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;-l&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--list-keys&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;List citation keys found in LaTeX files and exit (no lookup)&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--fresh&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Start from scratch, ignoring existing output file&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;-s&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;--source&quot;</span><span class="p">,</span>
+        <span class="n">choices</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;ads&quot;</span><span class="p">,</span> <span class="s2">&quot;inspire&quot;</span><span class="p">,</span> <span class="s2">&quot;auto&quot;</span><span class="p">],</span>
+        <span class="n">default</span><span class="o">=</span><span class="s2">&quot;ads&quot;</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Preferred BibTeX source: &#39;ads&#39; (default), &#39;inspire&#39;, or &#39;auto&#39; (based on key format)&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="c1"># Collect all citation keys</span>
+    <span class="n">tex_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">directory</span><span class="p">)</span>
+    <span class="n">all_keys</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="n">all_warnings</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">tex_file</span> <span class="ow">in</span> <span class="n">tex_dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;**/*.tex&quot;</span><span class="p">):</span>
+        <span class="n">keys</span><span class="p">,</span> <span class="n">warnings</span> <span class="o">=</span> <span class="n">extract_cite_keys</span><span class="p">(</span><span class="n">tex_file</span><span class="p">)</span>
+        <span class="n">all_keys</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>
+        <span class="n">all_warnings</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">warnings</span><span class="p">)</span>
+
+    <span class="c1"># Print warnings for invalid keys</span>
+    <span class="k">if</span> <span class="n">all_warnings</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Warnings:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">warning</span> <span class="ow">in</span> <span class="n">all_warnings</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">warning</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_keys</span><span class="p">)</span><span class="si">}</span><span class="s2"> unique citation keys&quot;</span><span class="p">)</span>
+
+    <span class="c1"># If --list-keys, print keys and exit</span>
+    <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">list_keys</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">all_keys</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="c1"># Check for ADS API key (not required if using --source inspire)</span>
+    <span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;ADS_API_KEY&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">api_key</span> <span class="ow">and</span> <span class="n">args</span><span class="o">.</span><span class="n">source</span> <span class="o">!=</span> <span class="s2">&quot;inspire&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: ADS_API_KEY environment variable not set&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Get your API key from: https://ui.adsabs.harvard.edu/user/settings/token&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;(Or use --source inspire to fetch from INSPIRE without an ADS key)&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span>
+
+    <span class="c1"># Check for existing bib file and determine which keys to fetch</span>
+    <span class="n">output_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">)</span>
+    <span class="n">existing_content</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">args</span><span class="o">.</span><span class="n">fresh</span> <span class="ow">and</span> <span class="n">output_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+        <span class="n">existing_keys</span> <span class="o">=</span> <span class="n">extract_existing_bib_keys</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+        <span class="n">keys_to_fetch</span> <span class="o">=</span> <span class="n">all_keys</span> <span class="o">-</span> <span class="n">existing_keys</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">existing_content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">existing_keys</span><span class="p">)</span><span class="si">}</span><span class="s2"> existing entries in </span><span class="si">{</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fetching </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">keys_to_fetch</span><span class="p">)</span><span class="si">}</span><span class="s2"> new keys&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">keys_to_fetch</span> <span class="o">=</span> <span class="n">all_keys</span>
+        <span class="k">if</span> <span class="n">args</span><span class="o">.</span><span class="n">fresh</span> <span class="ow">and</span> <span class="n">output_path</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Starting fresh (ignoring existing </span><span class="si">{</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="si">}</span><span class="s2">)&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Download BibTeX entries</span>
+    <span class="n">bibtex_entries</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">not_found</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">keys_to_fetch</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Fetching </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+        <span class="n">bibtex</span><span class="p">,</span> <span class="n">source</span> <span class="o">=</span> <span class="n">fetch_bibtex</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">api_key</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">source</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">bibtex</span><span class="p">:</span>
+            <span class="n">bibtex</span> <span class="o">=</span> <span class="n">replace_bibtex_key</span><span class="p">(</span><span class="n">bibtex</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+            <span class="n">bibtex</span> <span class="o">=</span> <span class="n">truncate_authors</span><span class="p">(</span><span class="n">bibtex</span><span class="p">,</span> <span class="n">args</span><span class="o">.</span><span class="n">max_authors</span><span class="p">)</span>
+            <span class="n">bibtex_entries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bibtex</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✓ </span><span class="si">{</span><span class="n">source</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">not_found</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✗ Not found&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Write output (append new entries to existing content)</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">existing_content</span> <span class="ow">and</span> <span class="n">bibtex_entries</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">existing_content</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bibtex_entries</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">existing_content</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">existing_content</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">bibtex_entries</span><span class="p">))</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Wrote </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">bibtex_entries</span><span class="p">)</span><span class="si">}</span><span class="s2"> new entries to </span><span class="si">{</span><span class="n">args</span><span class="o">.</span><span class="n">output</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">not_found</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Could not find </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">not_found</span><span class="p">)</span><span class="si">}</span><span class="s2"> keys:&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">not_found</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  - </span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div></div>
+        
+        
+    </div>
+
+    
+      <footer class="col-md-12 text-center">
+          
+          
+            <hr>
+            <p>
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
+
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "../.."</script>
+    
+    <script src="../../js/base.js"></script>
+    <script src="../../search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+
+</html>
