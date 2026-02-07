@@ -4,6 +4,7 @@ site_author: Gregory Ashton
 site_dir: docs/
 docs_dir: source/
 repo_url: https://github.com/GregoryAshton/GregoryAshton.github.io
+edit_uri: ""
 nav:
     - Home: index.md
     - Science: science.md
