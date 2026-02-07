@@ -1,0 +1,3 @@
+[codespell]
+skip = *.ipynb,*.html,*.json,*.js,*.css,*.png,*.jpg,*.jpeg,*.gif,*.pdf,*.svg,.git
+ignore-words-list = nd,te,aci,precessing,nam

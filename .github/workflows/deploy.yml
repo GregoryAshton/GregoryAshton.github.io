@@ -15,6 +15,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: pip install codespell
+
+      - run: codespell source/
+
   build:
     runs-on: ubuntu-latest
     steps:
