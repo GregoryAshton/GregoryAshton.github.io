@@ -176,9 +176,22 @@
       <button class="btn btn-primary" id="connectBtn" onclick="connectApi()">Connect</button>
     </div>
     <p class="hint">
-      Needs Maps JavaScript API + Directions API enabled.<br>
       Key stays in your browser — nothing sent anywhere else.
     </p>
+    <details style="margin-top: 10px;">
+      <summary style="color: #f97316; font-size: 12px; cursor: pointer;">How do I get an API key?</summary>
+      <div class="hint" style="margin-top: 8px; line-height: 1.8;">
+        1. Go to the <a href="https://console.cloud.google.com/" style="color: #38bdf8;" target="_blank" rel="noopener">Google Cloud Console</a><br>
+        2. Create a new project (or select an existing one)<br>
+        3. Go to <strong style="color: #ccc;">APIs &amp; Services &gt; Library</strong> and enable these two APIs:<br>
+        &nbsp;&nbsp;&nbsp;&bull; <strong style="color: #ccc;">Maps JavaScript API</strong><br>
+        &nbsp;&nbsp;&nbsp;&bull; <strong style="color: #ccc;">Directions API</strong><br>
+        4. Go to <strong style="color: #ccc;">APIs &amp; Services &gt; Credentials</strong><br>
+        5. Click <strong style="color: #ccc;">Create Credentials &gt; API Key</strong><br>
+        6. Copy the key and paste it above<br><br>
+        Note: Google requires a billing account, but offers a free tier ($200/month credit). You can restrict your key to only these two APIs under <strong style="color: #ccc;">API restrictions</strong> for extra safety.
+      </div>
+    </details>
     <div id="keyError"></div>
   </div>
 
