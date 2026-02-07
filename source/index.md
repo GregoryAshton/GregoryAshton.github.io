@@ -22,11 +22,11 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2026
 
-- **22/01/2025**: Final-year student Mattia put his latest work on the arXiv today [RNLE: Residual neural likelihood estimation and its application to gravitational-wave astronomy](https://arxiv.org/abs/2601.13857). This is a really nice body of work that explores a different way to use Simulation Based Inference with a focus on learning the likelihood of glitchy data.
+- **22/01/2026**: Final-year student Mattia put his latest work on the arXiv today [RNLE: Residual neural likelihood estimation and its application to gravitational-wave astronomy](https://arxiv.org/abs/2601.13857). This is a really nice body of work that explores a different way to use Simulation Based Inference with a focus on learning the likelihood of glitchy data.
 
-- **15/01/2025:** I am visiting Nottingham today for the inaugural [GW:UK](https://indico.global/event/16345/) meeting and a celeberation of 10-years of gravitational waves.
+- **15/01/2026:** I am visiting Nottingham today for the inaugural [GW:UK](https://indico.global/event/16345/) meeting and a celeberation of 10-years of gravitational waves.
 
-- **05/01/2025:** Today I started a new position as an Associate Professor of Mathematical Sciences at the University of Southampton!
+- **05/01/2026:** Today I started a new position as an Associate Professor of Mathematical Sciences at the University of Southampton!
 
 ### 2025 
 
