@@ -1,11 +1,11 @@
 # Projects
 
 In this page, I collect various miscellaneous coding projects I have been
-involved in.
+involved in and some "apps" that live on this site.
 
 ## Apps
 
-* [Drive Time](apps/drive-time/index.html) A tool to calculate drive times
+* [Drive Time](apps/drive-time/index.html) A tool to calculate drive times. This requires you to provide a Google API key, but then you get a view of typical journey times between two places. I find this useful for trying to figure out when to leave for work.
 
 ## Projects
 
