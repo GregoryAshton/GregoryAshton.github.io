@@ -1,5 +1,7 @@
 # Dr Gregory Ashton
 
+*Last updated: {{ git.date.strftime("%d %B %Y") }}*
+
 ## About me
 
 I am an Associate Professor of Mathematical Sciences at the [University of Southampton](https://www.southampton.ac.uk/about/faculties-schools-departments/school-of-mathematical-sciences). I joined the [Gravity group](https://www.southampton.ac.uk/research/groups/gravity) here in 2026 after 5 years working my way from Lecturer to Professor in Physics at [Royal Holloway, University of

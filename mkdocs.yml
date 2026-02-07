@@ -11,6 +11,9 @@ nav:
     - Projects: projects.md
     - Help: help.md
     - Notes: notes.md
+plugins:
+    - search
+    - macros
 theme: cinder
 markdown_extensions:
     - attr_list
