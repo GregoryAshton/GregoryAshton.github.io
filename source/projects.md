@@ -7,6 +7,8 @@ involved in and some "apps" that live on this site.
 
 * [Drive Time](apps/drive-time/index.html) A tool to calculate drive times. This requires you to provide a Google API key, but then you get a view of typical journey times between two places. I find this useful for trying to figure out when to leave for work.
 
+* [Train Times](apps/train-times/index.html) This is a simple app to quickly look up UK train departures
+
 ## Projects
 
 * [CBCFlow](https://cbc.docs.ligo.org/projects/cbcflow/index.html) allows convenient and machine readable storage, communication, and retrieval of important metadata for CBC analyses of events
