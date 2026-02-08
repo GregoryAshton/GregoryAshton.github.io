@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@600&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
             --bg-primary: #0f0f1e;
@@ -35,38 +35,38 @@
             background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
             color: var(--text-primary);
             min-height: 100vh;
-            padding: 20px;
+            padding: 16px;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 24px;
             animation: fadeInDown 0.6s ease;
         }
 
         h1 {
             font-family: 'JetBrains Mono', monospace;
-            font-size: clamp(1.8rem, 5vw, 2.5rem);
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
             color: var(--text-primary);
             letter-spacing: -0.02em;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .subtitle {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .journeys-container {
             display: grid;
-            gap: 24px;
+            gap: 16px;
             margin-bottom: 24px;
         }
 
@@ -76,69 +76,90 @@
             }
         }
 
+        @media (min-width: 1100px) {
+            .journeys-container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
         .journey-card {
             background: var(--bg-card);
-            border-radius: 16px;
-            padding: 24px;
+            border-radius: 12px;
+            padding: 16px;
             border: 1px solid var(--border);
             animation: fadeInUp 0.6s ease;
             animation-fill-mode: backwards;
         }
 
-        .journey-card:nth-child(2) {
-            animation-delay: 0.1s;
-        }
+        .journey-card:nth-child(2) { animation-delay: 0.05s; }
+        .journey-card:nth-child(3) { animation-delay: 0.1s; }
+        .journey-card:nth-child(4) { animation-delay: 0.15s; }
+        .journey-card:nth-child(5) { animation-delay: 0.2s; }
+        .journey-card:nth-child(6) { animation-delay: 0.25s; }
 
         .journey-header {
             display: flex;
             align-items: center;
-            gap: 12px;
-            margin-bottom: 20px;
+            gap: 10px;
+            margin-bottom: 12px;
         }
 
         .journey-number {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 600;
             color: var(--accent-primary);
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: rgba(233, 69, 96, 0.1);
-            border-radius: 8px;
+            border-radius: 6px;
+            flex-shrink: 0;
         }
 
         .journey-title {
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+            margin-bottom: 0;
         }
 
         .form-group {
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
         label {
             display: block;
-            font-size: 0.85rem;
+            font-size: 0.7rem;
             font-weight: 500;
             color: var(--text-secondary);
-            margin-bottom: 8px;
+            margin-bottom: 4px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
         input {
             width: 100%;
-            padding: 12px 16px;
+            padding: 8px 10px;
             background: var(--bg-secondary);
             border: 1px solid var(--border);
-            border-radius: 8px;
+            border-radius: 6px;
             color: var(--text-primary);
-            font-size: 1rem;
-            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-family: 'JetBrains Mono', monospace;
             transition: all 0.3s ease;
+            text-transform: uppercase;
         }
 
         input:focus {
@@ -150,17 +171,19 @@
         input::placeholder {
             color: var(--text-secondary);
             opacity: 0.5;
+            font-family: 'DM Sans', sans-serif;
+            text-transform: none;
         }
 
         button {
             width: 100%;
-            padding: 14px;
+            padding: 10px;
             background: linear-gradient(135deg, var(--accent-primary) 0%, #d63651 100%);
             border: none;
-            border-radius: 8px;
+            border-radius: 6px;
             color: white;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 0.8rem;
             cursor: pointer;
             transition: all 0.3s ease;
             font-family: 'DM Sans', sans-serif;
@@ -169,8 +192,8 @@
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 16px rgba(233, 69, 96, 0.3);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
         }
 
         button:active {
@@ -184,8 +207,8 @@
         }
 
         .results {
-            margin-top: 20px;
-            padding-top: 20px;
+            margin-top: 12px;
+            padding-top: 12px;
             border-top: 1px solid var(--border);
         }
 
@@ -193,110 +216,101 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
         }
 
         .results-title {
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
         .refresh-time {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-secondary);
             font-family: 'JetBrains Mono', monospace;
         }
 
-        .train-service {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 16px;
-            margin-bottom: 12px;
-            transition: all 0.3s ease;
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
         }
 
-        .train-service:hover {
-            border-color: var(--accent-primary);
-            transform: translateX(4px);
-        }
-
-        .service-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 8px;
-        }
-
-        .departure-time {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.5rem;
+        .results-table th {
+            text-align: left;
+            font-size: 0.65rem;
             font-weight: 600;
-            color: var(--text-primary);
-        }
-
-        .platform {
-            font-size: 0.9rem;
             color: var(--text-secondary);
-        }
-
-        .platform-number {
-            color: var(--accent-primary);
-            font-weight: 600;
-        }
-
-        .service-details {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        .operator {
-            color: var(--text-primary);
-        }
-
-        .status {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-top: 8px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            padding: 4px 6px;
+            border-bottom: 1px solid var(--border);
         }
 
-        .status.on-time {
-            background: rgba(78, 204, 163, 0.2);
-            color: var(--success);
+        .results-table td {
+            padding: 6px;
+            border-bottom: 1px solid rgba(42, 42, 62, 0.5);
+            vertical-align: middle;
         }
 
-        .status.delayed {
-            background: rgba(255, 159, 67, 0.2);
-            color: var(--warning);
+        .results-table tr:last-child td {
+            border-bottom: none;
         }
 
-        .status.cancelled {
-            background: rgba(233, 69, 96, 0.2);
+        .results-table .time {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .results-table .plat {
+            font-family: 'JetBrains Mono', monospace;
             color: var(--accent-primary);
+            font-weight: 600;
+            text-align: center;
         }
+
+        .status-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .status-dot.on-time { background: var(--success); }
+        .status-dot.delayed { background: var(--warning); }
+        .status-dot.cancelled { background: var(--accent-primary); }
+
+        .status-text {
+            font-size: 0.75rem;
+            white-space: nowrap;
+        }
+
+        .status-text.on-time { color: var(--success); }
+        .status-text.delayed { color: var(--warning); }
+        .status-text.cancelled { color: var(--accent-primary); }
 
         .error {
             background: rgba(233, 69, 96, 0.1);
             border: 1px solid var(--accent-primary);
-            border-radius: 8px;
-            padding: 16px;
+            border-radius: 6px;
+            padding: 10px;
             color: var(--accent-primary);
-            font-size: 0.9rem;
-            margin-top: 16px;
+            font-size: 0.8rem;
+            margin-top: 8px;
         }
 
         .loading {
             text-align: center;
-            padding: 20px;
+            padding: 12px;
             color: var(--text-secondary);
+            font-size: 0.85rem;
         }
 
         .loading::after {
@@ -311,42 +325,31 @@
         }
 
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .install-prompt {
             background: linear-gradient(135deg, var(--accent-secondary) 0%, #0a2342 100%);
             border: 1px solid var(--accent-primary);
             border-radius: 12px;
-            padding: 16px;
-            margin-bottom: 24px;
+            padding: 12px;
+            margin-bottom: 16px;
             text-align: center;
             animation: fadeInDown 0.6s ease;
+            font-size: 0.9rem;
         }
 
         .install-prompt button {
-            margin-top: 12px;
+            margin-top: 8px;
             background: var(--accent-primary);
-            font-size: 0.9rem;
-            padding: 10px 20px;
+            font-size: 0.8rem;
+            padding: 8px 16px;
         }
 
         .hidden {
@@ -355,10 +358,10 @@
 
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
+            margin-top: 24px;
+            padding-top: 16px;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border-top: 1px solid var(--border);
         }
 
@@ -385,51 +388,7 @@
             <button id="installButton">Install App</button>
         </div>
 
-        <div class="journeys-container">
-            <!-- Journey 1 -->
-            <div class="journey-card">
-                <div class="journey-header">
-                    <div class="journey-number">1</div>
-                    <div class="journey-title">Journey One</div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="from1">From Station (CRS Code)</label>
-                    <input type="text" id="from1" placeholder="e.g., HSL" maxlength="3">
-                </div>
-                
-                <div class="form-group">
-                    <label for="to1">To Station (CRS Code)</label>
-                    <input type="text" id="to1" placeholder="e.g., WAT" maxlength="3">
-                </div>
-                
-                <button id="search1">Get Next Trains</button>
-                
-                <div id="results1" class="results hidden"></div>
-            </div>
-
-            <!-- Journey 2 -->
-            <div class="journey-card">
-                <div class="journey-header">
-                    <div class="journey-number">2</div>
-                    <div class="journey-title">Journey Two</div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="from2">From Station (CRS Code)</label>
-                    <input type="text" id="from2" placeholder="e.g., WAT" maxlength="3">
-                </div>
-                
-                <div class="form-group">
-                    <label for="to2">To Station (CRS Code)</label>
-                    <input type="text" id="to2" placeholder="e.g., HSL" maxlength="3">
-                </div>
-                
-                <button id="search2">Get Next Trains</button>
-                
-                <div id="results2" class="results hidden"></div>
-            </div>
-        </div>
+        <div id="journeysContainer" class="journeys-container"></div>
 
         <footer>
             Powered by <a href="https://github.com/jpsingleton/Huxley2" target="_blank">Huxley2</a>
@@ -437,6 +396,8 @@
     </div>
 
     <script>
+        const NUM_JOURNEYS = 6;
+
         // Service Worker Registration
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -466,37 +427,61 @@
             }
         });
 
+        // Generate journey cards
+        function buildJourneyCards() {
+            const container = document.getElementById('journeysContainer');
+            for (let i = 1; i <= NUM_JOURNEYS; i++) {
+                const card = document.createElement('div');
+                card.className = 'journey-card';
+                card.innerHTML = `
+                    <div class="journey-header">
+                        <div class="journey-number">${i}</div>
+                        <div class="journey-title">Journey ${i}</div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from${i}">From</label>
+                            <input type="text" id="from${i}" placeholder="e.g. HSL" maxlength="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="to${i}">To</label>
+                            <input type="text" id="to${i}" placeholder="e.g. WAT" maxlength="3">
+                        </div>
+                    </div>
+                    <button id="search${i}">Search</button>
+                    <div id="results${i}" class="results hidden"></div>
+                `;
+                container.appendChild(card);
+            }
+        }
+
         // API Configuration
         const HUXLEY_BASE_URL = 'https://huxley2.azurewebsites.net';
-        
+
         // Load saved searches from localStorage
         function loadSavedSearches() {
             const saved = localStorage.getItem('trainSearches');
             if (saved) {
                 const searches = JSON.parse(saved);
-                if (searches.journey1) {
-                    document.getElementById('from1').value = searches.journey1.from || '';
-                    document.getElementById('to1').value = searches.journey1.to || '';
-                }
-                if (searches.journey2) {
-                    document.getElementById('from2').value = searches.journey2.from || '';
-                    document.getElementById('to2').value = searches.journey2.to || '';
+                for (let i = 1; i <= NUM_JOURNEYS; i++) {
+                    const key = `journey${i}`;
+                    if (searches[key]) {
+                        document.getElementById(`from${i}`).value = searches[key].from || '';
+                        document.getElementById(`to${i}`).value = searches[key].to || '';
+                    }
                 }
             }
         }
 
         // Save searches to localStorage
         function saveSearches() {
-            const searches = {
-                journey1: {
-                    from: document.getElementById('from1').value.toUpperCase(),
-                    to: document.getElementById('to1').value.toUpperCase()
-                },
-                journey2: {
-                    from: document.getElementById('from2').value.toUpperCase(),
-                    to: document.getElementById('to2').value.toUpperCase()
-                }
-            };
+            const searches = {};
+            for (let i = 1; i <= NUM_JOURNEYS; i++) {
+                searches[`journey${i}`] = {
+                    from: document.getElementById(`from${i}`).value.toUpperCase(),
+                    to: document.getElementById(`to${i}`).value.toUpperCase()
+                };
+            }
             localStorage.setItem('trainSearches', JSON.stringify(searches));
         }
 
@@ -504,11 +489,11 @@
         async function fetchDepartures(from, to, journeyNumber) {
             const resultsDiv = document.getElementById(`results${journeyNumber}`);
             resultsDiv.classList.remove('hidden');
-            resultsDiv.innerHTML = '<div class="loading">Loading train times</div>';
+            resultsDiv.innerHTML = '<div class="loading">Loading</div>';
 
             try {
                 const response = await fetch(`${HUXLEY_BASE_URL}/departures/${from}/to/${to}?expand=true`);
-                
+
                 if (!response.ok) {
                     throw new Error(`API returned ${response.status}`);
                 }
@@ -518,71 +503,66 @@
             } catch (error) {
                 resultsDiv.innerHTML = `
                     <div class="error">
-                        ⚠️ Error fetching train times: ${error.message}
-                        <br><small>Check station codes and try again</small>
+                        Error: ${error.message}<br><small>Check station codes and try again</small>
                     </div>
                 `;
             }
         }
 
-        // Display results
+        // Display results as a compact table
         function displayResults(data, resultsDiv, from, to) {
             if (!data.trainServices || data.trainServices.length === 0) {
                 resultsDiv.innerHTML = `
                     <div class="error">
-                        No direct trains found from ${from.toUpperCase()} to ${to.toUpperCase()}
+                        No trains found ${from.toUpperCase()} → ${to.toUpperCase()}
                     </div>
                 `;
                 return;
             }
 
-            const now = new Date().toLocaleTimeString('en-GB', { 
-                hour: '2-digit', 
-                minute: '2-digit' 
+            const now = new Date().toLocaleTimeString('en-GB', {
+                hour: '2-digit',
+                minute: '2-digit'
             });
 
-            let html = `
-                <div class="results-header">
-                    <div class="results-title">Next Departures</div>
-                    <div class="refresh-time">${now}</div>
-                </div>
-            `;
-
-            // Show first 5 services
             const services = data.trainServices.slice(0, 5);
-            
+
+            let rows = '';
             services.forEach(service => {
-                const std = service.std; // Scheduled Time of Departure
-                const etd = service.etd; // Estimated Time of Departure
-                const platform = service.platform || 'TBC';
-                const operator = service.operator || 'Unknown';
-                
+                const std = service.std;
+                const etd = service.etd;
+                const platform = service.platform || '-';
+
                 let statusClass = 'on-time';
                 let statusText = 'On time';
-                
+
                 if (etd === 'Cancelled') {
                     statusClass = 'cancelled';
                     statusText = 'Cancelled';
                 } else if (etd !== 'On time' && etd !== std) {
                     statusClass = 'delayed';
-                    statusText = `Expected ${etd}`;
+                    statusText = etd;
                 }
 
-                html += `
-                    <div class="train-service">
-                        <div class="service-header">
-                            <div class="departure-time">${std}</div>
-                            <div class="platform">Platform <span class="platform-number">${platform}</span></div>
-                        </div>
-                        <div class="service-details">
-                            <span class="operator">${operator}</span>
-                        </div>
-                        <div class="status ${statusClass}">${statusText}</div>
-                    </div>
+                rows += `
+                    <tr>
+                        <td class="time">${std}</td>
+                        <td class="plat">${platform}</td>
+                        <td><span class="status-dot ${statusClass}"></span><span class="status-text ${statusClass}">${statusText}</span></td>
+                    </tr>
                 `;
             });
 
-            resultsDiv.innerHTML = html;
+            resultsDiv.innerHTML = `
+                <div class="results-header">
+                    <div class="results-title">${from.toUpperCase()} → ${to.toUpperCase()}</div>
+                    <div class="refresh-time">${now}</div>
+                </div>
+                <table class="results-table">
+                    <thead><tr><th>Dep</th><th>Plat</th><th>Status</th></tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>
+            `;
         }
 
         // Setup search handlers
@@ -609,25 +589,21 @@
                 fetchDepartures(from, to, journeyNumber);
             });
 
-            // Allow Enter key to trigger search
             [fromInput, toInput].forEach(input => {
                 input.addEventListener('keypress', (e) => {
                     if (e.key === 'Enter') {
                         button.click();
                     }
                 });
-                
-                // Auto-uppercase as user types
-                input.addEventListener('input', (e) => {
-                    e.target.value = e.target.value.toUpperCase();
-                });
             });
         }
 
         // Initialize
+        buildJourneyCards();
         loadSavedSearches();
-        setupSearch(1);
-        setupSearch(2);
+        for (let i = 1; i <= NUM_JOURNEYS; i++) {
+            setupSearch(i);
+        }
     </script>
 </body>
 </html>
