@@ -352,6 +352,17 @@
             padding: 8px 16px;
         }
 
+        .api-banner {
+            background: rgba(255, 159, 67, 0.15);
+            border: 1px solid var(--warning);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 16px;
+            color: var(--warning);
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
         .hidden {
             display: none;
         }
@@ -381,6 +392,10 @@
             <h1>🚆 Next Trains</h1>
             <p class="subtitle">Real-time UK rail departures</p>
         </header>
+
+        <div id="apiBanner" class="api-banner hidden">
+            The Huxley2 API is currently unavailable. Train lookups will not work until it recovers.
+        </div>
 
         <div id="installPrompt" class="install-prompt hidden">
             <p><strong>Add to Home Screen</strong></p>
@@ -457,6 +472,21 @@
 
         // API Configuration
         const HUXLEY_BASE_URL = 'https://huxley2.azurewebsites.net';
+
+        // Check if Huxley2 API is reachable
+        async function checkApiHealth() {
+            const banner = document.getElementById('apiBanner');
+            try {
+                const response = await fetch(HUXLEY_BASE_URL, { method: 'HEAD', mode: 'no-cors' });
+                // no-cors gives opaque response, so also try a real request
+                const test = await fetch(`${HUXLEY_BASE_URL}/departures/WAT?expand=false`);
+                if (!test.ok) throw new Error();
+                banner.classList.add('hidden');
+            } catch {
+                banner.classList.remove('hidden');
+            }
+        }
+        checkApiHealth();
 
         // Load saved searches from localStorage
         function loadSavedSearches() {
