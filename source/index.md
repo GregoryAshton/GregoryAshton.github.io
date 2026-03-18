@@ -22,6 +22,14 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2026
 
+- **09/03/2026**: This week, we have been in Pisa for the 2026 spring LVK meeting. Here is Ann Malz explaining how we can combine pipelines to improve detection efficiency with the LIGO DAC chair and Virgo deputy spokesperson
+<figure markdown>
+  ![Ann Malz in Pisa](img/ann_pisa.jpg){ width="500" }
+  <figcaption>
+    Ann Malz explaining how we can combine pipelines to improve detection efficiency with the LIGO DAC chair and Virgo deputy spokesperson
+  </figcaption>
+</figure>
+
 - **18/02/2026**: Today, the paper [Reconstructing and resampling: a guide to utilising posterior samples from gravitational wave observations](https://academic.oup.com/rasti/advance-article/doi/10.1093/rasti/rzag012/8488768?utm_source=authortollfreelink&utm_campaign=rasti&utm_medium=email) was published in RASTI. The first draft of this was written while a postdoc in Monash, so it was nice to finally put everything together in one place.
 
 - **22/01/2026**: Final-year student Mattia put his latest work on the arXiv today [RNLE: Residual neural likelihood estimation and its application to gravitational-wave astronomy](https://arxiv.org/abs/2601.13857). This is a really nice body of work that explores a different way to use Simulation Based Inference with a focus on learning the likelihood of glitchy data.
