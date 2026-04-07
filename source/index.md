@@ -22,6 +22,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2026
 
+- **07/04/2026**: After an epic amount of runs and investigations, the GPBilby case studies paper is now on arXiv: [Case studies with GPBilby of glitch-contaminated transient gravitational waves](https://ui.adsabs.harvard.edu/abs/2026arXiv260402018E/abstract). The work was led by Mattia and Ann - I think we found some interesting things in there!
+
 - **09/03/2026**: This week, we have been in Pisa for the 2026 spring LVK meeting. Here is Ann Malz explaining how we can combine pipelines to improve detection efficiency with the LIGO DAC chair and Virgo deputy spokesperson
 <figure markdown>
   ![Ann Malz in Pisa](img/ann_pisa.jpg){ width="500" }
