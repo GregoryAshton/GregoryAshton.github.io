@@ -10,6 +10,7 @@ career. I don't claim these to be perfect solutions, you have suggestions, pleas
 * [Using linux on Windows](help/linux_windows.md)
 * [Python environments](help/python_environments.md)
 * [Using git to track initial projects](help/git.md)
+* [Tips for using SSH to access clusters](help/ssh.md)
 
 
 
