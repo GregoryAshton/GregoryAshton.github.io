@@ -22,6 +22,15 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2026
 
+- **09/07/2026**: New paper day! Ann pushed her third paper on Conformal Prediction to the arXiv and submitted to PRD. This work, titled [Combining gravitational wave search pipelines to find subthreshold signals in GWTC-5.0](https://arxiv.org/html/2607.07272v1), identifies several possible binary black hole signals buried in the noise
+
+<figure markdown>
+  ![Figure from the paper](https://arxiv.org/html/2607.07272v1/plots/gwtc4p1_violins_all_xgboost.png){ width="500" }
+<figcaption>
+Figure 9 from the paper showing posterior density plots for the sub-threshold signals identified as "significant" by the pipeline combination method
+</figcaption>
+</figure>
+
 - **18/06/2026**: The ApJL Focus Issue [The LIGO–Virgo–KAGRA Gravitational Wave Transient Catalog (GWTC): Release 4](https://iopscience.iop.org/collections/apjl-260303-220_Focus-on-GWTC-4__0) is now live! This marks the publication of several of the key papers. We started this project several years ago to fix a problem. Namely, the GWTC catalogs papers can be unweildy and hard to read, numbering tens of pages and many readers found it hard to figure out what had changed. The solution, contrary to some opinions, was not to make the pages shorter (which would mean cutting out all the detail and making the catalog impossible to understand), but to write a living-review style set of papers. The catalog is broken into a intro, methods, and results. In total, the number of pages increased (boo), but on the next release, the same text will be used and modified. This should mean that readers are able to see just the differences. Of course a project like this is big and open to scope creep, but I think broadly we met that goal. If you happen to read this and have opinions, I'd love to hear them.
 
 - **27/05/2026**: Today marks a significant milestone in the history of gravitational wave astronomy, no I am not talking about the release of the [GWTC-5.0](https://www.ligo.caltech.edu/news/ligo20260526) catalog, but Mattia Emma's viva defence! Pictured below, Mattia battled John Veitch and Vanessa Graber for just over four hours, but came out smiling
