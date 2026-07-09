@@ -4,6 +4,8 @@
 
 ## About me
 
+<img src="img/headshot.jpg" alt="Gregory Ashton" title="Oh look..an awkward photo of me, at least the shirt is nice" width="200" style="float: right; margin-left: 15px; margin-bottom: 10px; border-radius: 5px;">
+
 I am an Associate Professor of Mathematical Sciences at the [University of Southampton](https://www.southampton.ac.uk/about/faculties-schools-departments/school-of-mathematical-sciences). I joined the [Gravity group](https://www.southampton.ac.uk/research/groups/gravity) here in 2026 after 5 years working my way from Lecturer to Professor in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
 I began my research career at the University of Southampton, working with Ian
