@@ -20,12 +20,18 @@ I am an avid gamer, love to read and enjoy nature walks.
 
 ## PhD students supervision
 
+### Joseph Metson
+
+- Start date: 2026
+- Thesis title: TBC
+
+TBC
+
 ### Ann Malz 
 ![Ann Malz](img/Ann.jpg){ width="150" align=right }
 
 - Start date: 2023
 - Thesis title: TBC
-
 
 I am a PhD student in astrophysics, working with Greg Ashton and Nicolo Colombo on using machine learning for gravitational wave analysis. I am currently working on applying conformal prediction to determine uncertainties. When making use of machine learning, for example applied to gravitational wave parameter estimation, quantifying the uncertainty of how accurate the estimate is is essential. Conformal prediction provides a method to determine this uncertainty for any point prediction algorithm. 
 
@@ -56,7 +62,7 @@ My previous projects include
 ![Mattia Emma](img/Mattia.jpeg){ width="150" align=right }
 
 - Start date: 2022
-- Thesis title: TBC
+- Thesis title: Gravitational Wave Astronomer’s long quest for an unbiased likelihood
 
 I am a PhD student in gravitational wave astronomy under the supervision of Dr. Greg Ashton. My research portfolio spans various facets of gravitational wave physics, where I actively contribute as a member of the Laser Interferometer Gravitational-Wave Observatory (LIGO). One significant aspect of my work involves gravitational wave data analysis, where I delve into the intricacies of parameter estimation. Thus far I have been looking into the problems arising from the approximations used in our analysis with the increasing amount of detected signals, and into the benefits introduced by using more detectors for the analysis and their dependence on the performance of the single detectors.
 
