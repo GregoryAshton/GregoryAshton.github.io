@@ -21,11 +21,15 @@ I am an avid gamer, love to read and enjoy nature walks.
 ## PhD students supervision
 
 ### Joseph Metson
+![Joseph Metson](img/Joe.jpg){ width="150" align=right }
 
 - Start date: 2026
 - Thesis title: TBC
 
-TBC
+I am a PhD student at the University of Southampton working with Greg Ashton on gravitational wave parameter estimation. My current work involves comparing the performance of noise power spectral density (PSD) estimation methods to characterise the noise of LIGO-Virgo-KAGRA detectors and investigate the impact on the inferred parameters from GW events. I am an active member of the LVK collaboration, and currently part of a task force evaluating PSD methods to use for the upcoming IR1 observation run.
+My background is also in extracting signals from noisy data, but in the field of radio pulsars. I completed my MPhys in Physics with Astrophysics at the University of Manchester, where I worked on characterising the emission and rotation variability of mode-switching pulsars under the supervision of Patrick Weltevrede, Benjamin Shaw, Danai Antonopoulou and Avishek Basu. We applied principal component analysis to search for correlations between variations in the spin-down frequency and a characteristic pulse shape parameter. I also had a brief period working on the construction and calibration of the L-BASS telescope at the Jodrell Bank Observatory.
+
+Beyond research, I like to dabble in all sorts of hobbies such as painting, drumming and making an H1 radio telescope.
 
 ### Ann Malz 
 ![Ann Malz](img/Ann.jpg){ width="150" align=right }
