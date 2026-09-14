@@ -24,6 +24,8 @@ My research interest is the relativistic astrophysics of neutron stars and black
 
 ### 2026
 
+- **14/09/2026**: A new group first! Ann's paper [Improving the Sensitivity of Gravitational Wave Detection with Weighted Conformal Prediction](https://arxiv.org/abs/2609.11401) has been accepted to the Fifteenth Symposium on Conformal and Probabilistic Prediction with Applications (COPA). This is the first publication we have made in a machine-learning conference - a great milestone for Ann, well done!
+
 - **09/07/2026**: New paper day! Ann pushed her third paper on Conformal Prediction to the arXiv and submitted to PRD. This work, titled [Combining gravitational wave search pipelines to find subthreshold signals in GWTC-5.0](https://arxiv.org/html/2607.07272v1), identifies several possible binary black hole signals buried in the noise
 
 <figure markdown>
