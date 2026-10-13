@@ -6,7 +6,7 @@
 
 <img src="img/headshot.jpg" alt="Gregory Ashton" title="Oh look..an awkward photo of me, at least the shirt is nice" width="200" style="float: right; margin-left: 15px; margin-bottom: 10px; border-radius: 5px;">
 
-I am an Associate Professor of Mathematical Sciences at the [University of Southampton](https://www.southampton.ac.uk/about/faculties-schools-departments/school-of-mathematical-sciences). I joined the [Gravity group](https://www.southampton.ac.uk/research/groups/gravity) here in 2026 after 5 years working my way from Lecturer to Professor in Physics at [Royal Holloway, University of
+I am an Associate Professor of Mathematical Sciences at the [University of Southampton](https://www.southampton.ac.uk/about/faculties-schools-departments/school-of-mathematical-sciences). I joined the [Gravity group](https://www.southampton.ac.uk/research/groups/gravity) here in 2026 — returning to where I began my career — after five years working my way from Lecturer to Professor in Physics at [Royal Holloway, University of
 London](https://www.royalholloway.ac.uk/research-and-teaching/departments-and-schools/physics/).
 I began my research career at the University of Southampton, working with Ian
 Jones and Reinhard Prix, where I completed my PhD in 2016 on [Timing variations in neutron stars:
@@ -14,7 +14,8 @@ models, inference and their implications for gravitational
 waves](http://eprints.soton.ac.uk/401822/1/GregoryAshton_Thesis_WithLinks.pdf).
 Following this, I held a postdoc position at the Albert Einstein Institute, Hannover, before moving in 2018 to Monash University in Australia to work as an Assistant Lecturer with [Paul Lasky](http://users.monash.edu.au/~plasky/).
 I then briefly joined the [Institute for Cosmology and Gravitation](http://www.icg.port.ac.uk/) (ICG) at the University of Portsmouth, working with Laura Nuttall as a Research Fellow before moving to Royal Holloway.
-My research interest is the relativistic astrophysics of neutron stars and black holes. I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and co-chair the Collaboration's largest and most active observational science group, the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public).
+My research interests are the relativistic astrophysics of neutron stars and black holes.
+I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and currently the Project Scientist for the Gravitational Wave Transient Catalogue (GWTC) cross-division project, working to deliver GWTC-7.0. In the past, I have been elected to co-chair the [Compact Binary Group](https://dcc.ligo.org/LIGO-M1200248/public), the Parameter Estimation working group, and served on the IGWN Program Committee.
 
 * **Contact:** Send me an email at [gregory.ashton@ligo.org](mailto:gregory.ashton@ligo.org)
 * **Publications:** See this [ADS library](https://ui.adsabs.harvard.edu/public-libraries/Ns6_-Nu-SsO4gxJrZ0_3sQ) or my [Soton Pure portal](https://www.southampton.ac.uk/people/672y5s/doctor-gregory-ashton)
