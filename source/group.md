@@ -4,6 +4,14 @@ On this page, I list people that that I work with. I've tried to provide contact
 
 ## Postdoctoral researchers
 
+### Dr Metha Prathaban (2026-)
+![Metha Prathaban](img/Metha.jpg){ width="150" align=right }
+I am a Research Fellow working with Greg Ashton on parameter estimation of gravitational-wave data from the LIGO-Virgo-KAGRA (LVK) detectors. My work focuses on developing novel methods to advance gravitational-wave analysis with AI, harnessing machine learning and modern GPU hardware. My background is in accelerating nested sampling, a gold-standard method for Bayesian inference on gravitational-wave data and beyond. I am a member of the LVK Collaboration.
+
+I graduated with a Master’s from the University of Cambridge in 2021, with a project in theoretical cosmology on improving recombination modelling within “palindromic universes” and deriving observational constraints on this model. I then worked as a Junior Data Scientist in industry for a year, developing and deploying machine learning models for clients, before returning to Cambridge to complete my PhD (2026), titled “Next-generation gravitational-wave inference: Bayesian methods for an AI era”, under the supervision of Will Handley.
+
+Outside of research, I am passionate about improving access to STEM subjects for women and have served on the International Women’s Day committee at Cambridge. I also enjoy wild swimming, knitting and reading.
+
 ### Dr Sai Chaitanya Susarla (2025-)
 ![Sai Chaitanya Susarla](img/Sai.jpg){ width="150" align=right }
 I am a research fellow working with Prof. Greg Ashton on hierarchical profile domain timing of radio pulsars. My background is in using pulsars as tools to study interstellar medium. I graduated from a Masters at the Indian Institute of Science Education and Research, Thiruvananthapuram (IISER TVM). I then went on to pursue my PhD at the University of Galway working with Prof. Aaron Golden and Prof. Evan Keane. My PhD thesis title is "Examining ecliptic pulsars using the LOFAR telescope" focussing on studying solar wind and interstellar medium using pulsar timing methods of ecliptic pulsars. In addition to this, I am a member of the International Pulsar Timing Array (IPTA) aiming to discover nano-hertz Gravitational waves. I was instrumental in leading observations on several LOFAR stations to contribute to the IPTA efforts.
