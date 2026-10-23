@@ -25,8 +25,9 @@ I am a member of the [LIGO Scientific Collaboration](http://www.ligo.org) and cu
 
 ### 2026
 
+- **23/10/2026**: Sai has put a new paper on the arXiv [Simulation-based inference of profile evolution for high-precision pulsar timing](https://www.scholar-inbox.com/paper/Susarla2026ARXIV_Simulation_based_inference_of). In this work, he has developed a proof-of-concept of the application of SBI to pulsar timing, enabling profile-domain timing in the frequency domain. Very impressed by the speed he has put this together - the work has been presented at the IPTA meeting in South Africa and the SPINS meeting in Bath.
+- **05/10/2026**: Metha Prathaban has joined the group! Wonderful to have her on board and I'm excited to see what she achieves.
 - **14/09/2026**: A new group first! Ann's paper [Improving the Sensitivity of Gravitational Wave Detection with Weighted Conformal Prediction](https://arxiv.org/abs/2609.11401) has been accepted to the Fifteenth Symposium on Conformal and Probabilistic Prediction with Applications (COPA). This is the first publication we have made in a machine-learning conference - a great milestone for Ann, well done!
-
 - **09/07/2026**: New paper day! Ann pushed her third paper on Conformal Prediction to the arXiv and submitted to PRD. This work, titled [Combining gravitational wave search pipelines to find subthreshold signals in GWTC-5.0](https://arxiv.org/html/2607.07272v1), identifies several possible binary black hole signals buried in the noise
 
 <figure markdown>
